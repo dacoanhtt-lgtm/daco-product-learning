@@ -2679,6 +2679,238 @@ body.is-resizing-table-col {
 
 
 
+
+/* ===== AUTHENTICATION & ADMIN ROLES ===== */
+.btn-auth-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--accent-blue);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 0.5rem;
+}
+.btn-auth-login:hover {
+  background: var(--accent-blue);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.admin-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(249, 115, 22, 0.25));
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-right: 0.6rem;
+}
+.btn-logout-small {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+.btn-logout-small:hover {
+  color: #dc2626;
+}
+
+.sidebar-notes-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 1px 7px;
+  border-radius: 12px;
+  margin-left: auto;
+  line-height: 1.3;
+}
+
+/* ===== HÒM THƯ ĐỀ XUẤT & GHI CHÚ VIEW ===== */
+.notes-header-counter {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.notes-filter-bar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--bg-card);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.25rem;
+}
+.notes-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.notes-filter-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.notes-select {
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  font-size: 0.84rem;
+  outline: none;
+}
+.notes-select:focus {
+  border-color: var(--accent-blue);
+}
+
+.proposals-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.proposal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.25rem;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.proposal-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+.proposal-card.pending {
+  border-left: 4px solid #f59e0b;
+}
+.proposal-card.approved {
+  border-left: 4px solid #10b981;
+}
+.proposal-card.rejected {
+  border-left: 4px solid #ef4444;
+}
+
+.proposal-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.proposal-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.proposal-status-badge {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.proposal-status-badge.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+.proposal-status-badge.approved {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.proposal-status-badge.rejected {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.proposal-type-badge {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent-blue);
+  border-radius: 4px;
+}
+.proposal-author {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.proposal-date {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.proposal-content {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  white-space: pre-line;
+}
+
+.proposal-link-box {
+  background: var(--bg-secondary);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.proposal-admin-feedback {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px dashed rgba(16, 185, 129, 0.4);
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+  font-size: 0.84rem;
+  color: #10b981;
+}
+
+.proposal-actions-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.65rem;
+  margin-top: 0.65rem;
+}
+
 </style>
 </head>
 <body data-theme="light">
@@ -2724,6 +2956,11 @@ body.is-resizing-table-col {
           <span class="nav-icon">📝</span>
           <span class="nav-label">Tập Làm Báo Giá</span>
         </button>
+        <button class="sidebar-nav-item" id="sidebarNavNotes" onclick="switchToGlobalView('notes')">
+          <span class="nav-icon">📋</span>
+          <span class="nav-label">Hòm Thư Đề Xuất</span>
+          <span class="sidebar-notes-badge" id="sidebarNotesBadge">0</span>
+        </button>
         <button class="sidebar-nav-item" id="sidebarNavAdmin" onclick="switchToGlobalView('admin')">
           <span class="nav-icon">⚙️</span>
           <span class="nav-label">Quản Trị & Thêm Hãng</span>
@@ -2760,8 +2997,13 @@ body.is-resizing-table-col {
           <div class="search-dropdown" id="searchDropdown"></div>
         </div>
 
-        <!-- Header Actions: Theme Toggle -->
+        <!-- Header Actions: Theme Toggle & Admin Auth -->
         <div class="header-actions">
+          <div id="headerAuthContainer" style="display: flex; align-items: center;">
+            <button class="btn-auth-login" id="btnHeaderLogin" onclick="openAdminLoginModal()" title="Đăng nhập dành cho Quản trị viên">
+              <span>🔐</span> <span class="auth-btn-text">Đăng Nhập Admin</span>
+            </button>
+          </div>
           <button class="theme-toggle" id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối">
             <span id="themeIcon">🌙</span> <span id="themeText">Tối</span>
           </button>
@@ -3078,6 +3320,71 @@ body.is-resizing-table-col {
         <button class="btn-primary" id="btnCopyQuote" onclick="copyQuotationToClipboard()" style="background: var(--gradient-primary); border-color: var(--accent);">
           📋 Sao Chép Báo Giá Gửi Zalo / Email
         </button>
+      </div>
+    </section>
+
+    <!-- VIEW: HÒM THƯ ĐỀ XUẤT & GHI CHÚ (FEEDBACK & CHANGE PROPOSALS) -->
+    <section id="view-notes" class="view-section hidden">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>📋</span> <span>Hòm Thư Đề Xuất & Ghi Chú Chỉnh Sửa</span>
+            <span class="notes-header-counter" id="notesHeaderCounter">0 ghi chú</span>
+          </h2>
+          <p style="color: var(--text-muted); font-size: 0.88rem; max-width: 780px; line-height: 1.45;">
+            Toàn bộ phản hồi, ghi chú giá/nhà cung cấp, đề xuất sửa thông số hoặc bổ sung catalogue từ đội ngũ <b>Kinh doanh (Sales)</b> và <b>Mua hàng (Purchasing)</b> được tập hợp tại đây để Admin kiểm duyệt và cập nhật chính thức.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+          <button class="btn-primary" onclick="openNoteProposalModal(null, '', '')" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.1rem; border-radius: var(--radius-sm); font-size: 0.88rem; background: var(--gradient-warning); color: #fff; box-shadow: 0 4px 12px rgba(245,158,11,0.3);">
+            <span>➕</span> <span>Tạo Ghi Chú / Đề Xuất Mới</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="notes-filter-bar">
+        <div class="notes-filter-group">
+          <label>Lọc theo Hãng:</label>
+          <select id="notesFilterBrand" onchange="renderProposalsList()" class="notes-select">
+            <option value="all">Tất cả thương hiệu</option>
+            <option value="mitsubishi">Mitsubishi Electric</option>
+            <option value="qlight">Qlight</option>
+            <option value="brother">Brother</option>
+            <option value="proface">Pro-face</option>
+            <option value="mitutoyo">Mitutoyo</option>
+            <option value="omron">Omron</option>
+            <option value="autonics">Autonics</option>
+            <option value="patlite">Patlite</option>
+            <option value="zebra">Zebra</option>
+            <option value="other">Hệ Thống / Hãng Khác</option>
+          </select>
+        </div>
+        <div class="notes-filter-group">
+          <label>Trạng thái duyệt:</label>
+          <select id="notesFilterStatus" onchange="renderProposalsList()" class="notes-select">
+            <option value="all">Tất cả trạng thái</option>
+            <option value="pending">⏳ Chờ Admin duyệt</option>
+            <option value="approved">✅ Đã phê duyệt / Cập nhật</option>
+            <option value="rejected">❌ Đã từ chối</option>
+          </select>
+        </div>
+        <div class="notes-filter-group">
+          <label>Loại đề xuất:</label>
+          <select id="notesFilterType" onchange="renderProposalsList()" class="notes-select">
+            <option value="all">Tất cả phân loại</option>
+            <option value="spec">Sửa thông số / Model</option>
+            <option value="catalog">Cập nhật Catalogue / File</option>
+            <option value="price_supplier">Ghi chú Giá & Nhà cung cấp</option>
+            <option value="new_product">Đề xuất thêm Model mới</option>
+            <option value="other">Ý kiến khác</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Proposals List Container -->
+      <div id="proposalsListContainer" class="proposals-list-container">
+        <!-- Rendered dynamically -->
       </div>
     </section>
 
@@ -3591,6 +3898,103 @@ body.is-resizing-table-col {
     <div class="modal-card" style="max-width: 700px; max-height: 90vh;">
       <button class="modal-close" onclick="closeSupplierEditModal()">&times;</button>
       <div id="supplierEditModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal Đăng Nhập Quản Trị Viên (Admin Login) -->
+  <div class="modal-overlay" id="adminLoginModal">
+    <div class="modal-card" style="max-width: 440px; border-radius: 14px;">
+      <button class="modal-close" onclick="closeAdminLoginModal()">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔐</div>
+        <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">Đăng Nhập Quản Trị Viên</h3>
+        <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.4;">Chỉ Admin mới có quyền sửa đổi cơ sở dữ liệu, quy hoạch danh mục và phê duyệt các đề xuất.</p>
+      </div>
+      <form id="adminLoginForm" onsubmit="submitAdminLogin(event)">
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.4rem;">Tài Khoản Admin:</label>
+          <input type="text" id="adminUsernameInput" placeholder="daco.admin" autocomplete="username" required style="width: 100%; padding: 0.65rem 0.9rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.92rem;">
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.4rem;">Mật Khẩu:</label>
+          <input type="password" id="adminPasswordInput" placeholder="••••••••" autocomplete="current-password" required style="width: 100%; padding: 0.65rem 0.9rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.92rem;">
+          <div id="adminLoginError" style="display: none; color: #ef4444; font-size: 0.8rem; font-weight: 600; margin-top: 0.5rem;"></div>
+        </div>
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button type="button" class="btn-secondary" onclick="closeAdminLoginModal()" style="padding: 0.6rem 1.1rem;">Hủy</button>
+          <button type="submit" class="btn-primary" style="padding: 0.6rem 1.4rem; font-weight: 700; background: var(--gradient-primary);">Đăng Nhập</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Gửi Ghi Chú / Đề Xuất Sửa (Note Proposal Modal) -->
+  <div class="modal-overlay" id="noteProposalModal">
+    <div class="modal-card" style="max-width: 620px; max-height: 90vh;">
+      <button class="modal-close" onclick="closeNoteProposalModal()">&times;</button>
+      <div style="margin-bottom: 1.25rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+          <span style="font-size: 1.3rem;">📝</span>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-main);">Gửi Ghi Chú & Đề Xuất Chỉnh Sửa</h3>
+        </div>
+        <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.4;">Ghi chú của bạn sẽ được lưu vào hệ thống để mọi người cùng xem và gửi tới Admin phê duyệt cập nhật.</p>
+      </div>
+      <form id="noteProposalForm" onsubmit="submitNoteProposal(event)">
+        <input type="hidden" id="proposalProductId" value="">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.85rem;">
+          <div>
+            <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Họ Tên & Bộ Phận (*):</label>
+            <input type="text" id="proposalAuthorInput" placeholder="Ví dụ: Hoàng - Sales Hà Nội" required style="width: 100%; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Thương Hiệu Liên Quan:</label>
+            <select id="proposalBrandSelect" style="width: 100%; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem;">
+              <option value="mitsubishi">Mitsubishi Electric</option>
+              <option value="qlight">Qlight</option>
+              <option value="brother">Brother</option>
+              <option value="proface">Pro-face</option>
+              <option value="mitutoyo">Mitutoyo</option>
+              <option value="omron">Omron</option>
+              <option value="autonics">Autonics</option>
+              <option value="patlite">Patlite</option>
+              <option value="zebra">Zebra</option>
+              <option value="other">Hãng Khác / Toàn Hệ Thống</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.85rem;">
+          <div>
+            <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Dòng Sản Phẩm / Mã Model:</label>
+            <input type="text" id="proposalProductSerialInput" placeholder="Ví dụ: PFXET6400WAD, PT-E850TKW..." style="width: 100%; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Phân Loại Đề Xuất:</label>
+            <select id="proposalTypeSelect" style="width: 100%; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem;">
+              <option value="spec">Sửa thông số / Model kỹ thuật</option>
+              <option value="catalog">Cập nhật Catalogue / File PDF</option>
+              <option value="price_supplier">Ghi chú Giá vốn, Tồn kho & Nhà cung cấp</option>
+              <option value="new_product">Đề xuất bổ sung Model / Dòng mới</option>
+              <option value="other">Góp ý khác</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 0.85rem;">
+          <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Nội Dung Ghi Chú / Đề Xuất Cụ Thể (*):</label>
+          <textarea id="proposalContentInput" rows="4" placeholder="Mô tả chi tiết những gì cần chỉnh sửa, thông tin báo giá mới từ NCC, hoặc lỗi sai cần đính chính..." required style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem; line-height: 1.45;"></textarea>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Link Tài Liệu / Báo Giá Đính Kèm (Nếu có):</label>
+          <input type="text" id="proposalLinkInput" placeholder="https://... hoặc tên file catalogue đính kèm" style="width: 100%; padding: 0.55rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.85rem;">
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button type="button" class="btn-secondary" onclick="closeNoteProposalModal()" style="padding: 0.6rem 1.1rem;">Hủy</button>
+          <button type="submit" class="btn-primary" style="padding: 0.6rem 1.4rem; font-weight: 700; background: var(--gradient-warning); color: #fff;">Gửi Đề Xuất Cho Admin</button>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -18392,6 +18796,12 @@ function renderBrandNav() {
 
 // Switch To Global Views (Tập Làm Báo Giá hoặc Quản Trị Hệ Thống)
 function switchToGlobalView(viewName) {
+  // Guard Admin View: require login
+  if (viewName === 'admin' && !isAdminLoggedIn()) {
+    openAdminLoginModal('Tính năng Quản trị & Quy hoạch danh mục yêu cầu tài khoản Admin (daco.admin).');
+    return;
+  }
+
   CURRENT_VIEW = viewName;
 
   // 1. Hide Brand-specific wrapper
@@ -18405,19 +18815,25 @@ function switchToGlobalView(viewName) {
 
   // 3. Update Sidebar active states
   const btnQuote = document.getElementById('sidebarNavQuotation');
+  const btnNotes = document.getElementById('sidebarNavNotes');
   const btnAdmin = document.getElementById('sidebarNavAdmin');
   if (btnQuote) btnQuote.classList.toggle('active', viewName === 'quotation');
+  if (btnNotes) btnNotes.classList.toggle('active', viewName === 'notes');
   if (btnAdmin) btnAdmin.classList.toggle('active', viewName === 'admin');
 
   const accordionToggle = document.getElementById('brandAccordionToggle');
   if (accordionToggle) accordionToggle.classList.remove('active');
 
-  // 4. Update Breadcrumbs
+  // 4. Update Breadcrumbs & trigger renders
   const bcCat = document.getElementById('bcCategory');
   const bcCur = document.getElementById('bcCurrent');
   if (viewName === 'quotation') {
     if (bcCat) bcCat.innerText = 'Công Cụ Hệ Thống';
     if (bcCur) bcCur.innerText = 'Tập Làm Báo Giá';
+  } else if (viewName === 'notes') {
+    if (bcCat) bcCat.innerText = 'Hệ Thống Phản Hồi';
+    if (bcCur) bcCur.innerText = 'Hòm Thư Đề Xuất & Ghi Chú';
+    renderProposalsList();
   } else if (viewName === 'admin') {
     if (bcCat) bcCat.innerText = 'Quản Trị Hệ Thống';
     if (bcCur) bcCur.innerText = 'Cập Nhật & Thêm Hãng';
@@ -18908,7 +19324,12 @@ function handleRowClick(id) {
     clearTimeout(_rowClickTimer);
     _rowClickTimer = null;
     closeModal();
-    openEditProductModal(id);
+    if (isAdminLoggedIn()) {
+      openEditProductModal(id);
+    } else {
+      const p = (BRAND_DATA[CURRENT_BRAND]?.products || []).find(x => x.id === id);
+      openNoteProposalModal(id, p ? p.serial : '', p ? p.cat : '');
+    }
   } else {
     _rowClickTimer = setTimeout(() => {
       _rowClickTimer = null;
@@ -19346,9 +19767,15 @@ function openDetailModal(id) {
             ${p.fake === 'Có' ? '<span class="badge badge-red">⚠️ Fake</span>' : ''}
             ${p.renew === 'Có' ? '<span class="badge badge-amber">🔄 Renew</span>' : ''}
           </div>
-          <button type="button" class="btn-primary btn-sm" onclick="closeModal(); openEditProductModal(${p.id});" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; box-shadow: 0 2px 8px rgba(59,130,246,0.35); font-size: 0.82rem;">
-            ✏️ Chỉnh Sửa Thông Tin SP
-          </button>
+          ${isAdminLoggedIn() ? `
+            <button type="button" class="btn-primary btn-sm" onclick="closeModal(); openEditProductModal(${p.id});" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; box-shadow: 0 2px 8px rgba(59,130,246,0.35); font-size: 0.82rem;">
+              ✏️ Chỉnh Sửa Thông Tin SP
+            </button>
+          ` : `
+            <button type="button" class="btn-secondary btn-sm" onclick="closeModal(); openNoteProposalModal(${p.id}, '${escapeHtml(p.serial)}', '${escapeHtml(p.cat)}');" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; font-size: 0.82rem; background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4);" title="Gửi ghi chú đề xuất cần chỉnh sửa cho Admin phê duyệt">
+              📝 Gửi Ghi Chú / Đề Xuất Sửa
+            </button>
+          `}
         </div>
         <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.35rem; color: var(--text-main);">${p.serial}</h2>
         <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.4;">${p.subcat}</div>
@@ -23065,6 +23492,437 @@ function autoFitColumn(table, th, colIdx) {
   showToast(`📐 Đã căn chỉnh cột "${th.innerText.replace('▼', '').replace('▲', '').trim()}": ${fitW}px`);
 }
 
+
+
+// =========================================================================
+// ===== ADMIN AUTHENTICATION & PROPOSALS / NOTES MANAGEMENT SYSTEM =====
+// =========================================================================
+
+const ADMIN_CREDENTIALS = {
+  username: 'daco.admin',
+  password: 'Daco@1915'
+};
+
+function isAdminLoggedIn() {
+  return sessionStorage.getItem('DACO_ADMIN_LOGGED_IN') === 'true';
+}
+
+function updateAuthUI() {
+  const container = document.getElementById('headerAuthContainer');
+  if (!container) return;
+
+  if (isAdminLoggedIn()) {
+    container.innerHTML = `
+      <div class="admin-badge-pill" title="Đang đăng nhập với quyền Quản trị viên">
+        <span>👑</span> <span>daco.admin</span>
+        <button class="btn-logout-small" onclick="handleAdminLogout()">[Đăng xuất]</button>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `
+      <button class="btn-auth-login" id="btnHeaderLogin" onclick="openAdminLoginModal()" title="Đăng nhập dành cho Quản trị viên">
+        <span>🔐</span> <span class="auth-btn-text">Đăng Nhập Admin</span>
+      </button>
+    `;
+  }
+}
+
+function openAdminLoginModal(customMessage) {
+  const modal = document.getElementById('adminLoginModal');
+  const err = document.getElementById('adminLoginError');
+  if (err) {
+    if (customMessage) {
+      err.innerText = customMessage;
+      err.style.display = 'block';
+      err.style.color = 'var(--accent-blue)';
+    } else {
+      err.style.display = 'none';
+      err.style.color = '#ef4444';
+    }
+  }
+  if (modal) modal.classList.add('active');
+  const userInp = document.getElementById('adminUsernameInput');
+  if (userInp) setTimeout(() => userInp.focus(), 150);
+}
+
+function closeAdminLoginModal() {
+  const modal = document.getElementById('adminLoginModal');
+  if (modal) modal.classList.remove('active');
+  const err = document.getElementById('adminLoginError');
+  if (err) err.style.display = 'none';
+}
+
+function submitAdminLogin(e) {
+  if (e) e.preventDefault();
+  const u = (document.getElementById('adminUsernameInput').value || '').trim();
+  const p = (document.getElementById('adminPasswordInput').value || '').trim();
+  const err = document.getElementById('adminLoginError');
+
+  if (u === ADMIN_CREDENTIALS.username && p === ADMIN_CREDENTIALS.password) {
+    sessionStorage.setItem('DACO_ADMIN_LOGGED_IN', 'true');
+    sessionStorage.setItem('DACO_ADMIN_USER', u);
+    closeAdminLoginModal();
+    updateAuthUI();
+    showToast('👑 Đăng nhập Quản trị viên (Admin) thành công!');
+
+    // Re-render views to unlock admin controls
+    if (CURRENT_VIEW === 'brand') {
+      const data = BRAND_DATA[CURRENT_BRAND];
+      if (data && data.products) renderProductsTable(data.products);
+    } else if (CURRENT_VIEW === 'notes') {
+      renderProposalsList();
+    } else if (CURRENT_VIEW === 'admin') {
+      // Refresh admin view
+    }
+  } else {
+    if (err) {
+      err.innerText = '❌ Sai tài khoản hoặc mật khẩu! (Lưu ý: Mật khẩu có chữ D viết hoa: Daco@1915)';
+      err.style.display = 'block';
+      err.style.color = '#ef4444';
+    }
+  }
+}
+
+function handleAdminLogout() {
+  sessionStorage.removeItem('DACO_ADMIN_LOGGED_IN');
+  sessionStorage.removeItem('DACO_ADMIN_USER');
+  updateAuthUI();
+  showToast('Đã đăng xuất khỏi tài khoản Quản trị viên.');
+
+  if (CURRENT_VIEW === 'admin') {
+    switchBrand(CURRENT_BRAND);
+  } else if (CURRENT_VIEW === 'brand') {
+    const data = BRAND_DATA[CURRENT_BRAND];
+    if (data && data.products) renderProductsTable(data.products);
+  } else if (CURRENT_VIEW === 'notes') {
+    renderProposalsList();
+  }
+}
+
+// ===== PROPOSALS & NOTES MANAGEMENT =====
+
+const DEFAULT_PROPOSALS = [
+  {
+    id: 1,
+    author: 'Hải (Sales Hà Nội)',
+    brand: 'proface',
+    productSerial: 'Pro-face PFXET6400WAD',
+    type: 'price_supplier',
+    typeText: 'Ghi chú Giá & Tồn kho NCC',
+    content: 'Đại lý Hợp Long báo tồn kho ET6400WAD hiện còn hơn 25 bộ tại kho Long Biên, chiết khấu thêm 3.5% cho đơn dự án số lượng từ 3 bộ trở lên. Đề xuất cập nhật vào hồ sơ nhà cung cấp để anh em Sales chào giá cạnh tranh.',
+    link: '',
+    status: 'approved',
+    date: '07/10/2026 14:15',
+    adminComment: 'Admin đã duyệt: Đã ghi nhận vào hồ sơ thế mạnh Hợp Long.'
+  },
+  {
+    id: 2,
+    author: 'Lan (Thu Mua - Purchasing)',
+    brand: 'brother',
+    productSerial: 'PT-E850TKW',
+    type: 'spec',
+    typeText: 'Sửa thông số / Model',
+    content: 'Khách hàng tủ điện hỏi nhiều về việc máy in ống lồng PT-E850TKW có in được ống co nhiệt và ống PVC Max LM không. Đề xuất bổ sung ghi chú kỹ thuật: Máy tương thích cả ống lồng Brother và ống PVC tiêu chuẩn Ø2.5 - 6.5mm.',
+    link: '',
+    status: 'pending',
+    date: '08/10/2026 09:30',
+    adminComment: ''
+  },
+  {
+    id: 3,
+    author: 'Minh (Kỹ Thuật Hỗ Trợ Dự Án)',
+    brand: 'mitsubishi',
+    productSerial: 'FX5U / FX5UC (MELSEC iQ-F)',
+    type: 'catalog',
+    typeText: 'Cập nhật Catalogue / File',
+    content: 'Gửi Admin file tài liệu hướng dẫn đấu nối & lập trình PLC FX5U tiếng Việt bản chuẩn từ Mitsubishi Electric VN để bổ sung vào mục Tài Liệu cho khách hàng tải.',
+    link: 'https://www.mitsubishielectric.com/fa/products/cnt/plc/pmerit/iq-f/',
+    status: 'pending',
+    date: '08/10/2026 11:20',
+    adminComment: ''
+  }
+];
+
+function getProposals() {
+  const saved = localStorage.getItem('DACO_PORTAL_PROPOSALS');
+  if (saved) {
+    try {
+      return JSON.parse(saved);
+    } catch(e) {
+      return DEFAULT_PROPOSALS;
+    }
+  }
+  localStorage.setItem('DACO_PORTAL_PROPOSALS', JSON.stringify(DEFAULT_PROPOSALS));
+  return DEFAULT_PROPOSALS;
+}
+
+function saveProposals(list) {
+  localStorage.setItem('DACO_PORTAL_PROPOSALS', JSON.stringify(list));
+  updateNotesBadges();
+}
+
+function updateNotesBadges() {
+  const list = getProposals();
+  const pendingCount = list.filter(p => p.status === 'pending').length;
+  
+  const sidebarBadge = document.getElementById('sidebarNotesBadge');
+  if (sidebarBadge) {
+    sidebarBadge.innerText = pendingCount;
+    sidebarBadge.style.display = pendingCount > 0 ? 'inline-flex' : 'none';
+  }
+
+  const headerCounter = document.getElementById('notesHeaderCounter');
+  if (headerCounter) {
+    headerCounter.innerText = `${list.length} ghi chú (${pendingCount} chờ duyệt)`;
+  }
+}
+
+function renderProposalsList() {
+  const container = document.getElementById('proposalsListContainer');
+  if (!container) return;
+
+  const brandFilter = document.getElementById('notesFilterBrand')?.value || 'all';
+  const statusFilter = document.getElementById('notesFilterStatus')?.value || 'all';
+  const typeFilter = document.getElementById('notesFilterType')?.value || 'all';
+
+  let list = getProposals();
+
+  // Apply filters
+  if (brandFilter !== 'all') {
+    list = list.filter(item => item.brand === brandFilter);
+  }
+  if (statusFilter !== 'all') {
+    list = list.filter(item => item.status === statusFilter);
+  }
+  if (typeFilter !== 'all') {
+    list = list.filter(item => item.type === typeFilter);
+  }
+
+  if (!list.length) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 3rem 1.5rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-color); color: var(--text-dim);">
+        <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📭</div>
+        <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">Chưa có ghi chú nào phù hợp bộ lọc</div>
+        <p style="font-size: 0.82rem;">Hãy gửi ghi chú mới nếu bạn có thông tin cần cập nhật hoặc đổi tiêu chí lọc.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const brandNameMap = {
+    'mitsubishi': 'Mitsubishi Electric',
+    'qlight': 'Qlight',
+    'brother': 'Brother',
+    'proface': 'Pro-face',
+    'mitutoyo': 'Mitutoyo',
+    'omron': 'Omron',
+    'autonics': 'Autonics',
+    'patlite': 'Patlite',
+    'zebra': 'Zebra',
+    'other': 'Toàn Hệ Thống'
+  };
+
+  const statusLabelMap = {
+    'pending': { text: '⏳ Chờ Admin Duyệt', cls: 'pending' },
+    'approved': { text: '✅ Đã Duyệt & Áp Dụng', cls: 'approved' },
+    'rejected': { text: '❌ Đã Từ Chối', cls: 'rejected' }
+  };
+
+  const isAdmin = isAdminLoggedIn();
+
+  container.innerHTML = list.map(item => {
+    const sInfo = statusLabelMap[item.status] || { text: item.status, cls: 'pending' };
+    const bName = brandNameMap[item.brand] || (item.brand ? item.brand.toUpperCase() : 'Hệ Thống');
+
+    return `
+      <div class="proposal-card ${sInfo.cls}" id="proposalCard-${item.id}">
+        <div class="proposal-top-row">
+          <div class="proposal-meta-left">
+            <span class="proposal-status-badge ${sInfo.cls}">${sInfo.text}</span>
+            <span class="proposal-type-badge">${escapeHtml(item.typeText || item.type)}</span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--accent-blue);">${escapeHtml(bName)}</span>
+            ${item.productSerial ? `<span style="font-size: 0.82rem; font-weight: 800; color: var(--text-main);">• ${escapeHtml(item.productSerial)}</span>` : ''}
+          </div>
+          <div style="font-size: 0.78rem; color: var(--text-dim);">
+            <span>${escapeHtml(item.date)}</span>
+          </div>
+        </div>
+
+        <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.45rem;">
+          Người đề xuất: <b style="color: var(--text-main);">${escapeHtml(item.author)}</b>
+        </div>
+
+        <div class="proposal-content">${escapeHtml(item.content)}</div>
+
+        ${item.link ? `
+          <div class="proposal-link-box">
+            <span>🔗 Tài liệu đính kèm:</span>
+            <a href="${escapeHtml(item.link)}" target="_blank" style="color: var(--accent-blue); word-break: break-all; text-decoration: underline;">${escapeHtml(item.link)}</a>
+          </div>
+        ` : ''}
+
+        ${item.adminComment ? `
+          <div class="proposal-admin-feedback">
+            <b>🛡️ Ý kiến Quản trị viên:</b> ${escapeHtml(item.adminComment)}
+          </div>
+        ` : ''}
+
+        ${isAdmin ? `
+          <div class="proposal-actions-row">
+            <span style="font-size: 0.76rem; color: var(--text-dim); margin-right: auto;">Quyền Admin:</span>
+            ${item.status === 'pending' ? `
+              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id})" style="background: var(--gradient-success); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
+                ✅ Duyệt & Cập Nhật
+              </button>
+              <button class="btn-secondary btn-sm" onclick="adminRejectProposal(${item.id})" style="color: #ef4444; font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
+                ❌ Từ Chối
+              </button>
+            ` : ''}
+            <button class="btn-secondary btn-sm" onclick="adminDeleteProposal(${item.id})" style="color: var(--text-muted); font-size: 0.78rem; padding: 4px 8px;">
+              🗑️ Xóa
+            </button>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+function openNoteProposalModal(productId, productSerial, cat) {
+  const modal = document.getElementById('noteProposalModal');
+  if (!modal) return;
+
+  const brandSelect = document.getElementById('proposalBrandSelect');
+  const serialInp = document.getElementById('proposalProductSerialInput');
+  const idInp = document.getElementById('proposalProductId');
+  const authorInp = document.getElementById('proposalAuthorInput');
+
+  if (brandSelect && CURRENT_BRAND) brandSelect.value = CURRENT_BRAND;
+  if (serialInp) serialInp.value = productSerial || '';
+  if (idInp) idInp.value = productId || '';
+
+  // Remember author name in session
+  const lastAuthor = sessionStorage.getItem('DACO_LAST_PROPOSAL_AUTHOR') || '';
+  if (authorInp && lastAuthor) authorInp.value = lastAuthor;
+
+  modal.classList.add('active');
+  const contentInp = document.getElementById('proposalContentInput');
+  if (contentInp) setTimeout(() => contentInp.focus(), 150);
+}
+
+function closeNoteProposalModal() {
+  const modal = document.getElementById('noteProposalModal');
+  if (modal) modal.classList.remove('active');
+}
+
+function submitNoteProposal(e) {
+  if (e) e.preventDefault();
+
+  const author = (document.getElementById('proposalAuthorInput')?.value || '').trim();
+  const brand = document.getElementById('proposalBrandSelect')?.value || CURRENT_BRAND || 'other';
+  const productSerial = (document.getElementById('proposalProductSerialInput')?.value || '').trim();
+  const typeSelect = document.getElementById('proposalTypeSelect');
+  const type = typeSelect?.value || 'spec';
+  const typeText = typeSelect?.options[typeSelect.selectedIndex]?.text || 'Ghi chú';
+  const content = (document.getElementById('proposalContentInput')?.value || '').trim();
+  const link = (document.getElementById('proposalLinkInput')?.value || '').trim();
+
+  if (!author || !content) {
+    alert('Vui lòng điền họ tên/bộ phận và nội dung đề xuất!');
+    return;
+  }
+
+  sessionStorage.setItem('DACO_LAST_PROPOSAL_AUTHOR', author);
+
+  const now = new Date();
+  const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth()+1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+  const list = getProposals();
+  const newId = list.length ? Math.max(...list.map(x => x.id || 0)) + 1 : 1;
+
+  const newProposal = {
+    id: newId,
+    author: author,
+    brand: brand,
+    productSerial: productSerial,
+    type: type,
+    typeText: typeText,
+    content: content,
+    link: link,
+    status: 'pending',
+    date: dateStr,
+    adminComment: ''
+  };
+
+  list.unshift(newProposal);
+  saveProposals(list);
+
+  closeNoteProposalModal();
+  document.getElementById('noteProposalForm')?.reset();
+
+  showToast('📨 Đề xuất của bạn đã được gửi thành công! Admin sẽ duyệt và cập nhật sớm.');
+
+  if (CURRENT_VIEW === 'notes') {
+    renderProposalsList();
+  }
+}
+
+function adminApproveProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  const comment = prompt('Nhập phản hồi/ghi chú của Admin khi duyệt (có thể để trống):', 'Admin đã duyệt và cập nhật vào hệ thống.');
+  if (comment === null) return; // user cancelled
+
+  const list = getProposals();
+  const item = list.find(x => x.id === id);
+  if (item) {
+    item.status = 'approved';
+    item.adminComment = comment || 'Admin đã duyệt thành công.';
+    saveProposals(list);
+    renderProposalsList();
+    showToast(`✅ Đã phê duyệt đề xuất #${id}!`);
+  }
+}
+
+function adminRejectProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  const comment = prompt('Lý do từ chối đề xuất này:', 'Thông tin chưa đủ căn cứ hoặc đã có phương án thay thế.');
+  if (comment === null) return;
+
+  const list = getProposals();
+  const item = list.find(x => x.id === id);
+  if (item) {
+    item.status = 'rejected';
+    item.adminComment = comment || 'Admin đã từ chối đề xuất này.';
+    saveProposals(list);
+    renderProposalsList();
+    showToast(`❌ Đã từ chối đề xuất #${id}!`);
+  }
+}
+
+function adminDeleteProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  if (!confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn ghi chú #${id} này không?`)) return;
+
+  let list = getProposals();
+  list = list.filter(x => x.id !== id);
+  saveProposals(list);
+  renderProposalsList();
+  showToast(`🗑️ Đã xóa ghi chú #${id}!`);
+}
+
+
+  // Khởi tạo Auth UI và Badge Ghi chú
+  updateAuthUI();
+  updateNotesBadges();
 
 </script>
 </body>

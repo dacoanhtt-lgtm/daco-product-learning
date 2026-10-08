@@ -79,6 +79,12 @@ function renderBrandNav() {
 
 // Switch To Global Views (Tập Làm Báo Giá hoặc Quản Trị Hệ Thống)
 function switchToGlobalView(viewName) {
+  // Guard Admin View: require login
+  if (viewName === 'admin' && !isAdminLoggedIn()) {
+    openAdminLoginModal('Tính năng Quản trị & Quy hoạch danh mục yêu cầu tài khoản Admin (daco.admin).');
+    return;
+  }
+
   CURRENT_VIEW = viewName;
 
   // 1. Hide Brand-specific wrapper
@@ -92,19 +98,25 @@ function switchToGlobalView(viewName) {
 
   // 3. Update Sidebar active states
   const btnQuote = document.getElementById('sidebarNavQuotation');
+  const btnNotes = document.getElementById('sidebarNavNotes');
   const btnAdmin = document.getElementById('sidebarNavAdmin');
   if (btnQuote) btnQuote.classList.toggle('active', viewName === 'quotation');
+  if (btnNotes) btnNotes.classList.toggle('active', viewName === 'notes');
   if (btnAdmin) btnAdmin.classList.toggle('active', viewName === 'admin');
 
   const accordionToggle = document.getElementById('brandAccordionToggle');
   if (accordionToggle) accordionToggle.classList.remove('active');
 
-  // 4. Update Breadcrumbs
+  // 4. Update Breadcrumbs & trigger renders
   const bcCat = document.getElementById('bcCategory');
   const bcCur = document.getElementById('bcCurrent');
   if (viewName === 'quotation') {
     if (bcCat) bcCat.innerText = 'Công Cụ Hệ Thống';
     if (bcCur) bcCur.innerText = 'Tập Làm Báo Giá';
+  } else if (viewName === 'notes') {
+    if (bcCat) bcCat.innerText = 'Hệ Thống Phản Hồi';
+    if (bcCur) bcCur.innerText = 'Hòm Thư Đề Xuất & Ghi Chú';
+    renderProposalsList();
   } else if (viewName === 'admin') {
     if (bcCat) bcCat.innerText = 'Quản Trị Hệ Thống';
     if (bcCur) bcCur.innerText = 'Cập Nhật & Thêm Hãng';
@@ -595,7 +607,12 @@ function handleRowClick(id) {
     clearTimeout(_rowClickTimer);
     _rowClickTimer = null;
     closeModal();
-    openEditProductModal(id);
+    if (isAdminLoggedIn()) {
+      openEditProductModal(id);
+    } else {
+      const p = (BRAND_DATA[CURRENT_BRAND]?.products || []).find(x => x.id === id);
+      openNoteProposalModal(id, p ? p.serial : '', p ? p.cat : '');
+    }
   } else {
     _rowClickTimer = setTimeout(() => {
       _rowClickTimer = null;
@@ -1033,9 +1050,15 @@ function openDetailModal(id) {
             ${p.fake === 'Có' ? '<span class="badge badge-red">⚠️ Fake</span>' : ''}
             ${p.renew === 'Có' ? '<span class="badge badge-amber">🔄 Renew</span>' : ''}
           </div>
-          <button type="button" class="btn-primary btn-sm" onclick="closeModal(); openEditProductModal(${p.id});" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; box-shadow: 0 2px 8px rgba(59,130,246,0.35); font-size: 0.82rem;">
-            ✏️ Chỉnh Sửa Thông Tin SP
-          </button>
+          ${isAdminLoggedIn() ? `
+            <button type="button" class="btn-primary btn-sm" onclick="closeModal(); openEditProductModal(${p.id});" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; box-shadow: 0 2px 8px rgba(59,130,246,0.35); font-size: 0.82rem;">
+              ✏️ Chỉnh Sửa Thông Tin SP
+            </button>
+          ` : `
+            <button type="button" class="btn-secondary btn-sm" onclick="closeModal(); openNoteProposalModal(${p.id}, '${escapeHtml(p.serial)}', '${escapeHtml(p.cat)}');" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; font-size: 0.82rem; background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4);" title="Gửi ghi chú đề xuất cần chỉnh sửa cho Admin phê duyệt">
+              📝 Gửi Ghi Chú / Đề Xuất Sửa
+            </button>
+          `}
         </div>
         <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.35rem; color: var(--text-main);">${p.serial}</h2>
         <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.4;">${p.subcat}</div>
@@ -4752,3 +4775,434 @@ function autoFitColumn(table, th, colIdx) {
   showToast(`📐 Đã căn chỉnh cột "${th.innerText.replace('▼', '').replace('▲', '').trim()}": ${fitW}px`);
 }
 
+
+
+// =========================================================================
+// ===== ADMIN AUTHENTICATION & PROPOSALS / NOTES MANAGEMENT SYSTEM =====
+// =========================================================================
+
+const ADMIN_CREDENTIALS = {
+  username: 'daco.admin',
+  password: 'Daco@1915'
+};
+
+function isAdminLoggedIn() {
+  return sessionStorage.getItem('DACO_ADMIN_LOGGED_IN') === 'true';
+}
+
+function updateAuthUI() {
+  const container = document.getElementById('headerAuthContainer');
+  if (!container) return;
+
+  if (isAdminLoggedIn()) {
+    container.innerHTML = `
+      <div class="admin-badge-pill" title="Đang đăng nhập với quyền Quản trị viên">
+        <span>👑</span> <span>daco.admin</span>
+        <button class="btn-logout-small" onclick="handleAdminLogout()">[Đăng xuất]</button>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `
+      <button class="btn-auth-login" id="btnHeaderLogin" onclick="openAdminLoginModal()" title="Đăng nhập dành cho Quản trị viên">
+        <span>🔐</span> <span class="auth-btn-text">Đăng Nhập Admin</span>
+      </button>
+    `;
+  }
+}
+
+function openAdminLoginModal(customMessage) {
+  const modal = document.getElementById('adminLoginModal');
+  const err = document.getElementById('adminLoginError');
+  if (err) {
+    if (customMessage) {
+      err.innerText = customMessage;
+      err.style.display = 'block';
+      err.style.color = 'var(--accent-blue)';
+    } else {
+      err.style.display = 'none';
+      err.style.color = '#ef4444';
+    }
+  }
+  if (modal) modal.classList.add('active');
+  const userInp = document.getElementById('adminUsernameInput');
+  if (userInp) setTimeout(() => userInp.focus(), 150);
+}
+
+function closeAdminLoginModal() {
+  const modal = document.getElementById('adminLoginModal');
+  if (modal) modal.classList.remove('active');
+  const err = document.getElementById('adminLoginError');
+  if (err) err.style.display = 'none';
+}
+
+function submitAdminLogin(e) {
+  if (e) e.preventDefault();
+  const u = (document.getElementById('adminUsernameInput').value || '').trim();
+  const p = (document.getElementById('adminPasswordInput').value || '').trim();
+  const err = document.getElementById('adminLoginError');
+
+  if (u === ADMIN_CREDENTIALS.username && p === ADMIN_CREDENTIALS.password) {
+    sessionStorage.setItem('DACO_ADMIN_LOGGED_IN', 'true');
+    sessionStorage.setItem('DACO_ADMIN_USER', u);
+    closeAdminLoginModal();
+    updateAuthUI();
+    showToast('👑 Đăng nhập Quản trị viên (Admin) thành công!');
+
+    // Re-render views to unlock admin controls
+    if (CURRENT_VIEW === 'brand') {
+      const data = BRAND_DATA[CURRENT_BRAND];
+      if (data && data.products) renderProductsTable(data.products);
+    } else if (CURRENT_VIEW === 'notes') {
+      renderProposalsList();
+    } else if (CURRENT_VIEW === 'admin') {
+      // Refresh admin view
+    }
+  } else {
+    if (err) {
+      err.innerText = '❌ Sai tài khoản hoặc mật khẩu! (Lưu ý: Mật khẩu có chữ D viết hoa: Daco@1915)';
+      err.style.display = 'block';
+      err.style.color = '#ef4444';
+    }
+  }
+}
+
+function handleAdminLogout() {
+  sessionStorage.removeItem('DACO_ADMIN_LOGGED_IN');
+  sessionStorage.removeItem('DACO_ADMIN_USER');
+  updateAuthUI();
+  showToast('Đã đăng xuất khỏi tài khoản Quản trị viên.');
+
+  if (CURRENT_VIEW === 'admin') {
+    switchBrand(CURRENT_BRAND);
+  } else if (CURRENT_VIEW === 'brand') {
+    const data = BRAND_DATA[CURRENT_BRAND];
+    if (data && data.products) renderProductsTable(data.products);
+  } else if (CURRENT_VIEW === 'notes') {
+    renderProposalsList();
+  }
+}
+
+// ===== PROPOSALS & NOTES MANAGEMENT =====
+
+const DEFAULT_PROPOSALS = [
+  {
+    id: 1,
+    author: 'Hải (Sales Hà Nội)',
+    brand: 'proface',
+    productSerial: 'Pro-face PFXET6400WAD',
+    type: 'price_supplier',
+    typeText: 'Ghi chú Giá & Tồn kho NCC',
+    content: 'Đại lý Hợp Long báo tồn kho ET6400WAD hiện còn hơn 25 bộ tại kho Long Biên, chiết khấu thêm 3.5% cho đơn dự án số lượng từ 3 bộ trở lên. Đề xuất cập nhật vào hồ sơ nhà cung cấp để anh em Sales chào giá cạnh tranh.',
+    link: '',
+    status: 'approved',
+    date: '07/10/2026 14:15',
+    adminComment: 'Admin đã duyệt: Đã ghi nhận vào hồ sơ thế mạnh Hợp Long.'
+  },
+  {
+    id: 2,
+    author: 'Lan (Thu Mua - Purchasing)',
+    brand: 'brother',
+    productSerial: 'PT-E850TKW',
+    type: 'spec',
+    typeText: 'Sửa thông số / Model',
+    content: 'Khách hàng tủ điện hỏi nhiều về việc máy in ống lồng PT-E850TKW có in được ống co nhiệt và ống PVC Max LM không. Đề xuất bổ sung ghi chú kỹ thuật: Máy tương thích cả ống lồng Brother và ống PVC tiêu chuẩn Ø2.5 - 6.5mm.',
+    link: '',
+    status: 'pending',
+    date: '08/10/2026 09:30',
+    adminComment: ''
+  },
+  {
+    id: 3,
+    author: 'Minh (Kỹ Thuật Hỗ Trợ Dự Án)',
+    brand: 'mitsubishi',
+    productSerial: 'FX5U / FX5UC (MELSEC iQ-F)',
+    type: 'catalog',
+    typeText: 'Cập nhật Catalogue / File',
+    content: 'Gửi Admin file tài liệu hướng dẫn đấu nối & lập trình PLC FX5U tiếng Việt bản chuẩn từ Mitsubishi Electric VN để bổ sung vào mục Tài Liệu cho khách hàng tải.',
+    link: 'https://www.mitsubishielectric.com/fa/products/cnt/plc/pmerit/iq-f/',
+    status: 'pending',
+    date: '08/10/2026 11:20',
+    adminComment: ''
+  }
+];
+
+function getProposals() {
+  const saved = localStorage.getItem('DACO_PORTAL_PROPOSALS');
+  if (saved) {
+    try {
+      return JSON.parse(saved);
+    } catch(e) {
+      return DEFAULT_PROPOSALS;
+    }
+  }
+  localStorage.setItem('DACO_PORTAL_PROPOSALS', JSON.stringify(DEFAULT_PROPOSALS));
+  return DEFAULT_PROPOSALS;
+}
+
+function saveProposals(list) {
+  localStorage.setItem('DACO_PORTAL_PROPOSALS', JSON.stringify(list));
+  updateNotesBadges();
+}
+
+function updateNotesBadges() {
+  const list = getProposals();
+  const pendingCount = list.filter(p => p.status === 'pending').length;
+  
+  const sidebarBadge = document.getElementById('sidebarNotesBadge');
+  if (sidebarBadge) {
+    sidebarBadge.innerText = pendingCount;
+    sidebarBadge.style.display = pendingCount > 0 ? 'inline-flex' : 'none';
+  }
+
+  const headerCounter = document.getElementById('notesHeaderCounter');
+  if (headerCounter) {
+    headerCounter.innerText = `${list.length} ghi chú (${pendingCount} chờ duyệt)`;
+  }
+}
+
+function renderProposalsList() {
+  const container = document.getElementById('proposalsListContainer');
+  if (!container) return;
+
+  const brandFilter = document.getElementById('notesFilterBrand')?.value || 'all';
+  const statusFilter = document.getElementById('notesFilterStatus')?.value || 'all';
+  const typeFilter = document.getElementById('notesFilterType')?.value || 'all';
+
+  let list = getProposals();
+
+  // Apply filters
+  if (brandFilter !== 'all') {
+    list = list.filter(item => item.brand === brandFilter);
+  }
+  if (statusFilter !== 'all') {
+    list = list.filter(item => item.status === statusFilter);
+  }
+  if (typeFilter !== 'all') {
+    list = list.filter(item => item.type === typeFilter);
+  }
+
+  if (!list.length) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 3rem 1.5rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-color); color: var(--text-dim);">
+        <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📭</div>
+        <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">Chưa có ghi chú nào phù hợp bộ lọc</div>
+        <p style="font-size: 0.82rem;">Hãy gửi ghi chú mới nếu bạn có thông tin cần cập nhật hoặc đổi tiêu chí lọc.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const brandNameMap = {
+    'mitsubishi': 'Mitsubishi Electric',
+    'qlight': 'Qlight',
+    'brother': 'Brother',
+    'proface': 'Pro-face',
+    'mitutoyo': 'Mitutoyo',
+    'omron': 'Omron',
+    'autonics': 'Autonics',
+    'patlite': 'Patlite',
+    'zebra': 'Zebra',
+    'other': 'Toàn Hệ Thống'
+  };
+
+  const statusLabelMap = {
+    'pending': { text: '⏳ Chờ Admin Duyệt', cls: 'pending' },
+    'approved': { text: '✅ Đã Duyệt & Áp Dụng', cls: 'approved' },
+    'rejected': { text: '❌ Đã Từ Chối', cls: 'rejected' }
+  };
+
+  const isAdmin = isAdminLoggedIn();
+
+  container.innerHTML = list.map(item => {
+    const sInfo = statusLabelMap[item.status] || { text: item.status, cls: 'pending' };
+    const bName = brandNameMap[item.brand] || (item.brand ? item.brand.toUpperCase() : 'Hệ Thống');
+
+    return `
+      <div class="proposal-card ${sInfo.cls}" id="proposalCard-${item.id}">
+        <div class="proposal-top-row">
+          <div class="proposal-meta-left">
+            <span class="proposal-status-badge ${sInfo.cls}">${sInfo.text}</span>
+            <span class="proposal-type-badge">${escapeHtml(item.typeText || item.type)}</span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--accent-blue);">${escapeHtml(bName)}</span>
+            ${item.productSerial ? `<span style="font-size: 0.82rem; font-weight: 800; color: var(--text-main);">• ${escapeHtml(item.productSerial)}</span>` : ''}
+          </div>
+          <div style="font-size: 0.78rem; color: var(--text-dim);">
+            <span>${escapeHtml(item.date)}</span>
+          </div>
+        </div>
+
+        <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.45rem;">
+          Người đề xuất: <b style="color: var(--text-main);">${escapeHtml(item.author)}</b>
+        </div>
+
+        <div class="proposal-content">${escapeHtml(item.content)}</div>
+
+        ${item.link ? `
+          <div class="proposal-link-box">
+            <span>🔗 Tài liệu đính kèm:</span>
+            <a href="${escapeHtml(item.link)}" target="_blank" style="color: var(--accent-blue); word-break: break-all; text-decoration: underline;">${escapeHtml(item.link)}</a>
+          </div>
+        ` : ''}
+
+        ${item.adminComment ? `
+          <div class="proposal-admin-feedback">
+            <b>🛡️ Ý kiến Quản trị viên:</b> ${escapeHtml(item.adminComment)}
+          </div>
+        ` : ''}
+
+        ${isAdmin ? `
+          <div class="proposal-actions-row">
+            <span style="font-size: 0.76rem; color: var(--text-dim); margin-right: auto;">Quyền Admin:</span>
+            ${item.status === 'pending' ? `
+              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id})" style="background: var(--gradient-success); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
+                ✅ Duyệt & Cập Nhật
+              </button>
+              <button class="btn-secondary btn-sm" onclick="adminRejectProposal(${item.id})" style="color: #ef4444; font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
+                ❌ Từ Chối
+              </button>
+            ` : ''}
+            <button class="btn-secondary btn-sm" onclick="adminDeleteProposal(${item.id})" style="color: var(--text-muted); font-size: 0.78rem; padding: 4px 8px;">
+              🗑️ Xóa
+            </button>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+function openNoteProposalModal(productId, productSerial, cat) {
+  const modal = document.getElementById('noteProposalModal');
+  if (!modal) return;
+
+  const brandSelect = document.getElementById('proposalBrandSelect');
+  const serialInp = document.getElementById('proposalProductSerialInput');
+  const idInp = document.getElementById('proposalProductId');
+  const authorInp = document.getElementById('proposalAuthorInput');
+
+  if (brandSelect && CURRENT_BRAND) brandSelect.value = CURRENT_BRAND;
+  if (serialInp) serialInp.value = productSerial || '';
+  if (idInp) idInp.value = productId || '';
+
+  // Remember author name in session
+  const lastAuthor = sessionStorage.getItem('DACO_LAST_PROPOSAL_AUTHOR') || '';
+  if (authorInp && lastAuthor) authorInp.value = lastAuthor;
+
+  modal.classList.add('active');
+  const contentInp = document.getElementById('proposalContentInput');
+  if (contentInp) setTimeout(() => contentInp.focus(), 150);
+}
+
+function closeNoteProposalModal() {
+  const modal = document.getElementById('noteProposalModal');
+  if (modal) modal.classList.remove('active');
+}
+
+function submitNoteProposal(e) {
+  if (e) e.preventDefault();
+
+  const author = (document.getElementById('proposalAuthorInput')?.value || '').trim();
+  const brand = document.getElementById('proposalBrandSelect')?.value || CURRENT_BRAND || 'other';
+  const productSerial = (document.getElementById('proposalProductSerialInput')?.value || '').trim();
+  const typeSelect = document.getElementById('proposalTypeSelect');
+  const type = typeSelect?.value || 'spec';
+  const typeText = typeSelect?.options[typeSelect.selectedIndex]?.text || 'Ghi chú';
+  const content = (document.getElementById('proposalContentInput')?.value || '').trim();
+  const link = (document.getElementById('proposalLinkInput')?.value || '').trim();
+
+  if (!author || !content) {
+    alert('Vui lòng điền họ tên/bộ phận và nội dung đề xuất!');
+    return;
+  }
+
+  sessionStorage.setItem('DACO_LAST_PROPOSAL_AUTHOR', author);
+
+  const now = new Date();
+  const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth()+1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+  const list = getProposals();
+  const newId = list.length ? Math.max(...list.map(x => x.id || 0)) + 1 : 1;
+
+  const newProposal = {
+    id: newId,
+    author: author,
+    brand: brand,
+    productSerial: productSerial,
+    type: type,
+    typeText: typeText,
+    content: content,
+    link: link,
+    status: 'pending',
+    date: dateStr,
+    adminComment: ''
+  };
+
+  list.unshift(newProposal);
+  saveProposals(list);
+
+  closeNoteProposalModal();
+  document.getElementById('noteProposalForm')?.reset();
+
+  showToast('📨 Đề xuất của bạn đã được gửi thành công! Admin sẽ duyệt và cập nhật sớm.');
+
+  if (CURRENT_VIEW === 'notes') {
+    renderProposalsList();
+  }
+}
+
+function adminApproveProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  const comment = prompt('Nhập phản hồi/ghi chú của Admin khi duyệt (có thể để trống):', 'Admin đã duyệt và cập nhật vào hệ thống.');
+  if (comment === null) return; // user cancelled
+
+  const list = getProposals();
+  const item = list.find(x => x.id === id);
+  if (item) {
+    item.status = 'approved';
+    item.adminComment = comment || 'Admin đã duyệt thành công.';
+    saveProposals(list);
+    renderProposalsList();
+    showToast(`✅ Đã phê duyệt đề xuất #${id}!`);
+  }
+}
+
+function adminRejectProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  const comment = prompt('Lý do từ chối đề xuất này:', 'Thông tin chưa đủ căn cứ hoặc đã có phương án thay thế.');
+  if (comment === null) return;
+
+  const list = getProposals();
+  const item = list.find(x => x.id === id);
+  if (item) {
+    item.status = 'rejected';
+    item.adminComment = comment || 'Admin đã từ chối đề xuất này.';
+    saveProposals(list);
+    renderProposalsList();
+    showToast(`❌ Đã từ chối đề xuất #${id}!`);
+  }
+}
+
+function adminDeleteProposal(id) {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
+  }
+  if (!confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn ghi chú #${id} này không?`)) return;
+
+  let list = getProposals();
+  list = list.filter(x => x.id !== id);
+  saveProposals(list);
+  renderProposalsList();
+  showToast(`🗑️ Đã xóa ghi chú #${id}!`);
+}
+
+
+  // Khởi tạo Auth UI và Badge Ghi chú
+  updateAuthUI();
+  updateNotesBadges();
