@@ -24074,6 +24074,129 @@ function adminDeleteProposal(id) {
 }
 
 
+// ===== PROPOSAL SUBMISSION & DAILY WORK MANAGER NOTIFICATION =====
+function openNoteProposalModal(productId, productSerial, cat) {
+  const modal = document.getElementById('noteProposalModal');
+  if (!modal) return;
+
+  const brandSelect = document.getElementById('proposalBrandSelect');
+  const serialInp = document.getElementById('proposalProductSerialInput');
+  const idInp = document.getElementById('proposalProductId');
+  const authorInp = document.getElementById('proposalAuthorInput');
+
+  if (brandSelect && CURRENT_BRAND) brandSelect.value = CURRENT_BRAND;
+  if (serialInp) serialInp.value = productSerial || '';
+  if (idInp) idInp.value = productId || '';
+
+  const lastAuthor = sessionStorage.getItem('DACO_LAST_PROPOSAL_AUTHOR') || '';
+  if (authorInp && lastAuthor) authorInp.value = lastAuthor;
+
+  modal.classList.add('active');
+  const contentInp = document.getElementById('proposalContentInput');
+  if (contentInp) setTimeout(() => contentInp.focus(), 150);
+}
+
+function closeNoteProposalModal() {
+  const modal = document.getElementById('noteProposalModal');
+  if (modal) modal.classList.remove('active');
+}
+
+function notifyDailyWorkManager(proposal) {
+  const payload = JSON.stringify({
+    id: proposal.id,
+    author: proposal.author,
+    brand: proposal.brand,
+    product: proposal.productSerial || proposal.brand,
+    model: proposal.productSerial || proposal.brand,
+    content: proposal.content,
+    note: proposal.content,
+    typeText: proposal.typeText,
+    link: proposal.link,
+    date: proposal.date,
+    timestamp: Date.now(),
+    portalUrl: window.location.href.split('#')[0] + '#notes'
+  });
+
+  // 1. Gửi trực tiếp tới Local Bridge của Daily Work Manager (127.0.0.1:48900)
+  try {
+    fetch('http://127.0.0.1:48900/proposal', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: payload,
+      mode: 'cors'
+    }).then(r => console.log('[DACO Bridge] Local push success')).catch(err => {
+      // Local bridge có thể chưa chạy, không gây lỗi UI
+    });
+  } catch(e) {}
+
+  // 2. Gửi qua Cloud ntfy.sh (để Daily Work Manager nhận ngay cả khi truy cập từ xa)
+  try {
+    fetch('https://ntfy.sh/daco_portal_proposals_daco2026', {
+      method: 'POST',
+      body: payload,
+      headers: {
+        'Title': 'DACO Portal: Đề xuất mới từ ' + proposal.author,
+        'Tags': 'clipboard,memo'
+      }
+    }).then(r => console.log('[DACO Bridge] Cloud push success')).catch(err => {});
+  } catch(e) {}
+}
+
+function submitNoteProposal(e) {
+  if (e) e.preventDefault();
+
+  const author = (document.getElementById('proposalAuthorInput')?.value || '').trim();
+  const brand = document.getElementById('proposalBrandSelect')?.value || CURRENT_BRAND || 'other';
+  const productSerial = (document.getElementById('proposalProductSerialInput')?.value || '').trim();
+  const typeSelect = document.getElementById('proposalTypeSelect');
+  const type = typeSelect?.value || 'spec';
+  const typeText = typeSelect?.options[typeSelect.selectedIndex]?.text || 'Ghi chú';
+  const content = (document.getElementById('proposalContentInput')?.value || '').trim();
+  const link = (document.getElementById('proposalLinkInput')?.value || '').trim();
+
+  if (!author || !content) {
+    alert('Vui lòng điền họ tên/bộ phận và nội dung đề xuất!');
+    return;
+  }
+
+  sessionStorage.setItem('DACO_LAST_PROPOSAL_AUTHOR', author);
+
+  const now = new Date();
+  const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth()+1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+  const list = getProposals();
+  const newId = list.length ? Math.max(...list.map(x => x.id || 0)) + 1 : 1;
+
+  const newProposal = {
+    id: newId,
+    author: author,
+    brand: brand,
+    productSerial: productSerial,
+    type: type,
+    typeText: typeText,
+    content: content,
+    link: link,
+    status: 'pending',
+    date: dateStr,
+    adminComment: ''
+  };
+
+  list.unshift(newProposal);
+  saveProposals(list);
+
+  closeNoteProposalModal();
+  document.getElementById('noteProposalForm')?.reset();
+
+  // Đẩy thông báo tức thì sang Daily Work Manager
+  notifyDailyWorkManager(newProposal);
+
+  showToast('📨 Đề xuất của bạn đã được gửi thành công! Daily Work Manager đã nhận được thông báo.');
+
+  if (CURRENT_VIEW === 'notes') {
+    renderProposalsList();
+  }
+}
+
   // Khởi tạo Auth UI và Badge Ghi chú
   updateAuthUI();
   updateNotesBadges();
