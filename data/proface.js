@@ -182,7 +182,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4301.png"
+      "image": "assets/images/proface/gp4301.webp"
     },
     {
       "id": 2,
@@ -222,7 +222,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4301.png"
+      "image": "assets/images/proface/gp4301.webp"
     },
     {
       "id": 3,
@@ -260,7 +260,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4301.png"
+      "image": "assets/images/proface/gp4301.webp"
     },
     {
       "id": 4,
@@ -299,7 +299,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4401.png"
+      "image": "assets/images/proface/gp4401.webp"
     },
     {
       "id": 5,
@@ -336,7 +336,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4401.png"
+      "image": "assets/images/proface/gp4401.webp"
     },
     {
       "id": 6,
@@ -376,7 +376,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4501.png"
+      "image": "assets/images/proface/gp4501.webp"
     },
     {
       "id": 7,
@@ -415,7 +415,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4501.png"
+      "image": "assets/images/proface/gp4501.webp"
     },
     {
       "id": 8,
@@ -454,7 +454,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4601.png"
+      "image": "assets/images/proface/gp4601.webp"
     },
     {
       "id": 9,
@@ -492,7 +492,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4601.png"
+      "image": "assets/images/proface/gp4601.webp"
     },
     {
       "id": 10,
@@ -530,7 +530,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4601.png"
+      "image": "assets/images/proface/gp4601.webp"
     },
     {
       "id": 11,
@@ -569,7 +569,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4501.png"
+      "image": "assets/images/proface/gp4501.webp"
     },
     {
       "id": 12,
@@ -619,7 +619,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4301.png"
+      "image": "assets/images/proface/gp4301.webp"
     },
     {
       "id": 13,
@@ -665,7 +665,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4100.png"
+      "image": "assets/images/proface/gp4100.webp"
     },
     {
       "id": 14,
@@ -710,7 +710,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/st6400.png"
+      "image": "assets/images/proface/st6400.webp"
     },
     {
       "id": 15,
@@ -754,7 +754,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/st6500.png"
+      "image": "assets/images/proface/st6500.webp"
     },
     {
       "id": 16,
@@ -793,7 +793,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/st6500.png"
+      "image": "assets/images/proface/st6500.webp"
     },
     {
       "id": 17,
@@ -831,7 +831,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/st6500.png"
+      "image": "assets/images/proface/st6500.webp"
     },
     {
       "id": 18,
@@ -876,7 +876,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/stm6000.png"
+      "image": "assets/images/proface/stm6000.webp"
     },
     {
       "id": 19,
@@ -921,7 +921,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/et6400.png"
+      "image": "assets/images/proface/et6400.webp"
     },
     {
       "id": 20,
@@ -960,7 +960,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/et6400.png"
+      "image": "assets/images/proface/et6400.webp"
     },
     {
       "id": 21,
@@ -999,7 +999,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/et6400.png"
+      "image": "assets/images/proface/et6400.webp"
     },
     {
       "id": 22,
@@ -1043,7 +1043,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/sp5000.png"
+      "image": "assets/images/proface/sp5000.webp"
     },
     {
       "id": 23,
@@ -1082,7 +1082,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/sp5000.png"
+      "image": "assets/images/proface/sp5000.webp"
     },
     {
       "id": 24,
@@ -1121,7 +1121,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/sp5000.png"
+      "image": "assets/images/proface/sp5000.webp"
     },
     {
       "id": 25,
@@ -1157,7 +1157,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/ps5000.png"
+      "image": "assets/images/proface/ps5000.webp"
     },
     {
       "id": 26,
@@ -1206,7 +1206,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4501.png"
+      "image": "assets/images/proface/gp4501.webp"
     },
     {
       "id": 27,
@@ -1250,7 +1250,7 @@ window.PORTAL_DATA_PROFACE = {
           }
         ]
       },
-      "image": "assets/images/proface/gp4301.png"
+      "image": "assets/images/proface/gp4301.webp"
     }
   ],
   "treeData": [
@@ -1270,7 +1270,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Cỡ nhỏ thông dụng",
           "application": "Tủ điều khiển máy vừa và nhỏ, máy CNC mini.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4301.png",
+          "image": "assets/images/proface/gp4301.webp",
           "namingRule": {
             "example": "PFXGP4301TAD",
             "standardDoc": "Pro-face GP4000 Manual - PFXGP4301TAD",
@@ -1302,7 +1302,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Tiêu chuẩn góc rộng 7.0 inch",
           "application": "Dây chuyền sản xuất tự động hóa, robot hàn, máy đóng gói.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4401.png",
+          "image": "assets/images/proface/gp4401.webp",
           "namingRule": {
             "example": "PFXGP4401TAD",
             "standardDoc": "Pro-face GP4000 Manual - PFXGP4401TAD",
@@ -1333,7 +1333,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Chủ lực 10.4 inch (Nguồn DC 24V hoặc AC 220V)",
           "application": "Tủ điều khiển chính dây chuyền sản xuất, máy ép nhựa cỡ lớn.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4501.png",
+          "image": "assets/images/proface/gp4501.webp",
           "namingRule": {
             "example": "PFXGP4501TAD",
             "standardDoc": "Pro-face GP4000 Manual - PFXGP4501TAD",
@@ -1365,7 +1365,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Cỡ lớn cao cấp (12.1 inch & 15.0 inch)",
           "application": "Phòng điều hành, dây chuyền cán thép, xử lý nước, xi măng.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4601.png",
+          "image": "assets/images/proface/gp4601.webp",
           "namingRule": {
             "example": "PFXGP4601TAD",
             "standardDoc": "Pro-face GP4000 Manual - PFXGP4601TAD",
@@ -1408,7 +1408,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Phòng sạch y tế & thực phẩm",
           "application": "Máy chiết rót phòng sạch, máy dược phẩm không bám bụi.",
           "status": "Hiếm",
-          "image": "assets/images/proface/gp4501.png",
+          "image": "assets/images/proface/gp4501.webp",
           "namingRule": {
             "example": "PFXGP4501TADR",
             "standardDoc": "Pro-face GP4000R Manual",
@@ -1439,7 +1439,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Cầm tay di động công nghiệp an toàn cao",
           "application": "Dạy điểm Robot công nghiệp, cẩu trục, bảo trì máy móc lớn.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4301.png",
+          "image": "assets/images/proface/gp4301.webp",
           "namingRule": {
             "example": "PFXGP4311HTAD",
             "standardDoc": "Pro-face GP4000H Manual",
@@ -1470,7 +1470,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "HMI mini kích thước nhỏ gắn máy gọn gàng",
           "application": "Máy bơm, máy nén khí, cân điện tử, trạm hiển thị nhỏ.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4100.png",
+          "image": "assets/images/proface/gp4100.webp",
           "namingRule": {
             "example": "PFXGP4116T2D",
             "standardDoc": "Pro-face GP4100 Color Manual",
@@ -1513,7 +1513,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Mặt nhôm phay xước cao cấp, 2 Ethernet độc lập",
           "application": "Tủ điều khiển trung tâm máy đóng gói, chiết rót tốc độ cao.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/st6400.png",
+          "image": "assets/images/proface/st6400.webp",
           "namingRule": {
             "example": "PFXST6400WAD",
             "standardDoc": "Pro-face ST6000 Manual",
@@ -1550,7 +1550,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Cỡ lớn WXGA 1280x800 & 1366x768",
           "application": "Phòng điều hành, dây chuyền sản xuất lớn, SCADA nhà máy.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/st6400.png",
+          "image": "assets/images/proface/st6400.webp",
           "namingRule": {
             "example": "PFXST6600WAD",
             "standardDoc": "Pro-face ST6000 Manual",
@@ -1581,7 +1581,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Đột phá lắp lỗ tròn Ø22mm không cần cắt khoét chữ nhật",
           "application": "Tủ điện đã sơn hoàn thiện, máy móc cần bổ sung HMI nhanh.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/st6400.png",
+          "image": "assets/images/proface/st6400.webp",
           "namingRule": {
             "example": "PFXSTM6400WAD",
             "standardDoc": "Pro-face STM6000 Modular Manual",
@@ -1623,7 +1623,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Mã đinh thắng thầu phân khúc 7 inch",
           "application": "Máy đóng gói, chiết rót, ép nhựa, nâng cấp tủ điện cũ.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/et6400.png",
+          "image": "assets/images/proface/et6400.webp",
           "namingRule": {
             "example": "PFXET6400WAD",
             "standardDoc": "Pro-face ET6000 Hardware Manual",
@@ -1658,7 +1658,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Kinh tế khổ lớn 10.1 inch & 12.1 inch",
           "application": "Dây chuyền máy lớn cần tối ưu ngân sách.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/et6400.png",
+          "image": "assets/images/proface/et6400.webp",
           "namingRule": {
             "example": "PFXET6500WAD",
             "standardDoc": "Pro-face ET6000 Hardware Manual",
@@ -1700,7 +1700,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Module hiển thị rời + Box xử lý Windows",
           "application": "Trạm SCADA trung tâm, máy đa nhiệm cao cấp.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/sp5000.png",
+          "image": "assets/images/proface/sp5000.webp",
           "namingRule": {
             "example": "PFXSP5500TPD",
             "standardDoc": "Pro-face SP5000 Smart Portal Manual",
@@ -1733,7 +1733,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Máy tính công nghiệp Intel Core i3/i5/i7 chuẩn quân sự",
           "application": "Xử lý ảnh công nghiệp, trạm MES điều hành nhà máy.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/sp5000.png",
+          "image": "assets/images/proface/sp5000.webp",
           "namingRule": {
             "example": "PS6000 Series",
             "standardDoc": "Pro-face PS6000 IPC Manual",
@@ -1770,7 +1770,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "Đã ngừng sản xuất EOL",
           "application": "Dây chuyền máy cũ nhập khẩu Nhật Bản, Đài Loan.",
           "status": "Ngừng sx",
-          "image": "assets/images/proface/gp4301.png",
+          "image": "assets/images/proface/gp4301.webp",
           "namingRule": {
             "example": "GP-3500T",
             "standardDoc": "Pro-face GP3000 Hardware Manual (Discontinued)",
@@ -1799,7 +1799,7 @@ window.PORTAL_DATA_PROFACE = {
           "tier": "License vĩnh viễn chính hãng",
           "application": "Kích hoạt phần mềm lập trình cho công ty chế tạo máy, dự án FDI.",
           "status": "Thông dụng",
-          "image": "assets/images/proface/gp4501.png",
+          "image": "assets/images/proface/gp4501.webp",
           "namingRule": {
             "example": "PFXEXEDLS40A",
             "standardDoc": "GP-Pro EX License Key Ordering Guide",

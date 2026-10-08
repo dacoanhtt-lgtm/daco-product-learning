@@ -185,7 +185,7 @@
         "**Tư vấn Sales**: Thuyết phục khách nâng cấp sang FX5U hoặc Q Series để có linh kiện lâu dài."
       ],
       "suppliers": "Tuyến 1: Kovi, Phạm Dương (tồn kho cũ) | Tuyến 2: Kênh bãi TQ, Toàn Cầu",
-      "image": "assets/images/mitsubishi/plc_fx3u.jpg"
+      "image": "assets/images/mitsubishi/plc_fx3u.webp"
     },
     {
       "id": 2,
@@ -210,7 +210,7 @@
         "**Tư vấn Sales**: Tuyệt đối không nhận cung cấp hàng mới 100% có CO/CQ xịn; bắt buộc tư vấn đổi sang FX3U/FX5U."
       ],
       "suppliers": "Tuyến 1: Toàn Cầu (renew), Kovi, Phạm Dương (tồn) | Tuyến 2: Kênh TQ, Hải Âu",
-      "image": "assets/images/mitsubishi/plc_fx3u.jpg"
+      "image": "assets/images/mitsubishi/plc_fx3u.webp"
     },
     {
       "id": 3,
@@ -237,7 +237,7 @@
         "**Dấu hiệu nhận biết**: Soi kỹ ốc vít, font chữ in laser trên vỏ nhựa, tem 7 màu và chân giắc đấu dây."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long (hàng new chuẩn) | Tuyến 2: Sa Giang, Toàn Cầu, TQ",
-      "image": "assets/images/mitsubishi/plc_fx3u.jpg"
+      "image": "assets/images/mitsubishi/plc_fx3u.webp"
     },
     {
       "id": 4,
@@ -266,7 +266,7 @@
         "**Cảnh báo**: Đã xuất hiện hàng renew tháo từ các nhà máy FDI (Samsung, Foxconn); hàng nhái TQ bắt đầu manh nha."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long (kho sẵn lớn) | Tuyến 2: Sa Giang, Hải Âu, BA",
-      "image": "assets/images/mitsubishi/plc_fx5u.jpg"
+      "image": "assets/images/mitsubishi/plc_fx5u.webp"
     },
     {
       "id": 5,
@@ -301,7 +301,7 @@
         "**Cảnh báo Renew**: Rất nhiều hàng tháo máy cũ sơn lại vỏ bán giá mới; khi báo giá phải hỏi khách đã có Nguồn và Đế Base chưa."
       ],
       "suppliers": "Tuyến 1: Kovi, Phạm Dương, Hợp Long | Tuyến 2: Sa Giang, Toàn Cầu, Kênh TQ",
-      "image": "assets/images/mitsubishi/plc_q_series.jpg"
+      "image": "assets/images/mitsubishi/plc_q_series.webp"
     },
     {
       "id": 6,
@@ -330,7 +330,7 @@
         "**Đặt hàng**: Ưu tiên hỏi Covifa hoặc Phạm Dương để kiểm tra lead time tiến độ giao hàng."
       ],
       "suppliers": "Tuyến 1: Covifa (NPP chính hãng lấy tiến độ) | Tuyến 2: Phạm Dương, Hải Âu, TQ",
-      "image": "assets/images/mitsubishi/plc_q_series.jpg"
+      "image": "assets/images/mitsubishi/plc_q_series.webp"
     },
     {
       "id": 7,
@@ -361,7 +361,7 @@
         "**Quy trình mua**: Bắt buộc mua qua kênh phân phối chính thức Covifa/Hợp Long kèm hồ sơ đăng ký dự án để bảo hộ giá."
       ],
       "suppliers": "Tuyến 1: Covifa (NPP chính ngạch bảo hộ dự án) | Tuyến 2: Hợp Long, Phạm Dương",
-      "image": "assets/images/mitsubishi/plc_q_series.jpg"
+      "image": "assets/images/mitsubishi/plc_q_series.webp"
     },
     {
       "id": 8,
@@ -392,7 +392,7 @@
         "**Lỗi thường gặp**: FX3U-ENET nhái rất hay bị rớt mạng kết nối SCADA sau vài ngày chạy liên tục."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Sa Giang, Toàn Cầu, TQ",
-      "image": "assets/images/mitsubishi/comm_module.jpg"
+      "image": "assets/images/mitsubishi/comm_module.webp"
     },
     {
       "id": 9,
@@ -419,7 +419,7 @@
         "**Lưu ý trạm Remote**: Khi chào trạm AJ65SBTB1 phải xác định rõ ngõ ra Relay hay Transistor, giắc cắm domino hay ốc vặn."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Sa Giang, BA, Hải Âu, TQ",
-      "image": "assets/images/mitsubishi/comm_module.jpg"
+      "image": "assets/images/mitsubishi/comm_module.webp"
     },
     {
       "id": 10,
@@ -451,7 +451,7 @@
         "**Nguy cơ**: Bo Fake dùng chip ADC/DAC cấp thấp gây trôi dạt sai số đo đạc lớn khi nhiệt độ môi trường thay đổi."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Toàn Cầu, Hải Âu, TQ",
-      "image": "assets/images/mitsubishi/plc_fx3u.jpg"
+      "image": "assets/images/mitsubishi/plc_fx3u.webp"
     },
     {
       "id": 11,
@@ -481,7 +481,7 @@
         "**Lưu ý khi bán**: Khi chào mã mật độ cao 32/64 điểm (QX42, QY41P) phải hỏi khách đã có giắc cắm hoặc cầu đấu ngoài chưa."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Sa Giang, BA, TQ",
-      "image": "assets/images/mitsubishi/plc_q_series.jpg"
+      "image": "assets/images/mitsubishi/plc_q_series.webp"
     },
     {
       "id": 12,
@@ -506,7 +506,7 @@
         "**Tư vấn Sales**: Thuyết phục khách sang D800 có phủ lớp sơn bảo vệ chống ẩm hóa chất (mã đuôi -60)."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long (kho sẵn nhiều D700/D800) | Tuyến 2: Sa Giang, DACO, TQ",
-      "image": "assets/images/mitsubishi/inv_fr_d700.jpg"
+      "image": "assets/images/mitsubishi/inv_fr_d700.webp"
     },
     {
       "id": 13,
@@ -532,7 +532,7 @@
         "**Chọn mã chuẩn**: Bản tiêu chuẩn chọn đuôi -1 (như FR-E840-1.5K-1); bản Ethernet chọn đuôi -E."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Sa Giang, Hải Âu, BA, TQ (nặng cước)",
-      "image": "assets/images/mitsubishi/inv_fr_e800.jpg"
+      "image": "assets/images/mitsubishi/inv_fr_e800.webp"
     },
     {
       "id": 14,
@@ -558,7 +558,7 @@
         "**Lưu ý cẩu trục**: Khi chào cẩu trục nâng hạ phải hỏi khách có lắp điện trở xả hoặc bộ hãm FR-BU2 không."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Sa Giang, Hải Âu, Duy Hưng",
-      "image": "assets/images/mitsubishi/inv_fr_a800.jpg"
+      "image": "assets/images/mitsubishi/inv_fr_a800.webp"
     },
     {
       "id": 15,
@@ -582,7 +582,7 @@
         "**Thị trường**: Không có fake bo mạch; hàng thanh lý từ các tòa nhà hoặc trạm xử lý nước được renew khá nhiều."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: Duy Hưng, Sa Giang, TQ",
-      "image": "assets/images/mitsubishi/inv_fr_a800.jpg"
+      "image": "assets/images/mitsubishi/inv_fr_a800.webp"
     },
     {
       "id": 16,
@@ -606,7 +606,7 @@
         "**Thực chiến mua**: DACO NHẬP TRỰC TIẾP nên giá cực kỳ tốt; cẩn trọng nguồn Toàn Cầu chất lượng không ổn định."
       ],
       "suppliers": "Tuyến 1: DACO (giá cực tốt - nhập trực tiếp), Phạm Dương, Hợp Long, Kovi | Tuyến 2: Toàn Cầu, Hải Âu, BA",
-      "image": "assets/images/mitsubishi/hmi_gs2000.jpg"
+      "image": "assets/images/mitsubishi/hmi_gs2000.webp"
     },
     {
       "id": 17,
@@ -632,7 +632,7 @@
         "**Đặc điểm**: Tính năng cơ bản, thay thế đồng hồ kim cơ; không có hàng fake; thị trường chỉ có tồn kho hoặc renew."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: TQ, Hải Âu, BA",
-      "image": "assets/images/mitsubishi/hmi_gs2000.jpg"
+      "image": "assets/images/mitsubishi/hmi_gs2000.webp"
     },
     {
       "id": 18,
@@ -662,7 +662,7 @@
         "**Thị trường**: Không có fake; chỉ còn hàng bãi cũ renew hoặc hàng tồn kho các đại lý."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi (hàng bãi/tồn) | Tuyến 2: Kênh TQ, Toàn Cầu, Hải Âu",
-      "image": "assets/images/mitsubishi/hmi_gt25.jpg"
+      "image": "assets/images/mitsubishi/hmi_gt25.webp"
     },
     {
       "id": 19,
@@ -691,7 +691,7 @@
         "**Lưu ý điện áp**: Kiểm tra kỹ đuôi -A (100-240VAC) hay -D (24VDC) để tránh khách cắm nhầm cháy nguồn."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Kovi, Hợp Long | Tuyến 2: DACO, Hải Âu, TQ",
-      "image": "assets/images/mitsubishi/hmi_gt25.jpg"
+      "image": "assets/images/mitsubishi/hmi_gt25.webp"
     },
     {
       "id": 20,
@@ -716,7 +716,7 @@
         "**Nguyên tắc**: BẮT BUỘC PHẢI THAY ĐỒNG BỘ CẢ DRIVER VÀ MOTOR sang dòng J4 hoặc JE!"
       ],
       "suppliers": "Tuyến 1: Kovi, Phạm Dương (tồn kho) | Tuyến 2: Kênh TQ (chuyên renew J2S/J3), Toàn Cầu",
-      "image": "assets/images/mitsubishi/servo_mr_j4.jpg"
+      "image": "assets/images/mitsubishi/servo_mr_j4.webp"
     },
     {
       "id": 21,
@@ -742,7 +742,7 @@
         "**Thực chiến**: KHÔNG CÓ FAKE, CÓ RENEW; FDI Nhật/Hàn chỉ nhận hàng Japan kèm CO/CQ gốc."
       ],
       "suppliers": "Tuyến 1: Phạm Dương, Hợp Long, Kovi, Sa Giang | Tuyến 2: Kênh TQ (giá rất cạnh tranh), BA",
-      "image": "assets/images/mitsubishi/servo_mr_j4.jpg"
+      "image": "assets/images/mitsubishi/servo_mr_j4.webp"
     },
     {
       "id": 22,
@@ -767,7 +767,7 @@
         "**Đặt hàng**: Yêu cầu đặt hàng theo dự án kèm động cơ đồng bộ thế hệ mới HK Series và cáp quang."
       ],
       "suppliers": "Tuyến 1: Kovi, Phạm Dương, Hợp Long, Sa Giang | Tuyến 2: Hãng Mitsubishi Electric VN",
-      "image": "assets/images/mitsubishi/servo_mr_j4.jpg"
+      "image": "assets/images/mitsubishi/servo_mr_j4.webp"
     },
     {
       "id": 23,
@@ -792,7 +792,7 @@
         "**Giải pháp**: Thuyết phục khách chuyển đổi sang bộ J4 + motor HG-KR hoặc JE + motor HG-KN."
       ],
       "suppliers": "Tuyến 1: Kovi, Phạm Dương (tồn kho cũ) | Tuyến 2: Kênh TQ (chuyên renew động cơ cũ), Toàn Cầu",
-      "image": "assets/images/mitsubishi/servo_motor_hg.jpg"
+      "image": "assets/images/mitsubishi/servo_motor_hg.webp"
     },
     {
       "id": 24,
@@ -820,7 +820,7 @@
         "**Lợi thế giá**: Motor dưới 1kW Hợp Long và Phạm Dương giá cực kỳ tốt và luôn có sẵn kho."
       ],
       "suppliers": "Tuyến 1: Hợp Long (giá rất tốt motor <1kW), Phạm Dương, Kovi | Tuyến 2: Sa Giang, Kênh TQ",
-      "image": "assets/images/mitsubishi/servo_motor_hg.jpg"
+      "image": "assets/images/mitsubishi/servo_motor_hg.webp"
     },
     {
       "id": 25,
@@ -864,7 +864,7 @@
         "**Chiết khấu tốt nhất**: Duy Hưng và Hợp Long là 2 đơn vị có mức chiết khấu đóng cắt cao nhất miền Bắc."
       ],
       "suppliers": "Tuyến 1: Duy Hưng (chuyên gia chiết khấu cao), Hợp Long (tổng kho lớn) | Tuyến 2: Nghĩa Phong Hân, Phạm Dương, DTECH, BA",
-      "image": "assets/images/mitsubishi/mccb_nf.jpg"
+      "image": "assets/images/mitsubishi/mccb_nf.webp"
     }
   ],
   "treeData": [
@@ -884,7 +884,7 @@
           "tier": "Tiêu chuẩn thế hệ mới (Thay thế FX3U)",
           "application": "Máy công nghiệp chế tạo, đóng gói tốc độ cao, xử lý tín hiệu analog tích hợp, kết nối mạng IoT Ethernet.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/plc_fx5u.jpg",
+          "image": "assets/images/mitsubishi/plc_fx5u.webp",
           "namingRule": {
             "example": "FX5U-32MT/ES",
             "standardDoc": "MELSEC iQ-F FX5U User's Manual (Hardware) - JY997D55301",
@@ -933,7 +933,7 @@
           "tier": "Dòng chuyển tiếp / Chạy máy cũ",
           "application": "Dây chuyền sản xuất truyền thống, nâng cấp và bảo trì máy đang chạy ổn định.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/plc_fx3u.jpg",
+          "image": "assets/images/mitsubishi/plc_fx3u.webp",
           "namingRule": {
             "example": "FX3U-48MR/ES-A",
             "standardDoc": "MELSEC-F FX3U Series Hardware Manual - JY997D16501",
@@ -982,7 +982,7 @@
           "tier": "Cao cấp hệ thống lớn (Dạng Module ghép)",
           "application": "Dây chuyền tự động hóa quy mô lớn, nhà máy lắp ráp linh kiện ô tô, điện tử, xử lý hàng chục nghìn điểm I/O.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/plc_q_series.jpg",
+          "image": "assets/images/mitsubishi/plc_q_series.webp",
           "namingRule": {
             "example": "Q03UDVCPU",
             "standardDoc": "QCPU User's Manual (Hardware Design and Maintenance) - SH-080483ENG",
@@ -1032,7 +1032,7 @@
           "tier": "Đã ngừng sản xuất (Legacy)",
           "application": "Chỉ dùng để bảo trì máy cũ nhập khẩu từ Nhật, Châu Âu trước năm 2015.",
           "status": "Ngừng sx",
-          "image": "assets/images/mitsubishi/plc_fx3u.jpg",
+          "image": "assets/images/mitsubishi/plc_fx3u.webp",
           "namingRule": {
             "example": "FX2N-48MT-001",
             "standardDoc": "FX2N Series Hardware Manual - JY992D66301",
@@ -1087,7 +1087,7 @@
           "tier": "Phổ thông kinh tế (DACO nhập trực tiếp giá cực tốt)",
           "application": "Máy chế tạo độc lập, máy đóng gói, trạm bơm nước, giao diện trực quan chi phí hợp lý.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/hmi_gs2000.jpg",
+          "image": "assets/images/mitsubishi/hmi_gs2000.webp",
           "namingRule": {
             "example": "GS2107-WTBD-N",
             "standardDoc": "GOT SIMPLE Series User's Manual (Hardware) - JY997D52901",
@@ -1148,7 +1148,7 @@
           "tier": "Trung / Cao cấp công nghiệp",
           "application": "Dây chuyền sản xuất tiêu chuẩn cao, hỗ trợ nhiều cổng truyền thông, thẻ nhớ SD, Ethernet kép.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/hmi_gt25.jpg",
+          "image": "assets/images/mitsubishi/hmi_gt25.webp",
           "namingRule": {
             "example": "GT2508-VTBA",
             "standardDoc": "GOT2000 Series User's Manual (Hardware) - SH-081194ENG",
@@ -1207,7 +1207,7 @@
           "tier": "Cao cấp nhất (Flagship)",
           "application": "Các dự án phòng sạch, nhà máy điện tử bán dẫn, điều khiển cảm ứng đa điểm như tablet, xuất video HDMI.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/hmi_gt25.jpg",
+          "image": "assets/images/mitsubishi/hmi_gt25.webp",
           "namingRule": {
             "example": "GT2710-STBD",
             "standardDoc": "GOT2000 Series User's Manual (Hardware) - SH-081194ENG",
@@ -1272,7 +1272,7 @@
           "tier": "Tiêu chuẩn thế hệ mới (Thay thế FR-E700)",
           "application": "Máy chế biến gỗ, dệt may, băng tải thông minh, máy ép nhựa, tích hợp sẵn truyền thông mạng không cần card mở rộng.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/inv_fr_e800.jpg",
+          "image": "assets/images/mitsubishi/inv_fr_e800.webp",
           "namingRule": {
             "example": "FR-E820-0.75K-1",
             "standardDoc": "FREQROL-E800 Instruction Manual (Detailed) - IB-0600868ENG",
@@ -1324,7 +1324,7 @@
           "tier": "Kinh tế tải nhẹ",
           "application": "Băng tải nhỏ, quạt hút, máy cuốn dây đơn giản, máy khuấy sơn, cửa tự động.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/inv_fr_d700.jpg",
+          "image": "assets/images/mitsubishi/inv_fr_d700.webp",
           "namingRule": {
             "example": "FR-D740-2.2K-CHT",
             "standardDoc": "FREQROL-D700 Instruction Manual (Detailed) - IB-0600403ENG",
@@ -1374,7 +1374,7 @@
           "tier": "Cao cấp tải nặng (Heavy Duty)",
           "application": "Cầu trục, palang nâng hạ, máy đùn cao su, máy kéo thép, máy nghiền đá, thang hàng tốc độ cao.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/inv_fr_a800.jpg",
+          "image": "assets/images/mitsubishi/inv_fr_a800.webp",
           "namingRule": {
             "example": "FR-A840-3.7K",
             "standardDoc": "FREQROL-A800 Instruction Manual (Detailed) - IB-0600503ENG",
@@ -1431,7 +1431,7 @@
           "tier": "Chủ lực đa năng thông dụng nhất",
           "application": "Các trục điều khiển chuyển động chính xác cao trong máy công nghiệp, máy dán nhãn, máy cắt cuộn.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/servo_mr_j4.jpg",
+          "image": "assets/images/mitsubishi/servo_mr_j4.webp",
           "namingRule": {
             "example": "MR-J4-40B",
             "standardDoc": "MELSERVO-J4 Servo Amplifier Instruction Manual - SH-030106ENG",
@@ -1473,7 +1473,7 @@
           "tier": "Động cơ đồng bộ cho Driver MR-J4",
           "application": "Truyền động trục máy, quán tính thấp tăng tốc cực nhanh, định vị độ chính xác cao.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/servo_motor_hg.jpg",
+          "image": "assets/images/mitsubishi/servo_motor_hg.webp",
           "namingRule": {
             "example": "HG-KR43B",
             "standardDoc": "HG-KR/HG-SR Rotary Servo Motor Instruction Manual - SH-030113ENG",
@@ -1520,7 +1520,7 @@
           "tier": "Kinh tế / Tiêu chuẩn cơ bản",
           "application": "Các trục phụ, băng chuyền, máy đóng gói kinh tế, thay thế dòng MR-JN cũ.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/servo_mr_j4.jpg",
+          "image": "assets/images/mitsubishi/servo_mr_j4.webp",
           "namingRule": {
             "example": "MR-JE-40A",
             "breakdown": [
@@ -1569,7 +1569,7 @@
           "tier": "Đóng cắt khối bảo vệ công nghiệp",
           "application": "Aptomat tổng (Incomer) và phân phối nhánh trong tủ điện nhà xưởng, tòa nhà, trạm biến áp.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/mccb_nf.jpg",
+          "image": "assets/images/mitsubishi/mccb_nf.webp",
           "namingRule": {
             "example": "NF125-CV 3P 100A",
             "standardDoc": "Mitsubishi Low Voltage Circuit Breakers Catalog - Y-0694",
@@ -1620,7 +1620,7 @@
           "tier": "Điều khiển đóng ngắt động cơ",
           "application": "Điều khiển khởi động trực tiếp (DOL) hoặc sao-tam giác cho động cơ 3 pha bơm, quạt, máy nén.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/contactor_st.jpg",
+          "image": "assets/images/mitsubishi/contactor_st.webp",
           "namingRule": {
             "example": "S-T21 AC220V",
             "standardDoc": "Mitsubishi Magnetic Motor Starters MS-T Series Catalog - L-02035",
@@ -1672,7 +1672,7 @@
           "tier": "Mạng truyền thông công nghiệp",
           "application": "Truyền nhận dữ liệu giữa nhiều PLC, kết nối máy tính giám sát SCADA, kết nối Remote I/O.",
           "status": "Thông dụng",
-          "image": "assets/images/mitsubishi/comm_module.jpg",
+          "image": "assets/images/mitsubishi/comm_module.webp",
           "namingRule": {
             "example": "FX5-ENET / QJ71E71-100",
             "breakdown": [

@@ -225,7 +225,7 @@
           "desc": "Kèm vali đựng chuyên dụng và adapter sạc chính hãng."
         }
       ],
-      "image": "assets/images/brother/pt_e110.png"
+      "image": "assets/images/brother/pt_e110.webp"
     },
     {
       "id": 2,
@@ -287,7 +287,7 @@
           "desc": "Kết nối Bluetooth in trực tiếp từ smartphone."
         }
       ],
-      "image": "assets/images/brother/pt_e310bt.png"
+      "image": "assets/images/brother/pt_e310bt.webp"
     },
     {
       "id": 3,
@@ -349,7 +349,7 @@
           "desc": "Kết nối Bluetooth không dây với smartphone/tablet."
         }
       ],
-      "image": "assets/images/brother/pt_e560bt.png"
+      "image": "assets/images/brother/pt_e560bt.webp"
     },
     {
       "id": 4,
@@ -422,7 +422,7 @@
           "desc": "Kết nối Wi-Fi không dây đa thiết bị."
         }
       ],
-      "image": "assets/images/brother/pt_e850tkw.png"
+      "image": "assets/images/brother/pt_e850tkw.webp"
     },
     {
       "id": 5,
@@ -484,7 +484,7 @@
           "desc": "Kết nối Wi-Fi chia sẻ đa người dùng."
         }
       ],
-      "image": "assets/images/brother/pt_p900w.png"
+      "image": "assets/images/brother/pt_p900w.webp"
     },
     {
       "id": 6,
@@ -545,7 +545,7 @@
           "desc": "Kết nối Wi-Fi không dây đồng thời."
         }
       ],
-      "image": "assets/images/brother/pt_p900w.png"
+      "image": "assets/images/brother/pt_p900w.webp"
     },
     {
       "id": 7,
@@ -601,7 +601,7 @@
           "desc": "In khổ max 62mm, hỗ trợ in 2 màu Đen & Đỏ."
         }
       ],
-      "image": "assets/images/brother/ql_820nwb.png"
+      "image": "assets/images/brother/ql_820nwb.webp"
     },
     {
       "id": 8,
@@ -662,7 +662,7 @@
           "desc": "Kết nối Wi-Fi không dây."
         }
       ],
-      "image": "assets/images/brother/ql_820nwb.png"
+      "image": "assets/images/brother/ql_820nwb.webp"
     },
     {
       "id": 9,
@@ -738,7 +738,7 @@
           "desc": "Kết nối Bluetooth không dây."
         }
       ],
-      "image": "assets/images/brother/ql_820nwb.png"
+      "image": "assets/images/brother/ql_820nwb.webp"
     },
     {
       "id": 10,
@@ -794,7 +794,7 @@
           "desc": "Khổ in nhãn rộng 103mm cho vận đơn logistics."
         }
       ],
-      "image": "assets/images/brother/ql_1110nwb.png"
+      "image": "assets/images/brother/ql_1110nwb.webp"
     },
     {
       "id": 11,
@@ -855,7 +855,7 @@
           "desc": "Đầy đủ 3 giao thức kết nối mạng hiện đại."
         }
       ],
-      "image": "assets/images/brother/ql_1110nwb.png"
+      "image": "assets/images/brother/ql_1110nwb.webp"
     },
     {
       "id": 12,
@@ -931,7 +931,7 @@
           "desc": "In nhiệt trực tiếp không cần mực."
         }
       ],
-      "image": "assets/images/brother/td_2310d.png"
+      "image": "assets/images/brother/td_2310d.webp"
     },
     {
       "id": 13,
@@ -998,7 +998,7 @@
           "desc": "In nhiệt trực tiếp + Màn hình cảm ứng màu."
         }
       ],
-      "image": "assets/images/brother/td_2310d.png"
+      "image": "assets/images/brother/td_2310d.webp"
     },
     {
       "id": 14,
@@ -1069,7 +1069,7 @@
           "desc": "In nhiệt trực tiếp."
         }
       ],
-      "image": "assets/images/brother/td_4420dn.png"
+      "image": "assets/images/brother/td_4420dn.webp"
     },
     {
       "id": 15,
@@ -1135,7 +1135,7 @@
           "desc": "In nhiệt trực tiếp + Cổng mạng LAN có dây."
         }
       ],
-      "image": "assets/images/brother/td_4420dn.png"
+      "image": "assets/images/brother/td_4420dn.webp"
     },
     {
       "id": 16,
@@ -1211,7 +1211,7 @@
           "desc": "Đầy đủ Direct Thermal, LAN, Wi-Fi, Bluetooth."
         }
       ],
-      "image": "assets/images/brother/td_4420dn.png"
+      "image": "assets/images/brother/td_4420dn.webp"
     },
     {
       "id": 17,
@@ -1295,7 +1295,7 @@
           "desc": "Mực in chữ màu đen tương phản cao."
         }
       ],
-      "image": "assets/images/brother/tze_tape.png"
+      "image": "assets/images/brother/tze_tape.webp"
     }
   ],
   "treeData": [
@@ -1315,7 +1315,7 @@
           "tier": "Phổ thông dã ngoại (Khổ max 12mm)",
           "application": "Thợ điện dân dụng, công trình nhỏ, tủ điện mini.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/pt_e110.png",
+          "image": "assets/images/brother/pt_e110.webp",
           "namingRule": {
             "example": "PT-E110VP",
             "standardDoc": "Brother PT-E110 User's Manual",
@@ -1351,7 +1351,7 @@
           "tier": "Tầm trung thông minh (Khổ max 18mm)",
           "application": "In nhãn tủ điện, patch panel, in ống co nhiệt HSe khổ tới 18mm.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/pt_e310bt.png",
+          "image": "assets/images/brother/pt_e310bt.webp",
           "namingRule": {
             "example": "PT-E310BT",
             "standardDoc": "Brother PT-E310BT User's Manual",
@@ -1386,7 +1386,7 @@
           "tier": "Cao cấp số 1 (Khổ max 24mm, Cắt nửa Half-Cut)",
           "application": "Xưởng tủ bảng điện chuyên nghiệp, nhà thầu cơ điện M&E, trạm biến áp, Solar farm.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/pt_e560bt.png",
+          "image": "assets/images/brother/pt_e560bt.webp",
           "namingRule": {
             "example": "PT-E560BT",
             "standardDoc": "Brother PT-E560BT User's Manual",
@@ -1432,7 +1432,7 @@
           "tier": "Vũ khí tối thượng xưởng tủ điện (In ống Ø2.5-6.5mm & Nhãn 36mm)",
           "application": "Xưởng sản xuất tủ bảng điện công nghiệp, nhà máy chế tạo máy tự động hóa OEM.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/pt_e850tkw.png",
+          "image": "assets/images/brother/pt_e850tkw.webp",
           "namingRule": {
             "example": "PT-E850TKW",
             "standardDoc": "Brother PT-E850TKW Tube & Label Printer Manual",
@@ -1467,7 +1467,7 @@
           "tier": "Để bàn kết nối PC / LAN công nghiệp",
           "application": "Phòng kỹ thuật, dây chuyền sản xuất bo mạch điện tử SMT, in nhãn số lượng lớn từ Excel.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/pt_p900w.png",
+          "image": "assets/images/brother/pt_p900w.webp",
           "namingRule": {
             "example": "PT-P950W",
             "standardDoc": "Brother PT-P900 Series User's Manual",
@@ -1514,7 +1514,7 @@
           "tier": "Chủ lực văn phòng & bán lẻ (Khổ max 62mm)",
           "application": "Tem giá, nhãn mã vạch sản phẩm, tem thực phẩm in ngày giờ tự động qua RTC.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/ql_820nwb.png",
+          "image": "assets/images/brother/ql_820nwb.webp",
           "namingRule": {
             "example": "QL-820NWB",
             "standardDoc": "Brother QL-800 Series User's Guide",
@@ -1556,7 +1556,7 @@
           "tier": "Logistics & Chuyển phát nhanh (Khổ 103.6mm)",
           "application": "Vận đơn Shopee, TikTok Shop, bưu gửi kho bãi, tem thùng carton.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/ql_1110nwb.png",
+          "image": "assets/images/brother/ql_1110nwb.webp",
           "namingRule": {
             "example": "QL-1110NWB",
             "standardDoc": "Brother QL-1100 Series User's Guide",
@@ -1598,7 +1598,7 @@
           "tier": "Y tế & Phòng xét nghiệm (Khổ 63mm)",
           "application": "Tem ống nghiệm, vòng tay bệnh nhân, nhãn thuốc.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/td_2310d.png",
+          "image": "assets/images/brother/td_2310d.webp",
           "namingRule": {
             "example": "TD-2310D",
             "standardDoc": "Brother TD-2000 Series Manual",
@@ -1635,7 +1635,7 @@
           "tier": "Công nghiệp nặng & Kho bãi (Khổ 118mm, Tốc độ 8 ips)",
           "application": "Dán thùng carton, nhãn phụ hàng hóa xuất nhập khẩu, dây chuyền may mặc, ô tô.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/td_4420dn.png",
+          "image": "assets/images/brother/td_4420dn.webp",
           "namingRule": {
             "example": "TD-4420DN",
             "standardDoc": "Brother TD-4000 Series Manual",
@@ -1683,7 +1683,7 @@
           "tier": "Băng nhãn màng phủ 6 lớp",
           "application": "Dán tủ điện ngoài trời, nhà máy hóa chất, kho lạnh âm độ sâu.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/tze_tape.png",
+          "image": "assets/images/brother/tze_tape.webp",
           "namingRule": {
             "example": "TZe-231",
             "standardDoc": "Brother TZe Tape Specification Guide",
@@ -1729,7 +1729,7 @@
           "tier": "Ống co nhiệt & Mực in ống PVC",
           "application": "Bọc dây cáp điện tủ bảng điện và ruy-băng in ống cho PT-E850TKW.",
           "status": "Thông dụng",
-          "image": "assets/images/brother/hse_tube.png",
+          "image": "assets/images/brother/hse_tube.webp",
           "namingRule": {
             "example": "HSe-231",
             "standardDoc": "Brother HSe Heat Shrink Tube Guide",

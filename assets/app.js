@@ -2563,7 +2563,7 @@ function renderBrandTree(treeData) {
         tier: p.status || 'Thông dụng',
         application: p.subcat || '',
         status: p.status || 'Thông dụng',
-        image: 'assets/images/mitsubishi/plc_fx5u.jpg',
+        image: 'assets/images/mitsubishi/plc_fx5u.webp',
         commonModels: p.models || [],
         warnings: p.fake === 'Có' ? '⚠️ Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.' : ''
       }))
@@ -2650,7 +2650,7 @@ function renderBrandTree(treeData) {
               <div class="tree-series-card" id="treeSeriesCard_${s.id}">
                 <!-- Thumbnail Image with Fallback -->
                 <div class="series-media-box">
-                  <img src="${s.image || 'assets/images/mitsubishi/plc_fx5u.jpg'}" alt="${s.name}" onerror="this.onerror=null; this.src='assets/images/mitsubishi/plc_fx5u.jpg';" loading="lazy" />
+                  <img src="${s.image || 'assets/images/mitsubishi/plc_fx5u.webp'}" alt="${s.name}" onerror="this.onerror=null; this.src='assets/images/mitsubishi/plc_fx5u.webp';" loading="lazy" />
                   <div class="series-status-overlay">
                     ${getStatusBadge(s.status || 'Thông dụng')}
                   </div>
@@ -3685,7 +3685,7 @@ function openAddSeriesModal(catId) {
     </div>
     <div style="margin-bottom: 0.75rem;">
       <label class="form-label">Đường Dẫn Ảnh Sản Phẩm (File SVG/PNG hoặc URL):</label>
-      <input type="text" id="modalSeriesImg" class="form-input" placeholder="Ví dụ: assets/images/mitsubishi/plc_fx5u.jpg hoặc https://...">
+      <input type="text" id="modalSeriesImg" class="form-input" placeholder="Ví dụ: assets/images/mitsubishi/plc_fx5u.webp hoặc https://...">
     </div>
     <div style="margin-bottom: 0.75rem;">
       <label class="form-label">Mã Ví Dụ Quy Chuẩn Đọc Mã (Example):</label>
@@ -3787,7 +3787,7 @@ function saveSeriesModal(isNew) {
   const status = document.getElementById('modalSeriesStatus').value;
   const tier = document.getElementById('modalSeriesTier').value.trim();
   const application = document.getElementById('modalSeriesApp').value.trim();
-  const image = document.getElementById('modalSeriesImg').value.trim() || 'assets/images/mitsubishi/plc_fx5u.jpg';
+  const image = document.getElementById('modalSeriesImg').value.trim() || 'assets/images/mitsubishi/plc_fx5u.webp';
   const ruleEx = document.getElementById('modalSeriesRuleEx').value.trim();
   const warnings = document.getElementById('modalSeriesWarning').value.trim();
   const modelsStr = document.getElementById('modalSeriesModels').value.trim();

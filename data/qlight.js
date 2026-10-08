@@ -211,7 +211,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB18 = Bát gá chân đế chữ L gắn cạnh máy (tùy chọn: -LW24, -SZ18)."
         }
       ],
-      "image": "assets/images/qlight/st45l.png"
+      "image": "assets/images/qlight/st45l.webp"
     },
     {
       "id": 202,
@@ -318,7 +318,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB18 = Bát gá hợp kim nhôm chữ L bắt sườn vách tủ (tùy chọn: -LW24, -SZ18)."
         }
       ],
-      "image": "assets/images/qlight/st56el.png"
+      "image": "assets/images/qlight/st56el.webp"
     },
     {
       "id": 203,
@@ -423,7 +423,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB24 = Bát gá chữ L chân ren Ø24mm chuyên dụng cho dòng ST80."
         }
       ],
-      "image": "assets/images/qlight/st56el.png"
+      "image": "assets/images/qlight/st56el.webp"
     },
     {
       "id": 204,
@@ -530,7 +530,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB18 = Bát gá L-bracket tiêu chuẩn gắn trụ đứng."
         }
       ],
-      "image": "assets/images/qlight/est56l.png"
+      "image": "assets/images/qlight/est56l.webp"
     },
     {
       "id": 205,
@@ -637,7 +637,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB18 = Bát gá chân đế chữ L gắn sườn vách tủ."
         }
       ],
-      "image": "assets/images/qlight/qtg50l.png"
+      "image": "assets/images/qlight/qtg50l.webp"
     },
     {
       "id": 206,
@@ -725,7 +725,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "R (Đỏ) - A (Vàng) - G (Xanh lá)."
         }
       ],
-      "image": "assets/images/qlight/st45l.png"
+      "image": "assets/images/qlight/st45l.webp"
     },
     {
       "id": 207,
@@ -822,7 +822,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LB32 = Bát gá kim loại bắt vít trực tiếp lên vách máy."
         }
       ],
-      "image": "assets/images/qlight/qtc60l_iol.png"
+      "image": "assets/images/qlight/qtc60l_iol.webp"
     },
     {
       "id": 208,
@@ -909,7 +909,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "Thứ tự dải màu từ trên xuống: R (Đỏ) - A (Vàng) - G (Xanh lá)."
         }
       ],
-      "image": "assets/images/qlight/swte.png"
+      "image": "assets/images/qlight/swte.webp"
     },
     {
       "id": 209,
@@ -996,7 +996,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-R = Thấu kính màu đỏ (-A = Vàng hổ phách, -G = Xanh lá, -B = Xanh dương)."
         }
       ],
-      "image": "assets/images/qlight/s100d.png"
+      "image": "assets/images/qlight/s100d.webp"
     },
     {
       "id": 210,
@@ -1084,7 +1084,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-R = Thấu kính màu đỏ (-A = Vàng, -G = Xanh lá)."
         }
       ],
-      "image": "assets/images/qlight/s100d.png"
+      "image": "assets/images/qlight/s100d.webp"
     },
     {
       "id": 211,
@@ -1150,7 +1150,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-R = Màu đỏ chớp nháy cảnh báo công trình, đường sá, cầu cảng."
         }
       ],
-      "image": "assets/images/qlight/s100d.png"
+      "image": "assets/images/qlight/s100d.webp"
     },
     {
       "id": 212,
@@ -1227,7 +1227,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-24 = Nguồn 24VDC (-12 = 12VDC, -110 = 110VAC, -220 = 220VAC)."
         }
       ],
-      "image": "assets/images/qlight/srn_sen.png"
+      "image": "assets/images/qlight/srn_sen.webp"
     },
     {
       "id": 213,
@@ -1293,7 +1293,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-220 = Điện áp điện lưới AC 220V (-24 = Nguồn DC 24V, -110 = Nguồn AC 110V)."
         }
       ],
-      "image": "assets/images/qlight/sehn.png"
+      "image": "assets/images/qlight/sehn.webp"
     },
     {
       "id": 214,
@@ -1380,7 +1380,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-LC = Kích hoạt chọn kênh âm thanh bằng tiếp điểm khô bên ngoài (External Contact Type)."
         }
       ],
-      "image": "assets/images/qlight/qwcd.png"
+      "image": "assets/images/qlight/qwcd.webp"
     },
     {
       "id": 215,
@@ -1456,7 +1456,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-R = Màu đỏ cảnh báo ưu tiên."
         }
       ],
-      "image": "assets/images/qlight/sea.png"
+      "image": "assets/images/qlight/sea.webp"
     },
     {
       "id": 216,
@@ -1523,7 +1523,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-24 = Nguồn điện một chiều 24VDC chuyên dụng trong tủ gia công cơ khí."
         }
       ],
-      "image": "assets/images/qlight/qmcl_qcml.png"
+      "image": "assets/images/qlight/qmcl_qcml.webp"
     },
     {
       "id": 217,
@@ -1590,7 +1590,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-220 = Nguồn xoay chiều AC 220V trực tiếp thuận tiện đấu nối không cần bộ chuyển nguồn."
         }
       ],
-      "image": "assets/images/qlight/qel.png"
+      "image": "assets/images/qlight/qel.webp"
     },
     {
       "id": 218,
@@ -1655,7 +1655,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-24 = Nguồn một chiều 24VDC an toàn."
         }
       ],
-      "image": "assets/images/qlight/qel.png"
+      "image": "assets/images/qlight/qel.webp"
     },
     {
       "id": 219,
@@ -1732,7 +1732,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-IECEx = Đạt chuẩn an toàn phòng nổ quốc tế IECEx / ATEX Ex d IIC T6 Gb Zone 1 & 2."
         }
       ],
-      "image": "assets/images/qlight/snes_shd.png"
+      "image": "assets/images/qlight/snes_shd.webp"
     },
     {
       "id": 220,
@@ -1818,7 +1818,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-IECEx = Đạt tiêu chuẩn chứng nhận chống cháy nổ quốc tế IECEx / ATEX Zone 1 & Zone 2."
         }
       ],
-      "image": "assets/images/qlight/sea.png"
+      "image": "assets/images/qlight/sea.webp"
     },
     {
       "id": 221,
@@ -1914,7 +1914,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-IECEx = Đạt tiêu chuẩn an toàn phòng nổ quốc tế IECEx / ATEX."
         }
       ],
-      "image": "assets/images/qlight/st45l.png"
+      "image": "assets/images/qlight/st45l.webp"
     },
     {
       "id": 222,
@@ -1991,7 +1991,7 @@ window.PORTAL_DATA_QLIGHT = {
           "desc": "-R = Màu đỏ tiêu chuẩn hàng không quốc tế ICAO & FAA."
         }
       ],
-      "image": "assets/images/qlight/saol.png"
+      "image": "assets/images/qlight/saol.webp"
     }
   ],
   "treeData": [
@@ -2011,7 +2011,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Chuẩn công nghiệp Ø56mm (BÁN CHẠY SỐ 1 VN)",
           "application": "Lắp đỉnh tủ điện máy CNC, robot hàn, máy ép nhựa, máy dập, hệ thống Andon.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/st56el.png",
+          "image": "assets/images/qlight/st56el.webp",
           "namingRule": {
             "example": "ST56EL-WS-3-24-RAG-LB18",
             "standardDoc": "Qlight Signal Tower Lights Catalog - ST56EL Series",
@@ -2070,7 +2070,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Thiết kế nhỏ gọn Ø45mm (Compact Machine)",
           "application": "Lắp đặt trên máy gia công nhỏ, máy đóng gói bao bì, máy thử mạch SMT, băng tải lắp ráp linh kiện điện tử.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/st45l.png",
+          "image": "assets/images/qlight/st45l.webp",
           "namingRule": {
             "example": "ST45L-BZ-3-24-RAG-LB18",
             "standardDoc": "Qlight Signal Tower Lights Catalog - ST45L Series",
@@ -2128,7 +2128,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Dòng kinh tế E-Series (Giá siêu rẻ - Dự án lớn)",
           "application": "Đơn vị chế tạo máy OEM cần tối ưu tối đa giá thành, tủ điện phòng sạch, dây chuyền môi trường khô ráo.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/est56l.png",
+          "image": "assets/images/qlight/est56l.webp",
           "namingRule": {
             "example": "EST56L-BZ-3-24-RAG-LB18",
             "standardDoc": "Qlight Performance Line Catalog - EST56L Series",
@@ -2186,7 +2186,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Vòm cong liền khối thẩm mỹ cao (Thiết bị y tế / Phòng sạch)",
           "application": "Máy đóng gói dược phẩm, máy thử nghiệm sinh học, phòng kiểm tra QC, robot dịch vụ AGV, thiết bị xuất khẩu Châu Âu.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/qtg50l.png",
+          "image": "assets/images/qlight/qtg50l.webp",
           "namingRule": {
             "example": "QTG50L-BZ-3-24-RAG-LB18",
             "standardDoc": "Qlight Signal Tower Lights Catalog - QTG/QTC Series",
@@ -2244,7 +2244,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Mạng công nghiệp thông minh IO-Link (Smart Factory 4.0)",
           "application": "Nhà máy thông minh kết nối mạng công nghiệp, hiển thị mức nạp phôi dạng thanh đo mức, đổi màu trạng thái linh hoạt.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/qtc60l_iol.png",
+          "image": "assets/images/qlight/qtc60l_iol.webp",
           "namingRule": {
             "example": "QTC60L-IOL-3-24-RGB-LB32",
             "standardDoc": "Qlight IO-Link Product Catalog - QTC60L-IOL Series",
@@ -2307,7 +2307,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Đèn cảnh báo Ø100mm kinh điển (BÁN CHẠY NHẤT)",
           "application": "Lắp đặt tại cửa cuốn xuất nhập hàng, cổng barie, trạm cân xe tải, trạm biến áp, cẩu trục nhà xưởng.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/s100d.png",
+          "image": "assets/images/qlight/s100d.webp",
           "namingRule": {
             "example": "S100D-BZ-24-R",
             "standardDoc": "Qlight Signal Beacons & Warning Lights Catalog - S100 Series",
@@ -2356,7 +2356,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Đèn LED bán nguyệt gắn phẳng tường (Wall Mount)",
           "application": "Gắn phẳng hành lang bệnh viện, cửa phòng thí nghiệm, phòng sạch, thang máy chở hàng, lối thoát hiểm.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/swte.png",
+          "image": "assets/images/qlight/swte.webp",
           "namingRule": {
             "example": "SWTE-BZ-3-24-RAG",
             "standardDoc": "Qlight Signal Tower Lights Catalog - SWTE Series",
@@ -2404,7 +2404,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Đèn cảnh báo chướng ngại hàng không (Aviation Lights)",
           "application": "Lắp đặt đỉnh cột tháp viễn thông 5G/4G, trụ điện cao thế, turbine điện gió, ống khói nhà máy nhiệt điện, tòa nhà cao tầng.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/saol.png",
+          "image": "assets/images/qlight/saol.webp",
           "namingRule": {
             "example": "SAOL1-220-R",
             "standardDoc": "Qlight Aviation Obstruction Lights Catalog - SAOL Series",
@@ -2457,7 +2457,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Còi báo động điện tử công nghiệp 105dB - 115dB (BÁN CHẠY)",
           "application": "Cảnh báo lỗi máy dây chuyền sản xuất, cảnh báo robot di chuyển, trạm bơm nước thải, hệ thống báo cháy nội bộ.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/srn_sen.png",
+          "image": "assets/images/qlight/srn_sen.webp",
           "namingRule": {
             "example": "SEN15-WS-24",
             "standardDoc": "Qlight Signal Beacons and Sounders Catalog - SEN Series",
@@ -2501,7 +2501,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Loa còi công suất siêu lớn 120dB - 123dB vỏ hợp kim nhôm đúc",
           "application": "Cẩu trục cảng biển, cầu cảng bốc dỡ container, mỏ khai khoáng, nhà máy luyện thép, sân bãi diện tích rộng lớn.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/sehn.png",
+          "image": "assets/images/qlight/sehn.webp",
           "namingRule": {
             "example": "SEHN-WS-220",
             "standardDoc": "Qlight Heavy-Duty Sounders Catalog - SEHN Series",
@@ -2539,7 +2539,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Tổ hợp Đèn chớp siêu sáng & Còi hú công suất lớn 115-123dB",
           "application": "Cảnh báo toàn diện cả thị giác và thính giác cho cẩu tháp công trình, hầm mỏ, xưởng cơ khí nặng, trạm cứu hỏa.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/qwcd.png",
+          "image": "assets/images/qlight/qwcd.webp",
           "namingRule": {
             "example": "QWCD35-24-R-LC",
             "standardDoc": "Qlight Signal Beacons & Sounders Catalog - QWCD Series",
@@ -2598,7 +2598,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Kháng dung dịch làm mát & dầu mài áp lực cao (IP67 / IP69K)",
           "application": "Chiếu sáng khoang máy gia công CNC, máy phay, máy tiện, máy ép kim loại, môi trường xịt rửa nước áp lực cao.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/qmcl_qcml.png",
+          "image": "assets/images/qlight/qmcl_qcml.webp",
           "namingRule": {
             "example": "QCML-300-24",
             "standardDoc": "Qlight Industrial LED Lights Catalog - QCML Series",
@@ -2637,7 +2637,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Đèn thanh LED chiếu sáng tủ điện công nghiệp",
           "application": "Lắp trong nóc hoặc thanh ray tủ điện phân phối MSB, tủ biến tần, tủ PLC điều khiển máy móc.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/qel.png",
+          "image": "assets/images/qlight/qel.webp",
           "namingRule": {
             "example": "QEL-400-220",
             "standardDoc": "Qlight Industrial LED Lights Catalog - QEL Series",
@@ -2687,7 +2687,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Đèn xoay & chớp phòng nổ Zone 1/Zone 2 (Ex d IIC T6)",
           "application": "Khu vực có hơi khí gas dễ cháy nổ, giàn khoan dầu khí, trạm chiết nạp gas LPG, phòng pha sơn công nghiệp.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/snes_shd.png",
+          "image": "assets/images/qlight/snes_shd.webp",
           "namingRule": {
             "example": "SNES-24-R-IECEx",
             "standardDoc": "Qlight Explosion-Proof Signalings Catalog - SNES Series",
@@ -2730,7 +2730,7 @@ window.PORTAL_DATA_QLIGHT = {
           "tier": "Còi hú báo động phòng nổ 118dB (Ex-Proof Siren)",
           "application": "Báo động khẩn cấp sự cố xì ga, tràn dầu, cháy nổ trong khu vực nguy hiểm Zone 1 và Zone 2.",
           "status": "Thông dụng",
-          "image": "assets/images/qlight/sea.png",
+          "image": "assets/images/qlight/sea.webp",
           "namingRule": {
             "example": "SEA-3-220-RAG-IECEx",
             "standardDoc": "Qlight Explosion-Proof Signal Tower Catalog - SEA Series",
