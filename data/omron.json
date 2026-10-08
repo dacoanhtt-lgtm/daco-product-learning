@@ -1,0 +1,869 @@
+{
+  "brand": "Omron",
+  "products": [
+    {
+      "id": 1,
+      "cat": "PLC",
+      "subcat": "PLC Omron chính hãng",
+      "serial": "Omron CP1E",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "CP1E-N40DR-A"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: CP1E-N40DR-A",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 2,
+      "cat": "PLC",
+      "subcat": "PLC Omron chính hãng",
+      "serial": "Omron CP1L",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "CP1L-EM40DR-D"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: CP1L-EM40DR-D",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 3,
+      "cat": "PLC",
+      "subcat": "PLC Omron chính hãng",
+      "serial": "Omron CP1H",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "CP1H-X40DR-A"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: CP1H-X40DR-A",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 4,
+      "cat": "Biến tần",
+      "subcat": "Biến tần Omron chính hãng",
+      "serial": "Omron 3G3JX",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "3G3JX-A2004",
+        "3G3JX-A4075"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tải nhẹ",
+        "**Mã thông dụng**: 3G3JX-A2004, 3G3JX-A4075",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 5,
+      "cat": "Biến tần",
+      "subcat": "Biến tần Omron chính hãng",
+      "serial": "Omron 3G3MX",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "3G3MX-A2002",
+        "3G3MX-A4075"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tải trung",
+        "**Mã thông dụng**: 3G3MX-A2002, 3G3MX-A4075",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 6,
+      "cat": "Biến tần",
+      "subcat": "Biến tần Omron chính hãng",
+      "serial": "Omron 3G3RX",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "3G3RX-A2004",
+        "3G3RX-A4550"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tải Nặng",
+        "**Mã thông dụng**: 3G3RX-A2004, 3G3RX-A4550",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "CX-One, Sysmac Studio",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 7,
+      "cat": "HMI",
+      "subcat": "HMI Omron chính hãng",
+      "serial": "Omron NT",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "NT30C-ST141-E"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: NT30C-ST141-E",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 8,
+      "cat": "HMI",
+      "subcat": "HMI Omron chính hãng",
+      "serial": "Omron NV",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "NV4W-MR41",
+        "NV3Q-MR21"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: NV4W-MR41, NV3Q-MR21",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 9,
+      "cat": "HMI",
+      "subcat": "HMI Omron chính hãng",
+      "serial": "Omron NS",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "NS10-TV00B-V2"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: NS10-TV00B-V2",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 10,
+      "cat": "HMI",
+      "subcat": "HMI Omron chính hãng",
+      "serial": "Omron NB",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "NB7W-TW01B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: NB7W-TW01B",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 11,
+      "cat": "Sensor (Cảm biến)",
+      "subcat": "Sensor (Cảm biến) Omron chính hãng",
+      "serial": "Omron E2 - Cảm biến tiệm cận",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E2B-M12LN08-M1-B1",
+        "E2B-M12KS04-WP-C1 2M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: E2B-M12LN08-M1-B1, E2B-M12KS04-WP-C1 2M",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 12,
+      "cat": "Sensor (Cảm biến)",
+      "subcat": "Sensor (Cảm biến) Omron chính hãng",
+      "serial": "Omron E3- Cảm biến quang",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E3Z-D62 2M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: E3Z-D62 2M",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 13,
+      "cat": "Sensor (Cảm biến)",
+      "subcat": "Sensor (Cảm biến) Omron chính hãng",
+      "serial": "Omron E8 - Cảm biến áp suất",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E8F2-A01C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: E8F2-A01C",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 14,
+      "cat": "Sensor (Cảm biến)",
+      "subcat": "Sensor (Cảm biến) Omron chính hãng",
+      "serial": "Omron E4 - Cảm biến siêu âm",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E4PA-LS50-M1-N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: E4PA-LS50-M1-N",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 15,
+      "cat": "Rơ le thời gian",
+      "subcat": "Rơ le thời gian Omron chính hãng",
+      "serial": "Omron H3",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "H3DK-S1"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: H3DK-S1",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 16,
+      "cat": "Rơ le thời gian",
+      "subcat": "Rơ le thời gian Omron chính hãng",
+      "serial": "Omron H5",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "H5CZ-L8"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: H5CZ-L8",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 17,
+      "cat": "Rơ le trung gian",
+      "subcat": "Rơ le trung gian Omron chính hãng",
+      "serial": "Omron MY2N",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "MY2N-GS-R AC220/240",
+        "MY2N-GS-R DC24"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Thông dụng, loại nhỏ 8 chân",
+        "**Mã thông dụng**: MY2N-GS-R AC220/240, MY2N-GS-R DC24",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 18,
+      "cat": "Rơ le trung gian",
+      "subcat": "Rơ le trung gian Omron chính hãng",
+      "serial": "Omron MY4N",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "MY4N-GS-R AC220/240",
+        "MY4N-GS-R DC24"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Thông dụng loại 14 chân",
+        "**Mã thông dụng**: MY4N-GS-R AC220/240, MY4N-GS-R DC24",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 19,
+      "cat": "Rơ le trung gian",
+      "subcat": "Rơ le trung gian Omron chính hãng",
+      "serial": "Omron LY2N",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "LY2N-DC24",
+        "LY2N AC220/240"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: LY2N-DC24, LY2N AC220/240",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 20,
+      "cat": "Rơ le trung gian",
+      "subcat": "Rơ le trung gian Omron chính hãng",
+      "serial": "Omron LY4N",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "LY4N AC220/240",
+        "LY4N DC24"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: LY4N AC220/240, LY4N DC24",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 21,
+      "cat": "Nguồn",
+      "subcat": "Nguồn Omron chính hãng",
+      "serial": "Omron S8V",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "S8VK-C24024",
+        "S8VS-12024"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Dòng cao cấp",
+        "**Mã thông dụng**: S8VK-C24024, S8VS-12024",
+        "**Thế mạnh NCC**: CHINA"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA"
+    },
+    {
+      "id": 22,
+      "cat": "Nguồn",
+      "subcat": "Nguồn Omron chính hãng",
+      "serial": "Omron S8F",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "S8FS-C10024"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Dòng kinh tế",
+        "**Mã thông dụng**: S8FS-C10024",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 23,
+      "cat": "Nguồn",
+      "subcat": "Nguồn Omron chính hãng",
+      "serial": "Omron S8J",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "S8JX-G30024CD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Ngưng sản xuất",
+        "**Mã thông dụng**: S8JX-G30024CD",
+        "**Thế mạnh NCC**: Hợp Long, Bảo An stock sẵn"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN"
+    },
+    {
+      "id": 24,
+      "cat": "Bộ đếm",
+      "subcat": "Bộ đếm Omron chính hãng",
+      "serial": "Omron H7EC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "H7EC-N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: H7EC-N",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, HỢP LONG"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, HỢP LONG"
+    },
+    {
+      "id": 25,
+      "cat": "Bộ đếm",
+      "subcat": "Bộ đếm Omron chính hãng",
+      "serial": "Omron H7ER",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "H7ER-NV1-BH"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không thông dụng",
+        "**Mã thông dụng**: H7ER-NV1-BH",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, HỢP LONG"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, HỢP LONG"
+    },
+    {
+      "id": 26,
+      "cat": "Bộ đếm",
+      "subcat": "Bộ đếm Omron chính hãng",
+      "serial": "Omron H7CX",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "H7CX-A4D-N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Ngưng sản xuất",
+        "**Mã thông dụng**: H7CX-A4D-N",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, HỢP LONG"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, HỢP LONG"
+    },
+    {
+      "id": 27,
+      "cat": "Bộ đếm",
+      "subcat": "Bộ đếm Omron chính hãng",
+      "serial": "Omron H7CC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "H7CC-AD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: H7CC-AD",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, HỢP LONG"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, HỢP LONG"
+    },
+    {
+      "id": 28,
+      "cat": "Bộ đếm",
+      "subcat": "Bộ đếm Omron chính hãng",
+      "serial": "Omron H7ET",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "H7ET-NV1-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không Thông dụng",
+        "**Mã thông dụng**: H7ET-NV1-B",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, HỢP LONG"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, HỢP LONG"
+    },
+    {
+      "id": 29,
+      "cat": "Công tắc hành trình",
+      "subcat": "Công tắc hành trình Omron chính hãng",
+      "serial": "Omron WL",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "WLCA2-2N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: WLCA2-2N",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN, CHINA"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN, CHINA"
+    },
+    {
+      "id": 30,
+      "cat": "Công tắc hành trình",
+      "subcat": "Công tắc hành trình Omron chính hãng",
+      "serial": "Omron Z",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "Z-15GW2-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Loại nhỏ",
+        "**Mã thông dụng**: Z-15GW2-B",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN, CHINA"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN, CHINA"
+    },
+    {
+      "id": 31,
+      "cat": "Công tắc hành trình",
+      "subcat": "Công tắc hành trình Omron chính hãng",
+      "serial": "Omron DV4",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "D4V-8104Z"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Loại thẳng đứng",
+        "**Mã thông dụng**: D4V-8104Z",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "🔄 Cảnh báo thực chiến: Có rủi ro hàng cũ tháo máy Renew dựng lại vỏ.",
+        "**Thế mạnh NCC**: HỢP LONG, BẢO AN, CHINA"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "HỢP LONG, BẢO AN, CHINA"
+    },
+    {
+      "id": 32,
+      "cat": "Encorder",
+      "subcat": "Encorder Omron chính hãng",
+      "serial": "Omron E6A",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E6A2-CW5C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Đường kính thân 25",
+        "**Mã thông dụng**: E6A2-CW5C",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, BẢO AN"
+    },
+    {
+      "id": 33,
+      "cat": "Encorder",
+      "subcat": "Encorder Omron chính hãng",
+      "serial": "Omron E6B",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E6B2-CWZ6C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Đường kính thân 40",
+        "**Mã thông dụng**: E6B2-CWZ6C",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, BẢO AN"
+    },
+    {
+      "id": 34,
+      "cat": "Encorder",
+      "subcat": "Encorder Omron chính hãng",
+      "serial": "Omron E6C",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E6C3-AG5B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Đường kính thân 50",
+        "**Mã thông dụng**: E6C3-AG5B",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, BẢO AN"
+    },
+    {
+      "id": 35,
+      "cat": "Bộ điều khiển nhiệt độ",
+      "subcat": "Bộ điều khiển nhiệt độ Omron chính hãng",
+      "serial": "Omron E5CC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E5CC-RX2ASM-000"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã thông dụng**: E5CC-RX2ASM-000",
+        "⚠️ Cảnh báo thực chiến: Thị trường có nguy cơ hàng FAKE / Bo mạch copy nhái.",
+        "**Thế mạnh NCC**: CHINA, BẢO AN"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "CHINA, BẢO AN"
+    },
+    {
+      "id": 36,
+      "cat": "NCC",
+      "subcat": "NCC Omron chính hãng",
+      "serial": "Omron Hợp Long",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "CHINA"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Bảo An",
+        "**Mã thông dụng**: CHINA",
+        "**Thế mạnh NCC**: VASCO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.ia.omron.com/",
+      "suppliers": "VASCO"
+    }
+  ],
+  "history": [
+    {
+      "category": "Hệ Thống PLC & Bộ Điều Khiển Omron",
+      "steps": [
+        {
+          "era": "1990 - 2005",
+          "name": "C200H / CQM1",
+          "status": "Đã khai tử",
+          "badge": "discontinued",
+          "software": "SYSWIN / CX-P cũ",
+          "highlight": "Dòng PLC lập trình kinh điển đời đầu trong các dây chuyền lắp ráp xe máy, dệt may."
+        },
+        {
+          "era": "2006 - 2022",
+          "name": "CP1E / CP1L / CP1H / CJ2M",
+          "status": "Thông dụng",
+          "badge": "classic",
+          "software": "CX-One (CX-Programmer)",
+          "highlight": "Dòng PLC phổ thông phổ biến bậc nhất nhà máy Việt Nam, tích hợp cổng USB/Ethernet."
+        },
+        {
+          "era": "2020 - Nay",
+          "name": "CP2E / NX1P2 / NJ Series",
+          "status": "Chuẩn hiện hành",
+          "badge": "current",
+          "software": "Sysmac Studio",
+          "highlight": "Kiến trúc IoT đồng bộ hóa Motion, Logic, An toàn, kết nối cơ sở dữ liệu SQL/OPC UA."
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "CX-One",
+      "version": "v4.60+",
+      "target": "PLC CP1E, CP1L, CP1H, CJ1, CJ2, CS1, HMI NB, Servo G5",
+      "purpose": "Bộ phần mềm tổng hợp tích hợp toàn diện: CX-Programmer, CX-Integrator, CX-Designer...",
+      "note": "Bộ công cụ tiêu chuẩn hàng đầu phục vụ bảo trì, lập trình máy móc Omron hiện hữu.",
+      "link": "https://www.ia.omron.com/products/family/1629/"
+    },
+    {
+      "name": "Sysmac Studio",
+      "version": "v1.54+",
+      "target": "PLC Machine Controller NX1P2, NX102, NJ301, NJ501, HMI NA",
+      "purpose": "Môi trường phát triển tích hợp (IDE) duy nhất cho Logic, Motion, Vision, Robot, 3D Simulation.",
+      "note": "Nền tảng tự động hóa cao cấp nhất của Omron, hỗ trợ giao thức mạng EtherCAT tốc độ cao.",
+      "link": "https://www.ia.omron.com/products/family/3116/"
+    },
+    {
+      "name": "NB-Designer",
+      "version": "v1.50+",
+      "target": "Màn hình HMI cảm ứng Omron dòng NB: NB3Q, NB5Q, NB7W, NB10W",
+      "purpose": "Thiết kế giao diện đồ họa HMI cảm ứng, gán tag địa chỉ PLC Omron/Mitsubishi/Siemens.",
+      "note": "Phần mềm miễn phí, nhẹ nhàng, dễ sử dụng cho các ứng dụng hiển thị điều khiển cơ bản.",
+      "link": "https://www.ia.omron.com/products/family/3120/"
+    }
+  ],
+  "brochures": [
+    {
+      "title": "Omron Industrial Automation General Products Guide",
+      "category": "Catalog Tổng Hợp",
+      "desc": "Tổng hợp dải sản phẩm điều khiển tự động hóa, cảm biến, rơ le đóng cắt Omron toàn cầu.",
+      "link": "https://www.ia.omron.com/products/",
+      "isLocal": false
+    },
+    {
+      "title": "Omron CP2E Series Micro PLC Brochure",
+      "category": "Catalog Sản Phẩm",
+      "desc": "Dòng PLC nhỏ gọn thông minh kết nối mạng kép 2 cổng Ethernet thế hệ mới thay thế CP1E.",
+      "link": "https://www.ia.omron.com/products/family/3748/",
+      "isLocal": false
+    },
+    {
+      "title": "Omron E2B Proximity Sensors Catalog",
+      "category": "Catalog Sản Phẩm",
+      "desc": "Cảm biến tiệm cận kim loại thân trụ đồng thau chuẩn IP67 kinh tế và thông dụng nhất.",
+      "link": "https://www.ia.omron.com/products/family/3133/",
+      "isLocal": false
+    }
+  ]
+}

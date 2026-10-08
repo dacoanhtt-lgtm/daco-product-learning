@@ -1,0 +1,122 @@
+window.PORTAL_BRANDS = [
+  {
+    "id": "mitsubishi",
+    "name": "Mitsubishi Electric",
+    "code": "MELSEC",
+    "badge": "Tự Động Hóa & Đóng Cắt",
+    "color": "#e60012",
+    "icon": "⚡",
+    "tagline": "PLC, Biến Tần, Màn Hình HMI, Servo Driver, Aptomat Hạ Thế",
+    "productCount": 25,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "mitutoyo",
+    "name": "Mitutoyo",
+    "code": "MEASURING",
+    "badge": "Đo Lường Cơ Khí Chính Xác",
+    "color": "#f97316",
+    "icon": "📏",
+    "tagline": "Thước Cặp, Panme, Đồng Hồ So, Máy Đo Độ Cao, Bàn Chuẩn Map",
+    "productCount": 32,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "qlight",
+    "name": "Qlight",
+    "code": "SIGNALING",
+    "badge": "Tín Hiệu & Chống Cháy Nổ",
+    "color": "#eab308",
+    "icon": "🚨",
+    "tagline": "Đèn Tháp Tín Hiệu, Còi Báo Động, Đèn Chống Nổ, Đèn LED Máy CNC",
+    "productCount": 22,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "omron",
+    "name": "Omron",
+    "code": "OMRON",
+    "badge": "Tự Động Hóa & Cảm Biến",
+    "color": "#005bac",
+    "icon": "🏢",
+    "tagline": "PLC, Biến Tần, Cảm Biến Tiệm Cận & Quang, Rơ Le Trung Gian, Đồng Hồ Nhiệt Độ E5CC",
+    "productCount": 36,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "autonics",
+    "name": "Autonics",
+    "code": "AUTONICS",
+    "badge": "Cảm Biến & Điều Khiển",
+    "color": "#0284c7",
+    "icon": "🏢",
+    "tagline": "Cảm Biến Quang & Tiệm Cận, Đồng Hồ Nhiệt Độ TK/TC, Bộ Đếm Timer, Encoder Vòng Quay",
+    "productCount": 66,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "patlite",
+    "name": "Patlite",
+    "code": "PATLITE",
+    "badge": "Đèn Tháp & Còi Báo Động",
+    "color": "#dc2626",
+    "icon": "🏢",
+    "tagline": "Đèn Tháp Tín Hiệu LR Series, Đèn Báo Quay & Nhấp Nháy, Còi Báo Động Nhà Xưởng EHS",
+    "productCount": 38,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "brother",
+    "name": "Brother",
+    "code": "BROTHER",
+    "badge": "Máy In Nhãn & In Ống",
+    "color": "#2563eb",
+    "icon": "🏷️",
+    "tagline": "Máy In Nhãn Cầm Tay P-Touch, Máy In Ống Đầu Cốt PT-E850TKW, Máy In Mã Vạch TD/QL",
+    "productCount": 17,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "zebra",
+    "name": "Zebra",
+    "code": "ZEBRA",
+    "badge": "Máy In Mã Vạch & Barcode",
+    "color": "#334155",
+    "icon": "🏢",
+    "tagline": "Máy In Mã Vạch Công Nghiệp ZT Series, Máy In Để Bàn ZD Series, Máy Quét Barcode 1D/2D",
+    "productCount": 36,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "proface",
+    "name": "Pro-face",
+    "code": "PROFACE",
+    "badge": "Màn Hình Cảm Ứng HMI",
+    "color": "#059669",
+    "icon": "🖥️",
+    "tagline": "Màn Hình HMI Cảm Ứng GP4000, ST6000, STM6000, ET6000 & Smart Portal SP5000",
+    "productCount": 27,
+    "hasSoftware": true,
+    "hasHistory": true
+  },
+  {
+    "id": "xenang",
+    "name": "An Toàn Xe Nâng & Cầu Trục",
+    "code": "SAFETY",
+    "badge": "An Toàn Nhà Xưởng",
+    "color": "#d97706",
+    "icon": "🏢",
+    "tagline": "Đèn Vạch Vùng An Toàn LED, Camera AI Nhận Diện Người, Cảnh Báo Tốc Độ Xe Nâng",
+    "productCount": 44,
+    "hasSoftware": false,
+    "hasHistory": true
+  }
+];

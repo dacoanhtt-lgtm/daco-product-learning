@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="servo_body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2430"/>
+      <stop offset="100%" stop-color="#0f131a"/>
+    </linearGradient>
+  </defs>
+  <!-- Drive Chassis -->
+  <rect x="110" y="10" width="180" height="260" rx="8" fill="url(#servo_body)" stroke="#475569" stroke-width="2"/>
+  <rect x="110" y="10" width="180" height="6" rx="2" fill="#e60012"/>
+
+  <!-- Logo and Model Title -->
+  <text x="125" y="32" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial, sans-serif">MITSUBISHI</text>
+  <text x="125" y="46" fill="#38bdf8" font-size="12" font-weight="900" font-family="Arial, sans-serif">MELSERVO-J4</text>
+
+  <!-- 7-Segment LED Status Display (Alarm / Status indicator) -->
+  <rect x="125" y="55" width="70" height="32" rx="3" fill="#020617" stroke="#334155"/>
+  <text x="135" y="78" fill="#ef4444" font-size="18" font-weight="bold" font-family="monospace">b 0 1</text>
+  
+  <!-- Diagnostic Buttons -->
+  <circle cx="215" cy="65" r="5" fill="#334155" stroke="#94a3b8"/>
+  <circle cx="235" cy="65" r="5" fill="#334155" stroke="#94a3b8"/>
+  <circle cx="255" cy="65" r="5" fill="#334155" stroke="#94a3b8"/>
+  <circle cx="275" cy="65" r="5" fill="#15803d" stroke="#22c55e"/>
+
+  <!-- Optical SSCNET III/H Fiber Optic Ports -->
+  <rect x="125" y="96" width="150" height="34" rx="4" fill="#090d16" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="135" y="110" fill="#38bdf8" font-size="8" font-weight="bold" font-family="sans-serif">SSCNET III/H (OPTICAL)</text>
+  <circle cx="165" cy="120" r="4" fill="#ef4444"/>
+  <circle cx="195" cy="120" r="4" fill="#3b82f6"/>
+  <text x="215" y="122" fill="#94a3b8" font-size="7" font-family="sans-serif">CN1A / CN1B</text>
+
+  <!-- CN2 Encoder Connector -->
+  <rect x="125" y="138" width="150" height="34" rx="4" fill="#090d16" stroke="#475569"/>
+  <text x="135" y="152" fill="#cbd5e1" font-size="8" font-family="sans-serif">CN2 (ENCODER FEEDBACK)</text>
+  <rect x="175" y="156" width="45" height="12" rx="2" fill="#1e293b" stroke="#64748b"/>
+
+  <!-- Power Terminals (L1, L2, L3 / U, V, W) -->
+  <rect x="125" y="180" width="150" height="80" rx="4" fill="#1e293b" stroke="#334155"/>
+  <text x="135" y="196" fill="#f59e0b" font-size="9" font-weight="bold" font-family="sans-serif">⚡ POWER TERMINALS</text>
+  <g fill="#64748b" stroke="#cbd5e1" stroke-width="1">
+    <circle cx="145" cy="214" r="4"/>
+    <circle cx="170" cy="214" r="4"/>
+    <circle cx="195" cy="214" r="4"/>
+    <circle cx="220" cy="214" r="4"/>
+    <circle cx="245" cy="214" r="4"/>
+  </g>
+  <text x="135" y="230" fill="#94a3b8" font-size="7" font-family="monospace">L1  L2  L3  L11 L21</text>
+  <text x="145" y="248" fill="#38bdf8" font-size="9" font-weight="bold" font-family="monospace">MR-J4-40B (400W)</text>
+</svg>

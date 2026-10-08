@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DACO PORTAL - Cổng Tra Cứu Kỹ Thuật & Cẩm Nang Sản Phẩm Nội Bộ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-theme="light">
+
+  <div class="app-layout">
+    <!-- LEFT SIDEBAR: DACO 3-TIER NAVIGATION -->
+    <aside class="sidebar" id="appSidebar">
+      <button class="sidebar-toggle" id="sidebarToggleBtn" title="Thu gọn / Mở rộng menu">◀</button>
+
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">⚡</div>
+        <div class="sidebar-logo-text">
+          <h1>DACO PORTAL</h1>
+          <span>Cẩm Nang Kỹ Thuật Nội Bộ</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- MỤC 1: CẨM NANG THƯƠNG HIỆU (ACCORDION MENU) -->
+        <div class="sidebar-accordion" id="sidebarBrandAccordion">
+          <button class="sidebar-accordion-btn active" id="brandAccordionToggle" onclick="toggleBrandAccordion()" title="Bấm để đóng/mở danh sách thương hiệu">
+            <div class="accordion-title-left">
+              <span class="nav-icon">🏢</span>
+              <span class="nav-label">Thương Hiệu</span>
+            </div>
+            <div class="accordion-title-right">
+              <span class="badge-count" id="sidebarBrandCount">3</span>
+              <span class="accordion-chevron" id="brandAccordionChevron">▾</span>
+            </div>
+          </button>
+          <div class="sidebar-accordion-content" id="sidebarBrandAccordionContent">
+            <div class="sidebar-brand-list" id="sidebarBrandList">
+              <!-- Render via JS: Mitsubishi, Mitutoyo, Qlight, Omron... -->
+            </div>
+          </div>
+        </div>
+
+        <!-- MỤC 2 & 3: CÔNG CỤ TOÀN HỆ THỐNG -->
+        <div class="sidebar-section-title" style="margin-top: 0.75rem;">
+          <span>🛠️ HỆ THỐNG & CÔNG CỤ</span>
+        </div>
+        <button class="sidebar-nav-item" id="sidebarNavQuotation" onclick="switchToGlobalView('quotation')">
+          <span class="nav-icon">📝</span>
+          <span class="nav-label">Tập Làm Báo Giá</span>
+        </button>
+        <button class="sidebar-nav-item" id="sidebarNavAdmin" onclick="switchToGlobalView('admin')">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-label">Quản Trị & Thêm Hãng</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-user">
+        <div class="sidebar-user-avatar">⚡</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">DACO Hub v2.5</div>
+          <div class="sidebar-user-role">Hệ Thống Nội Bộ</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT MAIN CONTENT AREA -->
+    <main class="main-content" id="mainContent">
+      <!-- Top App Header inside Main Content -->
+      <header class="top-header">
+        <!-- Breadcrumb Navigation -->
+        <div class="header-breadcrumb" id="headerBreadcrumb">
+          <span id="bcCategory">Thương Hiệu</span>
+          <span style="opacity: 0.35;">/</span>
+          <b id="bcCurrent">Mitsubishi Electric</b>
+        </div>
+
+        <!-- Universal Global Search Across ALL Brands -->
+        <div class="global-search-wrapper">
+          <div class="search-input-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="globalSearchInput" class="global-search-input" placeholder="Tìm kiếm nhanh toàn hệ thống (Gõ FX3U, 500-196, ST56, D740, fake, phần mềm...)" autocomplete="off">
+            <button class="search-clear-btn" id="searchClearBtn">&times;</button>
+          </div>
+          <div class="search-dropdown" id="searchDropdown"></div>
+        </div>
+
+        <!-- Header Actions: Theme Toggle -->
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối">
+            <span id="themeIcon">🌙</span> <span id="themeText">Tối</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Application Container -->
+      <div class="app-container">
+
+        <!-- BRAND SPECIFIC VIEWS WRAPPER (Shown when a Brand is selected) -->
+        <div id="brandViewsWrapper">
+          <!-- Active Brand Info Banner -->
+          <div class="active-brand-banner" id="activeBrandBanner">
+            <div class="active-brand-info">
+              <div class="active-brand-title-row">
+                <h2 id="currentBrandName">Mitsubishi Electric</h2>
+                <span class="active-brand-badge" id="currentBrandBadge">Tự Động Hóa & Đóng Cắt</span>
+                <span class="active-brand-count" id="currentBrandCount">25 Dòng Sản Phẩm</span>
+              </div>
+              <p id="currentBrandTagline">PLC, Biến Tần, Màn Hình HMI, Servo Driver, Aptomat Hạ Thế</p>
+            </div>
+          </div>
+
+          <!-- Sub Navigation Tabs for Selected Brand (5 core technical tabs - Tree Map first) -->
+          <div class="sub-tab-bar" id="subTabBar">
+            <button class="sub-tab-btn active" data-view="tree">
+              <span class="tab-icon">🌳</span> <span>Sơ Đồ Danh Mục &amp; Quy Chuẩn</span>
+            </button>
+            <button class="sub-tab-btn" data-view="catalog">
+              <span class="tab-icon">📊</span> <span>Tra Cứu Danh Mục</span>
+            </button>
+            <button class="sub-tab-btn" data-view="history">
+              <span class="tab-icon">📜</span> <span>Lịch Sử Dòng Sản Phẩm</span>
+            </button>
+            <button class="sub-tab-btn" data-view="software">
+              <span class="tab-icon">💻</span> <span>Phần Mềm Đi Kèm</span>
+            </button>
+            <button class="sub-tab-btn" data-view="brochure">
+              <span class="tab-icon">📁</span> <span>Brochure &amp; Catalog</span>
+            </button>
+          </div>
+
+    <!-- VIEW 0: PRODUCT TREE HIERARCHY & CODE BREAKDOWN (DEFAULT VIEW) -->
+    <section id="view-tree" class="view-section">
+      <!-- 1. Interactive Model Decoder Bar (Tool dán mã giải mã tức thì) -->
+      <div class="tree-decoder-card">
+        <div class="tree-decoder-header">
+          <div class="tree-decoder-title">
+            <span class="tree-decoder-icon">⚡</span>
+            <div>
+              <h3>Trình Giải Mã Mã Hàng Tức Thì (Instant Model Decoder)</h3>
+              <p>Dán mã bất kỳ của khách gửi để bóc tách ý nghĩa từng ký tự (VD: FX5U-32MT/ES, FR-E820-0.75K-1, GS2107-WTBD-N, NF125-CV...)</p>
+            </div>
+          </div>
+          <div class="tree-decoder-badge">Dành Cho Người Mới</div>
+        </div>
+
+        <div class="tree-decoder-input-row">
+          <div class="tree-decoder-input-wrap">
+            <span class="tree-decoder-input-icon">🔍</span>
+            <input type="text" id="modelDecoderInput" class="tree-decoder-input" placeholder="Dán mã sản phẩm vào đây (Ví dụ: FX5U-32MT/ES hoặc FR-E820-0.75K-1)..." autocomplete="off">
+            <button type="button" id="modelDecoderClearBtn" class="tree-decoder-clear-btn" style="display:none">&times;</button>
+          </div>
+          <button type="button" id="btnExecuteDecode" class="btn-primary" style="padding: 0.65rem 1.25rem; font-weight: 700; white-space: nowrap;">
+            ⚡ Giải Mã Ký Tự
+          </button>
+        </div>
+
+        <!-- Quick Sample Badges -->
+        <div class="tree-decoder-samples" id="treeDecoderSamples">
+          <span class="sample-label">Mã thử nhanh:</span>
+          <button class="sample-chip" onclick="quickFillDecoder('FX5U-32MT/ES')">FX5U-32MT/ES</button>
+          <button class="sample-chip" onclick="quickFillDecoder('FR-E820-0.75K-1')">FR-E820-0.75K-1</button>
+          <button class="sample-chip" onclick="quickFillDecoder('GS2107-WTBD-N')">GS2107-WTBD-N</button>
+          <button class="sample-chip" onclick="quickFillDecoder('MR-J4-40B')">MR-J4-40B</button>
+          <button class="sample-chip" onclick="quickFillDecoder('HG-KR43B')">HG-KR43B</button>
+          <button class="sample-chip" onclick="quickFillDecoder('NF125-CV 3P 100A')">NF125-CV 3P 100A</button>
+          <button class="sample-chip" onclick="quickFillDecoder('S-T21 AC220V')">S-T21 AC220V</button>
+        </div>
+
+        <!-- Decoder Result Box -->
+        <div id="modelDecoderResultBox" class="tree-decoder-result hidden"></div>
+      </div>
+
+      <!-- 2. Tree Hierarchy Header & Controls -->
+      <div class="tree-toolbar">
+        <div class="tree-toolbar-info">
+          <h2 class="tree-toolbar-title" id="treeBrandTitle">Bản Đồ Danh Mục Sản Phẩm (Category Tree &amp; Mindmap)</h2>
+          <span class="tree-toolbar-sub" id="treeBrandSub">Bố cục hệ thống chuẩn hóa theo Catalog hãng • Có ảnh thực tế &amp; quy chuẩn đọc mã</span>
+        </div>
+        <div class="tree-toolbar-actions">
+          <button type="button" class="btn-secondary btn-sm" onclick="openAddCategoryModal()">
+            <span>➕</span> <span>Thêm Nhóm Danh Mục Mới</span>
+          </button>
+          <button type="button" class="btn-secondary btn-sm" onclick="resetBrandTreeData()" title="Khôi phục cấu trúc chuẩn mặc định của hãng">
+            <span>🔄</span> <span>Khôi Phục Mặc Định</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Dynamic Categories & Series Cards Container -->
+      <div id="treeCategoriesContainer" class="tree-categories-wrapper"></div>
+    </section>
+
+    <!-- VIEW 1: CATALOG TABLE (100% BULLET POINTS) -->
+    <section id="view-catalog" class="view-section hidden">
+      <!-- Fast Filter Bar for Catalog -->
+      <div class="catalog-filter-bar">
+        <div class="filter-item">
+          <label class="filter-label">Chủng Loại:</label>
+          <select id="filterCategory" class="filter-select" onchange="applyCatalogFilters()">
+            <option value="all">Tất cả chủng loại</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label class="filter-label">Trạng Thái:</label>
+          <select id="filterStatus" class="filter-select" onchange="applyCatalogFilters()">
+            <option value="all">Tất cả trạng thái</option>
+            <option value="Thông dụng">✅ Thông dụng</option>
+            <option value="Ngừng sx">🛑 Ngừng sản xuất</option>
+            <option value="Hiếm">⚡ Hiếm</option>
+            <option value="Mới">✨ Mới</option>
+            <option value="fake">⚠️ Có cảnh báo Fake</option>
+            <option value="renew">🔄 Có cảnh báo Renew</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label class="filter-label">Phần Mềm Đi Kèm:</label>
+          <select id="filterSoftware" class="filter-select" onchange="applyCatalogFilters()">
+            <option value="all">Tất cả</option>
+            <option value="has_software">💻 Có phần mềm</option>
+            <option value="no_software">Không dùng phần mềm</option>
+          </select>
+        </div>
+
+        <div class="filter-item" style="flex: 1; min-width: 170px;">
+          <label class="filter-label">Lọc nhanh Model / Series:</label>
+          <input type="text" id="filterKeyword" class="filter-input" placeholder="Gõ mã model, tên series..." oninput="applyCatalogFilters()">
+        </div>
+
+        <div class="filter-actions">
+          <button type="button" class="btn-supplier-directory" onclick="openAllSuppliersDirectory()" title="Tra cứu toàn bộ hồ sơ nhà cung cấp & khuyến nghị mua hàng thực chiến">
+            <span>🏢</span> <span>Hồ Sơ Nhà Cung Cấp</span>
+          </button>
+          <button class="btn-filter-reset" onclick="resetCatalogFilters()" title="Đặt lại bộ lọc">
+            🔄 Đặt lại
+          </button>
+          <button type="button" class="btn-filter-reset" onclick="resetColumnWidths()" title="Khôi phục độ rộng các cột về mặc định ban đầu (chuẩn Excel)" style="background: var(--bg-card); border-color: var(--border-color); color: var(--text-main);">
+            📐 Reset Cột
+          </button>
+          <span id="filterResultCount" class="filter-count-badge">0 SP</span>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table id="catalogTable" class="resizable-table">
+          <thead>
+            <tr>
+              <th class="text-center" data-col="0" style="width: 45px; min-width: 40px;">STT</th>
+              <th data-col="1" style="width: 290px; min-width: 240px;">Chủng Loại, Dòng & Trạng Thái</th>
+              <th data-col="2" style="width: 180px; min-width: 140px;">Model Thông Dụng</th>
+              <th data-col="3" style="width: 320px; min-width: 220px;">Đặc Điểm & Cảnh Báo Kỹ Thuật (Bullet Points)</th>
+              <th data-col="4" style="width: 230px; min-width: 180px;">Nhà Cung Cấp Thế Mạnh</th>
+              <th data-col="5" style="width: 130px; min-width: 100px;">Phần Mềm</th>
+              <th class="text-center" data-col="6" style="width: 120px; min-width: 90px;">Tài Liệu</th>
+            </tr>
+          </thead>
+          <tbody id="catalogTableBody">
+            <!-- Render via JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- VIEW 2: HISTORY TIMELINE -->
+    <section id="view-history" class="view-section hidden">
+      <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">Sơ Đồ Lịch Sử & Lộ Trình Tiến Hóa Dòng Đời Sản Phẩm</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Giúp nhân viên ghi nhớ nhanh lộ trình thay thế: Dòng cũ khai tử ➔ Dòng chuyển tiếp ➔ Dòng chuẩn hiện hành ➔ Dòng tương lai.</p>
+      </div>
+      <div id="historyContainer" class="history-section">
+        <!-- Render via JS -->
+      </div>
+    </section>
+
+    <!-- VIEW 3: SOFTWARE ECOSYSTEM -->
+    <section id="view-software" class="view-section hidden">
+      <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">Hệ Thống Phần Mềm Kỹ Thuật Đi Kèm</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Bảng tra cứu các phần mềm lập trình, cài đặt tham số, mô phỏng và thu thập dữ liệu chuyên dụng theo từng thiết bị.</p>
+      </div>
+      <div id="softwareContainer" class="software-grid">
+        <!-- Render via JS -->
+      </div>
+    </section>
+
+    <!-- VIEW 4: BROCHURE LIBRARY -->
+    <section id="view-brochure" class="view-section hidden">
+      <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">Thư Viện Tài Liệu Kỹ Thuật & Catalog PDF</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Xem trực tiếp hoặc tải về catalog chính hãng, bản vẽ kích thước và hướng dẫn sử dụng của thương hiệu đang chọn.</p>
+      </div>
+      <div id="brochureContainer" class="software-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+        <!-- Render via JS according to active brand -->
+      </div>
+    </section>
+  </div> <!-- /#brandViewsWrapper -->
+
+    <!-- VIEW 5: QUOTATION SIMULATOR & AUTO-SCORING -->
+    <section id="view-quotation" class="view-section hidden">
+      <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">📝 Lập Báo Giá Thực Chiến (Quotation Tool)</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Nhân viên thực hành lập báo giá nhanh theo các tình huống RFQ thực tế. Hỗ trợ tự động tính toán Margin, thành tiền, thuế VAT, xuất CSV và sao chép định dạng gửi Zalo/Email cho khách hàng.</p>
+      </div>
+
+      <!-- Scenario Selector Box -->
+      <div class="quotation-scenario-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+          <div style="font-weight: 800; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🎯</span> <span>CHỌN TÌNH HUỐNG YÊU CẦU BÁO GIÁ (RFQ):</span>
+          </div>
+          <select id="scenarioSelect" class="form-input" style="max-width: 480px; font-weight: 700; color: var(--accent-blue);">
+            <!-- Render via JS -->
+          </select>
+        </div>
+
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 0.85rem 1rem;">
+          <div style="font-size: 0.72rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Nội dung yêu cầu từ Khách hàng:</div>
+          <div id="rawInquiryText" style="white-space: pre-line; font-size: 0.88rem; line-height: 1.5; color: var(--text-main); font-weight: 500;"></div>
+        </div>
+
+        <div id="scenarioCheckpoints" style="margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap;"></div>
+      </div>
+
+      <!-- Customer & Terms Setting -->
+      <div class="quotation-meta-grid">
+        <div>
+          <label class="form-label">Tên Khách Hàng / Công Ty:</label>
+          <input type="text" id="quoteCustomerName" class="form-input" value="Công ty TNHH Cơ Khí & Tự Động Hóa An Phát">
+        </div>
+        <div>
+          <label class="form-label">Phân Loại Khách Hàng:</label>
+          <select id="quoteCustomerType" class="form-input">
+            <option value="Thương Mại">Khách Thương Mại (Margin 8% - 12%)</option>
+            <option value="Chế Tạo Máy (OEM)" selected>Khách Chế Tạo Máy CTM (Margin 12% - 18%)</option>
+            <option value="Nhà Máy FDI">Khách Nhà Máy FDI (Margin 18% - 25%)</option>
+            <option value="Nhà Thầu Tủ Điện">Nhà Thầu Tủ Điện (Margin 10% - 15%)</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Yêu Cầu Chứng Chỉ CO/CQ:</label>
+          <select id="quoteCoCqReq" class="form-input">
+            <option value="Có">Bắt buộc CO/CQ gốc chính hãng</option>
+            <option value="Bản scan">Chấp nhận CO/CQ bản scan</option>
+            <option value="Không">Không cần CO/CQ</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Thuế Suất VAT:</label>
+          <select id="quoteVatRate" class="form-input">
+            <option value="10" selected>VAT 10%</option>
+            <option value="8">VAT 8%</option>
+            <option value="0">Không VAT (Khách ngoài)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Quotation Items Table -->
+      <div class="table-container" style="margin-bottom: 1rem;">
+        <table id="quoteItemsTable">
+          <thead>
+            <tr>
+              <th style="width: 35px;" class="text-center">#</th>
+              <th style="min-width: 140px;">Mã Model</th>
+              <th style="min-width: 180px;">Tên Thiết Bị / Mô Tả</th>
+              <th style="width: 70px;" class="text-center">SL</th>
+              <th style="width: 70px;">ĐVT</th>
+              <th style="min-width: 130px;">Nhà Cung Cấp</th>
+              <th style="min-width: 100px;">Xuất Xứ</th>
+              <th style="min-width: 110px;">Tiến Độ</th>
+              <th style="min-width: 110px;">Giá Vốn (₫)</th>
+              <th style="min-width: 110px;">Giá Bán (₫)</th>
+              <th style="min-width: 90px;" class="text-center">Margin</th>
+              <th style="min-width: 120px;" class="text-right">Thành Tiền (₫)</th>
+              <th style="width: 40px;"></th>
+            </tr>
+          </thead>
+          <tbody id="quoteItemsBody">
+            <!-- Render via JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <button class="btn-secondary" id="btnAddQuoteRow">+ Thêm Dòng Mặt Hàng</button>
+        <div id="quoteSummaryTotals" style="text-align: right; font-size: 0.9rem; line-height: 1.6;">
+          <!-- Auto Calculated Totals -->
+        </div>
+      </div>
+
+      <!-- Quotation Practical Action Toolbar (Bỏ đánh giá tiêu chí theo yêu cầu) -->
+      <div class="quote-actions-bar" style="display: flex; gap: 0.75rem; justify-content: flex-end; align-items: center; margin: 1.5rem 0 2rem 0; flex-wrap: wrap;">
+        <button class="btn-secondary" id="btnClearQuoteTable" onclick="resetQuoteTable()">
+          🔄 Làm Mới Bảng
+        </button>
+        <button class="btn-secondary" id="btnDownloadQuoteCsv" onclick="downloadQuoteCsv()">
+          📥 Tải File CSV Báo Giá
+        </button>
+        <button class="btn-secondary" id="btnPrintQuote" onclick="window.print()">
+          🖨️ In Báo Giá (Print)
+        </button>
+        <button class="btn-primary" id="btnCopyQuote" onclick="copyQuotationToClipboard()" style="background: var(--gradient-primary); border-color: var(--accent);">
+          📋 Sao Chép Báo Giá Gửi Zalo / Email
+        </button>
+      </div>
+    </section>
+
+    <!-- VIEW 6: ADMIN DATA MANAGER & NEW BRAND CREATOR -->
+    <section id="view-admin" class="view-section hidden">
+      <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">⚙️ Quản Trị Hệ Thống: Cập Nhật & Mở Rộng</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Cập nhật danh mục sản phẩm, quản lý thư viện tài liệu & phần mềm, hoặc mở rộng thêm thương hiệu mới hoàn toàn.</p>
+      </div>
+
+      <!-- 2 Main Admin Update Tabs -->
+      <div class="admin-main-tabs" id="adminMainTabs">
+        <button class="admin-main-tab active" id="btnAdminTabProducts" onclick="switchAdminMainTab('products')">
+          <span>📦</span> <span>Tab 1: Cập Nhật Sản Phẩm</span>
+        </button>
+        <button class="admin-main-tab" id="btnAdminTabDocs" onclick="switchAdminMainTab('docs')">
+          <span>📚</span> <span>Tab 2: Cập Nhật Tài Liệu & Phần Mềm</span>
+        </button>
+      </div>
+
+      <!-- TAB 1: CẬP NHẬT SẢN PHẨM & TẠO HÃNG -->
+      <div id="adminTabContentProducts">
+        <div class="admin-grid">
+          <!-- Form 1: Add Product to Existing Brand -->
+          <div class="admin-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;">
+              <span>➕</span> <span>Thêm Sản Phẩm Mới Vào Hãng Đã Có</span>
+            </h3>
+
+            <!-- Toggle: Manual vs CSV Upload -->
+            <div class="admin-mode-toggle" id="adminModeToggle">
+              <button class="admin-mode-btn active" data-mode="manual" onclick="switchAdminMode('manual')">
+                ✏️ Nhập Tay
+              </button>
+              <button class="admin-mode-btn" data-mode="upload" onclick="switchAdminMode('upload')">
+                📂 Upload File CSV
+              </button>
+            </div>
+
+            <!-- Manual Entry Form -->
+            <div id="adminManualForm">
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Chọn Thương Hiệu:</label>
+                <select id="adminProductBrand" class="form-input">
+                  <!-- Render via JS -->
+                </select>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <div>
+                  <label class="form-label">Tên Dòng / Series (In Đậm):</label>
+                  <input type="text" id="adminProdSerial" class="form-input" placeholder="Ví dụ: FX5U, E800, Series 500...">
+                </div>
+                <div>
+                  <label class="form-label">Chủng Loại (Cat):</label>
+                  <input type="text" id="adminProdCat" class="form-input" placeholder="Ví dụ: PLC, Biến tần, Thước Cặp...">
+                </div>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Phân Loại Chi Tiết (Subcat):</label>
+                <input type="text" id="adminProdSubcat" class="form-input" placeholder="Ví dụ: PLC thế hệ mới hiệu năng cao iQ-F...">
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <div>
+                  <label class="form-label">Trạng Thái:</label>
+                  <select id="adminProdStatus" class="form-input">
+                    <option value="Thông dụng">Thông dụng</option>
+                    <option value="Ngừng sx">Ngừng sx</option>
+                    <option value="Hiếm">Hiếm</option>
+                    <option value="Mới">Mới</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label">Nguy cơ Fake?</label>
+                  <select id="adminProdFake" class="form-input">
+                    <option value="Không">Không</option>
+                    <option value="Có">Có</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label">Nguy cơ Renew?</label>
+                  <select id="adminProdRenew" class="form-input">
+                    <option value="Không">Không</option>
+                    <option value="Có">Có</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Model Thông Dụng (Mỗi mã cách nhau dấu phẩy hoặc xuống dòng):</label>
+                <textarea id="adminProdModels" class="form-input" rows="2" placeholder="FX5U-32MT/ES, FX5U-64MT/ES..."></textarea>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Model Thay Thế / Nâng Cấp:</label>
+                <input type="text" id="adminProdReplacement" class="form-input" placeholder="Ví dụ: Dòng FX5U thay thế FX3U...">
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Đặc Điểm & Cảnh Báo (Mỗi ý 1 dòng):</label>
+                <textarea id="adminProdPoints" class="form-input" rows="3" placeholder="**Bản chất**: ...&#10;**Ứng dụng**: ...&#10;**Cảnh báo**: ..."></textarea>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
+                <div>
+                  <label class="form-label">Phần Mềm Đi Kèm:</label>
+                  <input type="text" id="adminProdSoftware" class="form-input" placeholder="Ví dụ: GX Works3">
+                </div>
+                <div>
+                  <label class="form-label">Link Brochure / Catalog:</label>
+                  <input type="text" id="adminProdBrochure" class="form-input" placeholder="Ví dụ: https://... hoặc file PDF">
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1.25rem;">
+                <label class="form-label">Nhà Cung Cấp Thế Mạnh:</label>
+                <input type="text" id="adminProdSuppliers" class="form-input" placeholder="Tuyến 1: Phạm Dương, Hợp Long | Tuyến 2: Kovi">
+              </div>
+
+              <button class="btn-primary" id="btnAdminSaveProduct" style="width: 100%;">
+                💾 LƯU SẢN PHẨM MỚI VÀO HỆ THỐNG
+              </button>
+            </div>
+
+            <!-- CSV Upload Form -->
+            <div id="adminUploadForm" class="hidden">
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Thêm Vào Thương Hiệu:</label>
+                <select id="adminCsvBrand" class="form-input">
+                  <!-- Render via JS -->
+                </select>
+              </div>
+
+              <!-- Template Download -->
+              <div class="csv-template-bar">
+                <span>📄 Chưa có file? Tải template CSV mẫu:</span>
+                <button class="btn-template" onclick="downloadCsvTemplate()">⬇️ Tải Template CSV</button>
+              </div>
+
+              <!-- Drop Zone -->
+              <div class="csv-drop-zone" id="csvDropZone" onclick="document.getElementById('csvFileInput').click()">
+                <div class="csv-drop-icon">📂</div>
+                <div class="csv-drop-title">Kéo & Thả file CSV vào đây</div>
+                <div class="csv-drop-sub">hoặc click để chọn file • Hỗ trợ .csv (UTF-8)</div>
+                <input type="file" id="csvFileInput" accept=".csv,.txt" style="display:none">
+              </div>
+
+              <!-- Preview Area -->
+              <div id="csvPreviewArea" class="hidden">
+                <div class="csv-preview-header">
+                  <span id="csvPreviewCount">0 sản phẩm</span>
+                  <div style="display:flex; gap:0.5rem;">
+                    <button class="btn-secondary" style="font-size:0.8rem; padding: 0.3rem 0.7rem;" onclick="clearCsvUpload()">✖ Xóa</button>
+                    <button class="btn-primary" style="font-size:0.8rem; padding: 0.3rem 0.9rem;" id="btnConfirmCsvImport">✅ Xác Nhận Import</button>
+                  </div>
+                </div>
+                <div class="csv-preview-table-wrap">
+                  <table class="csv-preview-table">
+                    <thead><tr id="csvPreviewHead"></tr></thead>
+                    <tbody id="csvPreviewBody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 2: Create Brand-New Brand (Via File Upload or Manual) -->
+          <div class="admin-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem; color: #a855f7; display: flex; align-items: center; gap: 0.5rem;">
+              <span>🚀</span> <span>Khởi Tạo & Import Thương Hiệu Mới</span>
+            </h3>
+
+            <!-- Mode Toggle: File Upload vs Manual -->
+            <div class="admin-mode-toggle" id="adminNewBrandModeToggle">
+              <button class="admin-mode-btn active" id="btnModeNewBrandUpload" data-mode="upload" onclick="switchNewBrandMode('upload')">
+                📂 Import File CSV (Tạo Hãng + SP)
+              </button>
+              <button class="admin-mode-btn" id="btnModeNewBrandManual" data-mode="manual" onclick="switchNewBrandMode('manual')">
+                ✏️ Khởi Tạo Thủ Công
+              </button>
+            </div>
+
+            <!-- Mode 1: Create Brand from CSV File (Default) -->
+            <div id="newBrandUploadForm">
+              <!-- Quick Brand Meta (Auto-filled on file drop or editable) -->
+              <div style="background: var(--bg-secondary); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 0.75rem;">
+                <div style="font-size: 0.75rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.4rem;">
+                  1. THÔNG TIN NHẬN DIỆN THƯƠNG HIỆU:
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.5rem;">
+                  <div>
+                    <label class="form-label" style="font-size: 0.75rem;">Tên Thương Hiệu:</label>
+                    <input type="text" id="newBrandCsvName" class="form-input" placeholder="Tự điền theo tên file hoặc gõ: Omron, SMC...">
+                  </div>
+                  <div>
+                    <label class="form-label" style="font-size: 0.75rem;">Mã Định Danh (Slug):</label>
+                    <input type="text" id="newBrandCsvSlug" class="form-input" placeholder="omron, smc, siemens...">
+                  </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 60px 100px 1fr; gap: 0.6rem;">
+                  <div>
+                    <label class="form-label" style="font-size: 0.75rem;">Icon:</label>
+                    <input type="text" id="newBrandCsvIcon" class="form-input text-center" value="🏢">
+                  </div>
+                  <div>
+                    <label class="form-label" style="font-size: 0.75rem;">Màu Hãng:</label>
+                    <input type="color" id="newBrandCsvColor" class="form-input" value="#005bac" style="height: 38px; padding: 2px;">
+                  </div>
+                  <div>
+                    <label class="form-label" style="font-size: 0.75rem;">Lĩnh Vực / Badge:</label>
+                    <input type="text" id="newBrandCsvBadge" class="form-input" placeholder="Ví dụ: Thiết Bị Cảm Biến & Khí Nén">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Template Download -->
+              <div class="csv-template-bar">
+                <span>📄 Chưa có file? Tải template CSV mẫu cho hãng mới:</span>
+                <button class="btn-template" onclick="downloadNewBrandCsvTemplate()">⬇️ Tải Template CSV Hãng</button>
+              </div>
+
+              <!-- Drop Zone for Brand CSV -->
+              <div class="csv-drop-zone" id="newBrandCsvDropZone" onclick="document.getElementById('newBrandCsvFileInput').click()">
+                <div class="csv-drop-icon">🚀</div>
+                <div class="csv-drop-title">Kéo & Thả file CSV của hãng mới vào đây</div>
+                <div class="csv-drop-sub">Tự động nhận diện tên thương hiệu và nạp toàn bộ danh mục sản phẩm • Hỗ trợ .csv (UTF-8)</div>
+                <input type="file" id="newBrandCsvFileInput" accept=".csv,.txt" style="display:none">
+              </div>
+
+              <!-- Preview Area for Brand CSV -->
+              <div id="newBrandCsvPreviewArea" class="hidden">
+                <div class="csv-preview-header">
+                  <span id="newBrandCsvPreviewCount">0 sản phẩm</span>
+                  <div style="display:flex; gap:0.5rem;">
+                    <button class="btn-secondary" style="font-size:0.8rem; padding: 0.3rem 0.7rem;" onclick="clearNewBrandCsvUpload()">✖ Xóa</button>
+                    <button class="btn-primary" style="font-size:0.8rem; padding: 0.3rem 0.9rem; background: #a855f7; border-color: #a855f7;" id="btnConfirmNewBrandCsvImport">✨ Xác Nhận Tạo Hãng & Import Sản Phẩm</button>
+                  </div>
+                </div>
+                <div class="csv-preview-table-wrap">
+                  <table class="csv-preview-table">
+                    <thead><tr id="newBrandCsvPreviewHead"></tr></thead>
+                    <tbody id="newBrandCsvPreviewBody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode 2: Manual Brand Creation Form -->
+            <div id="newBrandManualForm" class="hidden">
+              <div style="margin-bottom: 0.75rem;">
+                <label class="form-label">Tên Thương Hiệu:</label>
+                <input type="text" id="adminBrandName" class="form-input" placeholder="Ví dụ: Omron, Schneider, Siemens, SMC...">
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <div>
+                  <label class="form-label">Mã Định Danh (Slug không dấu):</label>
+                  <input type="text" id="adminBrandId" class="form-input" placeholder="Ví dụ: omron, schneider...">
+                </div>
+                <div>
+                  <label class="form-label">Màu Nhận Diện Thương Hiệu:</label>
+                  <input type="color" id="adminBrandColor" class="form-input" value="#005bac" style="height: 42px; padding: 2px;">
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 80px 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <div>
+                  <label class="form-label">Icon:</label>
+                  <input type="text" id="adminBrandIcon" class="form-input text-center" value="🏷️">
+                </div>
+                <div>
+                  <label class="form-label">Badge Chuyên Môn:</label>
+                  <input type="text" id="adminBrandBadge" class="form-input" placeholder="Ví dụ: Cảm Biến & Rơ Le Công Nghiệp">
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1.25rem;">
+                <label class="form-label">Mô Tả Sản Phẩm Chủ Lực (Tagline):</label>
+                <input type="text" id="adminBrandTagline" class="form-input" placeholder="Ví dụ: Cảm biến quang, Cảm biến từ, Rơ le trung gian, Bộ nguồn tổ ong...">
+              </div>
+
+              <button class="btn-primary" id="btnAdminCreateBrand" style="width: 100%; background: #a855f7; border-color: #a855f7;">
+                ✨ KHỞI TẠO THƯƠNG HIỆU MỚI (RỖNG)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: CẬP NHẬT TÀI LIỆU & PHẦN MỀM -->
+      <div id="adminTabContentDocs" class="hidden">
+        <!-- Brand selector for docs & software -->
+        <div class="admin-card" style="margin-bottom: 1.5rem; background: var(--bg-secondary); border-color: var(--accent-blue);">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 0.6rem;">
+              <span style="font-size: 1.4rem;">🏢</span>
+              <div>
+                <div style="font-weight: 800; font-size: 1rem;">Thương Hiệu Đang Quản Lý Tài Liệu & Phần Mềm:</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Mọi tài liệu PDF, brochure hoặc phần mềm thêm vào sẽ gắn liền với thương hiệu này</div>
+              </div>
+            </div>
+            <select id="adminDocTargetBrand" class="form-input" style="max-width: 320px; font-weight: 700; color: var(--accent-blue);" onchange="handleAdminDocBrandChange(this.value)">
+              <!-- Render via JS -->
+            </select>
+          </div>
+        </div>
+
+        <div class="admin-grid">
+          <!-- Form A: Add / Upload Brochure & Catalog PDF -->
+          <div class="admin-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem; color: #ef4444; display: flex; align-items: center; gap: 0.5rem;">
+              <span>📄</span> <span>Thêm / Upload Tài Liệu & Catalog PDF</span>
+            </h3>
+
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Tiêu Đề Tài Liệu / Catalog:</label>
+              <input type="text" id="adminDocTitle" class="form-input" placeholder="Ví dụ: Catalog Đèn Tháp ST56EL 2026, Cẩm Nang Đo Lường...">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div>
+                <label class="form-label">Phân Loại Tài Liệu:</label>
+                <select id="adminDocCategory" class="form-input">
+                  <option value="Catalog Tổng Hợp">Catalog Tổng Hợp</option>
+                  <option value="Catalog Sản Phẩm">Catalog Sản Phẩm</option>
+                  <option value="Tài Liệu Đào Tạo">Tài Liệu Đào Tạo Nội Bộ</option>
+                  <option value="Hướng Dẫn Sử Dụng">Hướng Dẫn Sử Dụng (Manual)</option>
+                  <option value="Bản Vẽ Kích Thước">Bản Vẽ Kích Thước (2D/3D CAD)</option>
+                  <option value="Tài Liệu Báo Giá">Tài Liệu Báo Giá & Quy Chuẩn</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label">Kiểu Tài Liệu:</label>
+                <select id="adminDocType" class="form-input" onchange="toggleDocInputMode(this.value)">
+                  <option value="link">Đường Dẫn / File Nội Bộ</option>
+                  <option value="upload">Upload File Từ Máy Tính</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Phạm vi áp dụng catalog: Thư viện chung hay Gán đúng Series -->
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Phạm Vi Áp Dụng Tài Liệu:</label>
+              <select id="adminDocScope" class="form-input" onchange="toggleAdminDocScope(this.value)">
+                <option value="brand">🌐 Lưu vào Thư Viện Catalog chung của Hãng</option>
+                <option value="product">🎯 Gán trực tiếp vào nút [Xem Catalog] của 1 Series cụ thể</option>
+                <option value="both">⭐ Cả hai (Lưu Thư Viện + Gán vào nút [Xem Catalog] của Series)</option>
+              </select>
+            </div>
+
+            <!-- Dropdown chọn Series (Hiện khi chọn product hoặc both) -->
+            <div id="adminDocProductSelectGroup" class="hidden" style="margin-bottom: 0.75rem; background: var(--bg-secondary); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px dashed var(--accent);">
+              <label class="form-label" style="color: var(--accent); font-weight: 700;">🎯 Chọn Đúng Dòng / Series Cần Gán Nút [Xem Catalog]:</label>
+              <select id="adminDocTargetProduct" class="form-input" style="font-weight: 600;">
+                <!-- Render via JS: FX5U, FR-E800, CP1E, ZT411... -->
+              </select>
+              <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.35rem;">
+                💡 Khi chọn mục này, nút <b>"📄 Xem Catalog"</b> của đúng dòng sản phẩm đó sẽ mở file tài liệu này!
+              </div>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Mô Tả Tóm Tắt Nội Dung:</label>
+              <textarea id="adminDocDesc" class="form-input" rows="2" placeholder="Ví dụ: Tổng hợp toàn bộ catalog chính hãng, thông số kỹ thuật, sơ đồ đấu dây..."></textarea>
+            </div>
+
+            <!-- Path/Link input -->
+            <div id="adminDocLinkGroup" style="margin-bottom: 1.25rem;">
+              <label class="form-label">Đường Dẫn File Hoặc Link Web:</label>
+              <input type="text" id="adminDocLink" class="form-input" placeholder="Ví dụ: ../Signal Tower Lights_en.pdf hoặc https://...">
+              <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.25rem;">Có thể trỏ tới file PDF trong máy (như ../ten_file.pdf) hoặc link web chính hãng.</div>
+            </div>
+
+            <!-- File Upload input (Hidden by default) -->
+            <div id="adminDocFileGroup" class="hidden" style="margin-bottom: 1.25rem;">
+              <label class="form-label">Chọn File Tài Liệu (.pdf, .docx, .xlsx, .zip):</label>
+              <div class="csv-drop-zone" style="padding: 1.25rem 1rem;" onclick="document.getElementById('adminDocFileInput').click()">
+                <div class="csv-drop-icon" style="font-size: 1.8rem;">📎</div>
+                <div class="csv-drop-title" id="adminDocFileNameDisplay" style="font-size: 0.9rem;">Click để chọn file từ máy tính</div>
+                <div class="csv-drop-sub">File được nạp trực tiếp vào thư viện trình duyệt</div>
+                <input type="file" id="adminDocFileInput" accept=".pdf,.docx,.doc,.xlsx,.zip" style="display:none" onchange="handleAdminDocFilePicked(this)">
+              </div>
+            </div>
+
+            <button class="btn-primary" id="btnAdminSaveDoc" style="width: 100%; background: #ef4444; border-color: #ef4444;" onclick="saveAdminDocument()">
+              💾 LƯU TÀI LIỆU VÀO THƯ VIỆN
+            </button>
+          </div>
+
+          <!-- Form B: Add Software -->
+          <div class="admin-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;">
+              <span>💻</span> <span>Thêm Phần Mềm Kỹ Thuật Đi Kèm</span>
+            </h3>
+
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div>
+                <label class="form-label">Tên Phần Mềm:</label>
+                <input type="text" id="adminSoftName" class="form-input" placeholder="Ví dụ: GX Works3, USB-ITPAK, Sysmac...">
+              </div>
+              <div>
+                <label class="form-label">Phiên Bản (Ver):</label>
+                <input type="text" id="adminSoftVer" class="form-input" placeholder="Ví dụ: v1.095+">
+              </div>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Dòng Thiết Bị Hỗ Trợ (Target):</label>
+              <input type="text" id="adminSoftTarget" class="form-input" placeholder="Ví dụ: PLC FX5U, FX5UC (iQ-F), iQ-R Series...">
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Chức Năng Chính (Purpose):</label>
+              <textarea id="adminSoftPurpose" class="form-input" rows="2" placeholder="Ví dụ: Lập trình Ladder, SFC, ST; cấu hình tham số kéo thả..."></textarea>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <label class="form-label">Link Tải / Cài Đặt (Google Drive, OneDriver, Web hãng):</label>
+              <input type="text" id="adminSoftLink" class="form-input" placeholder="Ví dụ: https://drive.google.com/... hoặc link tải chính hãng">
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <label class="form-label">Lưu Ý Kỹ Thuật Khi Sử Dụng (Note):</label>
+              <textarea id="adminSoftNote" class="form-input" rows="2" placeholder="Ví dụ: Yêu cầu cài thêm gói iQ Works, tương thích Windows 10/11..."></textarea>
+            </div>
+
+            <button class="btn-primary" id="btnAdminSaveSoft" style="width: 100%;" onclick="saveAdminSoftware()">
+              💾 LƯU PHẦN MỀM VÀO HỆ THỐNG
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Preview of Documents & Software of Selected Brand -->
+        <div class="admin-card" style="margin-top: 1.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+              <span>📋</span> <span>Danh Sách Tài Liệu & Phần Mềm Hiện Có Của Hãng</span>
+            </h3>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <label for="adminDocPreviewBrandSelect" style="font-size: 0.8rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase;">Chọn Hãng Cần Xem:</label>
+              <select id="adminDocPreviewBrandSelect" class="form-input" style="width: auto; min-width: 220px; font-weight: 700; color: var(--accent); padding: 0.4rem 0.85rem; height: 38px; border-radius: var(--radius-sm); border-color: var(--accent);" onchange="onAdminDocPreviewBrandChange(this.value)">
+                <!-- Render via JS: Mitsubishi, Mitutoyo, Qlight, Omron... -->
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-blue); text-transform: uppercase; margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                <span>📄 Tài Liệu / Brochure</span>
+                <span id="adminDocsCount" style="color: var(--text-dim); font-size: 0.78rem;">0 mục</span>
+              </div>
+              <div id="adminDocsListContainer" style="max-height: 280px; overflow-y: auto;"></div>
+            </div>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                <span>💻 Phần Mềm Đi Kèm</span>
+                <span id="adminSoftCount" style="color: var(--text-dim); font-size: 0.78rem;">0 mục</span>
+              </div>
+              <div id="adminSoftListContainer" style="max-height: 280px; overflow-y: auto;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div> <!-- /.app-container -->
+
+      <!-- Footer -->
+      <footer style="border-top: 1px solid var(--border-color); padding: 1.25rem 1.75rem; text-align: center; font-size: 0.8rem; color: var(--text-dim); margin-top: auto; background: var(--bg-card);">
+        Hệ Thống Cẩm Nang & Tra Cứu Sản Phẩm Nội Bộ Đa Thương Hiệu • Kiến Trúc Module Động (Non-Fixed Engine) • DACO Portal 2026
+      </footer>
+    </main> <!-- /.main-content -->
+  </div> <!-- /.app-layout -->
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Tree In-Place Edit / Add Modal -->
+  <div class="modal-overlay" id="treeEditModal">
+    <div class="modal-card" style="max-width: 680px;">
+      <button class="modal-close" onclick="closeTreeEditModal()">&times;</button>
+      <div id="treeEditModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Supplier Profile & Purchasing Guide Modal -->
+  <div class="modal-overlay" id="supplierDetailModal">
+    <div class="modal-card" style="max-width: 880px; max-height: 90vh;">
+      <button class="modal-close" onclick="closeSupplierModal()">&times;</button>
+      <div id="supplierModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Product Edit Modal (In-place editing for any table row) -->
+  <div class="modal-overlay" id="productEditModal">
+    <div class="modal-card" style="max-width: 750px; max-height: 90vh;">
+      <button class="modal-close" onclick="closeProductEditModal()">&times;</button>
+      <div id="productEditModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Supplier Edit Modal (In-place editing for supplier profiles) -->
+  <div class="modal-overlay" id="supplierEditModal">
+    <div class="modal-card" style="max-width: 700px; max-height: 90vh;">
+      <button class="modal-close" onclick="closeSupplierEditModal()">&times;</button>
+      <div id="supplierEditModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastMessage">📋 Đã sao chép vào bộ nhớ tạm!</div>
+
+  <!-- Data Bundles (100% Offline Compatible without CORS restrictions) -->
+  <script src="data/brands.js"></script>
+  <script src="data/mitsubishi.js"></script>
+  <script src="data/mitutoyo.js"></script>
+  <script src="data/qlight.js"></script>
+  <script src="data/omron.js"></script>
+  <script src="data/autonics.js"></script>
+  <script src="data/patlite.js"></script>
+  <script src="data/brother.js"></script>
+  <script src="data/zebra.js"></script>
+  <script src="data/proface.js"></script>
+  <script src="data/xenang.js"></script>
+  <script src="data/quotation_scenarios.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

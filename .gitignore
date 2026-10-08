@@ -1,0 +1,13 @@
+# Test screenshots in root
+*.png
+!assets/images/**/*.png
+!assets/images/**/*.jpg
+!assets/images/**/*.svg
+
+# Python temp files
+__pycache__/
+*.pyc
+
+# Local IDE
+.vscode/
+.idea/

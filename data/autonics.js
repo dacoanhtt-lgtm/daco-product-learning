@@ -1,0 +1,1403 @@
+window.PORTAL_DATA_AUTONICS = {
+  "brand": "Autonics",
+  "products": [
+    {
+      "id": 1,
+      "cat": "Cảm biển",
+      "subcat": "cảm ứng",
+      "serial": "Autonics Dòng PR",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PR08-1.5DN",
+        "PR18-5DN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: cảm ứng",
+        "**Thông số/Quy cách**: Dòng - kt ren ngoài- kc phát hiện-ngõ ra (NPN)-chức năng ( NO/OFF)- điện áp V (12-24V)- cáp",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 2,
+      "cat": "Cảm biển",
+      "subcat": "đầu L, thẳng",
+      "serial": "Autonics Dòng PRD",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PRDL12-4DN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đầu L, thẳng",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 3,
+      "cat": "Cảm biển",
+      "subcat": "chống nhiễu, đầu phẳng",
+      "serial": "Autonics Dòng PRF/PRFD",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PRFD18-7DP-V"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: chống nhiễu, đầu phẳng",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 4,
+      "cat": "Cảm biển",
+      "subcat": "chống nhiễu",
+      "serial": "Autonics Dòng PRA/PRFA",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PRFAT30-10DO-V"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: chống nhiễu",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 5,
+      "cat": "Cảm biển",
+      "subcat": "siêu nhỏ gọn, siêu mini",
+      "serial": "Autonics Dòng PRW",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PRW08-1.5DP"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: siêu nhỏ gọn, siêu mini",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 6,
+      "cat": "Cảm biển",
+      "subcat": "bền, full vỏ làm bằng kim loại, chịu môi trường tốt",
+      "serial": "Autonics Dòng PRFD-K (New)",
+      "status": "Mới",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PRFDAT18-7DO-V"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: bền, full vỏ làm bằng kim loại, chịu môi trường tốt",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 7,
+      "cat": "Cảm biển",
+      "subcat": "hình khối",
+      "serial": "Autonics Dòng PS/PSN",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PSN17-5DN2"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: hình khối",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 8,
+      "cat": "Cảm biển",
+      "subcat": "điện dung/ dạng trụ",
+      "serial": "Autonics Dòng CR",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "CR30-15DN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: điện dung/ dạng trụ",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 9,
+      "cat": "Cảm biển",
+      "subcat": "siêu nhỏ, dạng phản xạ gương",
+      "serial": "Autonics Dòng BTF",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BTF15-BDTD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: siêu nhỏ, dạng phản xạ gương",
+        "**Thông số/Quy cách**: B: phản xạ gương, D:ngõ ra NPN, T có thể phát hiện vật, D: dark on/off",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 10,
+      "cat": "Cảm biển",
+      "subcat": "có đầu thu và phát rời",
+      "serial": "Autonics Dòng BTS",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BTS15-LDTD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: có đầu thu và phát rời",
+        "**Thông số/Quy cách**: L: đầu thu",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 11,
+      "cat": "Cảm biển",
+      "subcat": "phát hiện kim loại",
+      "serial": "Autonics Dòng BJ",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BJ10M-TDT"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: phát hiện kim loại",
+        "**Thông số/Quy cách**: T: dạng đầu thẳng, D: NPN, T: on thi phát hiện vật, F: on khi k phát hiện vật",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 12,
+      "cat": "Cảm biển",
+      "subcat": "cảm ứng từ , đầu ren M30",
+      "serial": "Autonics Dòng BEN",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BEN10M-TDT"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: cảm ứng từ , đầu ren M30",
+        "**Thông số/Quy cách**: tương tự",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 13,
+      "cat": "Cảm biển",
+      "subcat": "khuếch tán",
+      "serial": "Autonics Dòng BYD",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BYD100-DDT"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: khuếch tán",
+        "**Thông số/Quy cách**: k/c phát hiện tối đa 100cm, D: NPN, D: dòng đện 1 chiều DC",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 14,
+      "cat": "Cảm biển",
+      "subcat": "phản xạ khuếch tán k cần gương",
+      "serial": "Autonics Dòng BRQ",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BRQM100-DDTA"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: phản xạ khuếch tán k cần gương",
+        "**Thông số/Quy cách**: tương tự, A: đầu nối rời",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 15,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biển",
+      "serial": "Autonics Dòng BC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "Dòng BC"
+      ],
+      "replacement": "",
+      "points": [
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 16,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biến khuếch tán mini, siêu nhỏ",
+      "serial": "Autonics Dòng BS3/BS4/BS5",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BS3-F1M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Cảm biến khuếch tán mini, siêu nhỏ",
+        "**Thông số/Quy cách**: F: k cần gương, 1: kc phát hiện 100mm, M: kim loại",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 17,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biến khuếch đại cho dây sợi quang",
+      "serial": "Autonics Dòng BF3/ BF4 /BF5",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BF3RX"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Cảm biến khuếch đại cho dây sợi quang",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 18,
+      "cat": "Cảm biển",
+      "subcat": "Bộ khuếch đại có màn hình LED để thể hiện giá trị cường độ as",
+      "serial": "Autonics Dòng BFX",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BFX-D1-N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Bộ khuếch đại có màn hình LED để thể hiện giá trị cường độ as",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 19,
+      "cat": "Cảm biển",
+      "subcat": "Dòng cơ bản trong cảm biến quang",
+      "serial": "Autonics Dòng BFC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BFC-P"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Dòng cơ bản trong cảm biến quang",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 20,
+      "cat": "Cảm biển",
+      "subcat": "dđầu sợi quang, mắt quang phản xạ khuếch tán",
+      "serial": "Autonics Dòng BD",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BD-030"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: dđầu sợi quang, mắt quang phản xạ khuếch tán",
+        "**Thông số/Quy cách**: kc:30mm",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 21,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biển",
+      "serial": "Autonics Dòng BW",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "Dòng BW"
+      ],
+      "replacement": "",
+      "points": [
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 22,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biến vùng, dạng khối vuông",
+      "serial": "Autonics Dòng BWC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BWC40-04H"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Cảm biến vùng, dạng khối vuông",
+        "**Thông số/Quy cách**: kích thước, khoảng cách, H: kiểu lắp chìm, âm",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 23,
+      "cat": "Cảm biển",
+      "subcat": "phản xạ gương",
+      "serial": "Autonics Dòng BWP",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BWP20-08"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: phản xạ gương",
+        "**Thông số/Quy cách**: kc tối đa: 2m, 08: NPN",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 24,
+      "cat": "Cảm biển",
+      "subcat": "Loại phản xạ gương, chỉ cần 1 đầu",
+      "serial": "Autonics Dòng BWPK",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "BWPK25-05P"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Loại phản xạ gương, chỉ cần 1 đầu",
+        "**Thông số/Quy cách**: kc: 2.5m, 05: NPN",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 25,
+      "cat": "Cảm biển",
+      "subcat": "Đầu sợi quang rời, phát hiện trong MT hẹp, bé",
+      "serial": "Autonics Dòng LSC",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "LSC-C5CT3-ET"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Đầu sợi quang rời, phát hiện trong MT hẹp, bé",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 26,
+      "cat": "Cảm biển",
+      "subcat": "tương tự LSC nhưng cao cấp hơn",
+      "serial": "Autonics Dòng LSE2",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "LSE2-A5R2-ET"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: tương tự LSC nhưng cao cấp hơn",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 27,
+      "cat": "Cảm biển",
+      "subcat": "Bản nâng cấp hiện đại, chính xác cao, phản ứng nhanh",
+      "serial": "Autonics Dòng LSE3",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "LSE3-4A5R2-ET"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Bản nâng cấp hiện đại, chính xác cao, phản ứng nhanh",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 28,
+      "cat": "Cảm biển",
+      "subcat": "Dùng cho khí nén/ chân ko",
+      "serial": "Autonics Dòng PSQ",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PSQ-BC1-Rc1/8"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Dùng cho khí nén/ chân ko",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 29,
+      "cat": "Cảm biển",
+      "subcat": "đo dải áp suất",
+      "serial": "Autonics Dòng PSAN",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PSAN-1CA-R1/8"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đo dải áp suất",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 30,
+      "cat": "Cảm biển",
+      "subcat": "dòng cảm biến áp suất mini",
+      "serial": "Autonics Dòng PSS",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PSS-01A-R1/8"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: dòng cảm biến áp suất mini",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 31,
+      "cat": "Cảm biển",
+      "subcat": "dòng cảm biến & hiển thị áp suất đa kênh, nhiều điểm áp suất",
+      "serial": "Autonics Dòng PSM",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "PSM4-VD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: dòng cảm biến & hiển thị áp suất đa kênh, nhiều điểm áp suất",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 32,
+      "cat": "Cảm biển",
+      "subcat": "tương tự LSC nhưng cao cấp hơn",
+      "serial": "Autonics Dòng TPS20/ TPS30",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "TPS20-A13F8-00"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: tương tự LSC nhưng cao cấp hơn",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 33,
+      "cat": "Cảm biển",
+      "subcat": "encoder quay, size mini",
+      "serial": "Autonics Dòng Encoder tương đối: E18S/E20/E30S/E40, E50S/E58",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "E18S2-300-1-N-5-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: encoder quay, size mini",
+        "**Thông số/Quy cách**: dòng- số xung- số kênh ngõ- NPN-5VDC-hướng cáp",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 34,
+      "cat": "Cảm biển",
+      "subcat": "encoder quay, size tb",
+      "serial": "Autonics Dòng ENA/ENC/ENH",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "ENA-1-2-N-24"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: encoder quay, size tb",
+        "**Thông số/Quy cách**: tương tự/ 100 xung",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 35,
+      "cat": "Cảm biển",
+      "subcat": "encoder quay lại trục đặc",
+      "serial": "Autonics Dòng tuyệt đối: EP50S/EP58/ENP",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "EP50S6P-360-3F-N-5"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: encoder quay lại trục đặc",
+        "**Thông số/Quy cách**: trục đặc , kt 50mm, dk 6mm",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 36,
+      "cat": "Cảm biển",
+      "subcat": "Cảm biến bằng sóng siêu âm",
+      "serial": "Autonics Dòng UTR",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Không",
+      "models": [
+        "UTRCM18-1300"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Cảm biến bằng sóng siêu âm",
+        "⚠️ Cảnh báo thực chiến: Thị trường có hàng FAKE / nhái thương hiệu.",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 37,
+      "cat": "Đồng hồ",
+      "subcat": "Bộ điều khiển nhiệt độ",
+      "serial": "Autonics Dòng TK / TX / TC/ TCN",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "TK4M-T4RN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Bộ điều khiển nhiệt độ",
+        "**Thông số/Quy cách**: kt: 96x48mm",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 38,
+      "cat": "Đồng hồ",
+      "subcat": "đòng hồ  đo tốc độ và hướng quay",
+      "serial": "Autonics Dòng TN series",
+      "status": "Mới",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "TNL-P46SS-RS-035"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đòng hồ  đo tốc độ và hướng quay",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 39,
+      "cat": "Đồng hồ",
+      "subcat": "đo tốc độ, hiển thị tần số",
+      "serial": "Autonics Dòng THD series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "THD-D1-C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đo tốc độ, hiển thị tần số",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 40,
+      "cat": "Đồng hồ",
+      "subcat": "đoồng hồ hiển thị áp suất điện tử",
+      "serial": "Autonics Dòng DPU series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DPU12A-025N"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đoồng hồ hiển thị áp suất điện tử",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 41,
+      "cat": "Đồng hồ",
+      "subcat": "đồng hồ hiển thị tốc độ quay, tần số, tốc độ tuyến tính",
+      "serial": "Autonics Dòng SPR series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "SPR1-1100NFF"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: đồng hồ hiển thị tốc độ quay, tần số, tốc độ tuyến tính",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 42,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng SPRM series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "SPRM3-F110EC"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 43,
+      "cat": "Đồng hồ",
+      "subcat": "Bộ hẹn giờ",
+      "serial": "Autonics Dòng LE7M / LE8N / LE4S / FSE",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "LE7M-2B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: Bộ hẹn giờ",
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 44,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng ATM / ATS / ATN / ATE8",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ATS11-11D"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 45,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng ATS8SD-4 / ATS8W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ATS8W-11"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 46,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng CT / CX / LA8N / FXY",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng CT / CX / LA8N / FXY"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 47,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng CM6M",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng CM6M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 48,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng MT4Y / MT4W / MT4N / MX4W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng MT4Y / MT4W / MT4N / MX4W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 49,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng LR5N-B / MP5 series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng LR5N-B / MP5 series"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 50,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng KRN100/KRN1000",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng KRN100/KRN1000"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 51,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng SPB",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SPB"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 52,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng SPB-A",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SPB-A"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 53,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng GP-A",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng GP-A"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 54,
+      "cat": "Đồng hồ",
+      "subcat": "Đồng hồ",
+      "serial": "Autonics Dòng LP-A",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng LP-A"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 55,
+      "cat": "Động cơ",
+      "subcat": "Động cơ",
+      "serial": "Autonics Dòng 2-phase (Ngừng sản xuất)",
+      "status": "Ngừng sx",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "A2K / A3K series"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 56,
+      "cat": "Động cơ",
+      "subcat": "Động cơ",
+      "serial": "Autonics Dòng 5-phase",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "AK / AHK / AK-G / AK-GB / AK-R series"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 57,
+      "cat": "Động cơ",
+      "subcat": "Động cơ",
+      "serial": "Autonics Dòng 2-phase",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Ai-M / Ai-M-B / Ai-M-G / Ai-M-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 58,
+      "cat": "Động cơ",
+      "subcat": "Động cơ",
+      "serial": "Autonics Dòng PMC",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng PMC"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 59,
+      "cat": "Safety",
+      "subcat": "Safety",
+      "serial": "Autonics Dòng SFL/SFLA",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SFL/SFLA"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 60,
+      "cat": "Safety",
+      "subcat": "Safety",
+      "serial": "Autonics Dòng SFD/SFDL/SFDL2",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SFD/SFDL/SFDL2"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 61,
+      "cat": "Safety",
+      "subcat": "Safety",
+      "serial": "Autonics Dòng SFN",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SFN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 62,
+      "cat": "Safety",
+      "subcat": "Safety",
+      "serial": "Autonics Dòng SFEN",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SFEN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 63,
+      "cat": "Safety",
+      "subcat": "Safety",
+      "serial": "Autonics Dòng SF2KR",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng SF2KR"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 64,
+      "cat": "Camera",
+      "subcat": "Camera",
+      "serial": "Autonics Dòng VG",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng VG"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 65,
+      "cat": "Camera",
+      "subcat": "Camera",
+      "serial": "Autonics Dòng VC",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dòng VC"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Hợp Long, BA, HMV, NCC China, HCC HQ"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hợp Long, BA, HMV, NCC China, HCC HQ"
+    },
+    {
+      "id": 66,
+      "cat": "NCC",
+      "subcat": "NCC CHINA",
+      "serial": "Autonics Bảo An",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Minh Việt"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm nổi bật**: NCC CHINA",
+        "**Thông số/Quy cách**: NCC HÀN QUỐC",
+        "**Nhà cung cấp**: Hãng AUTONICS VINA"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://www.autonics.com/product/category/all",
+      "suppliers": "Hãng AUTONICS VINA"
+    }
+  ],
+  "history": [
+    {
+      "category": "Cảm Biến & Bộ Điều Khiển Autonics",
+      "steps": [
+        {
+          "era": "1995 - 2010",
+          "name": "Dòng PR / TZN / FX",
+          "status": "Kinh điển",
+          "badge": "classic",
+          "software": "Không dùng phần mềm",
+          "highlight": "Đặt nền móng thiết bị cảm biến và đồng hồ nhiệt độ giá cạnh tranh xuất xứ Hàn Quốc tại VN."
+        },
+        {
+          "era": "2010 - 2020",
+          "name": "Dòng PRFA / TK / CT",
+          "status": "Thông dụng",
+          "badge": "current",
+          "software": "DAQMaster v2",
+          "highlight": "Ra mắt cảm biến tiệm cận chống tia lửa hàn PRFA, bộ điều khiển nhiệt TK lấy mẫu 50ms."
+        },
+        {
+          "era": "2020 - Nay",
+          "name": "Dòng PRFD-K / TX / Modbus",
+          "status": "Chuẩn hiện hành",
+          "badge": "future",
+          "software": "DAQMaster v3.5+",
+          "highlight": "Tích hợp truyền thông công nghiệp, cảm biến vỏ kim loại toàn phần PRFD-K siêu bền."
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "DAQMaster",
+      "version": "v3.5+",
+      "target": "Bộ điều khiển nhiệt độ TK, TC, TX, Bộ đếm Timer CT, Bộ hiển thị xung",
+      "purpose": "Phần mềm thu thập dữ liệu (SCADA mini), vẽ biểu đồ nhiệt độ thời gian thực, sao lưu tham số.",
+      "note": "Kết nối máy tính qua bộ chuyển đổi USB-RS485 SCM-US485 của Autonics.",
+      "link": "https://www.autonics.com/support/download/software"
+    }
+  ],
+  "brochures": [
+    {
+      "title": "Autonics Sensors & Controllers Overview Catalog",
+      "category": "Catalog Tổng Hợp",
+      "desc": "Tổng hợp cảm biến quang, cảm biến tiệm cận, cảm biến áp suất, bộ điều khiển nhiệt độ Autonics.",
+      "link": "https://www.autonics.com/product/category/all",
+      "isLocal": false
+    }
+  ]
+};

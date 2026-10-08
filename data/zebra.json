@@ -1,0 +1,828 @@
+{
+  "brand": "Zebra",
+  "products": [
+    {
+      "id": 1,
+      "cat": "Máy in công nghiệp",
+      "subcat": "203 dpi, 300 dpi",
+      "serial": "Zebra ZT111",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT111"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tốc độ thấp 156mm/s",
+        "**Độ phân giải / Khổ in**: 203 dpi, 300 dpi",
+        "**Ứng dụng**: In tem nhãn số lượng lớn",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/us/en/products/printers/industrial/zt100-series.html",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 2,
+      "cat": "Máy in công nghiệp",
+      "subcat": "Máy in công nghiệp",
+      "serial": "Zebra ZT230",
+      "status": "Ngừng sx",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT230"
+      ],
+      "replacement": "Dòng ZT231 thay thế ZT230; ZT411 thay thế ZT410",
+      "points": [
+        "**Đặc điểm**: Ngừng sx",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 3,
+      "cat": "Máy in công nghiệp",
+      "subcat": "204 dpi, 300 dpi",
+      "serial": "Zebra ZT231/ZT231 RFID",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT231",
+        "ZT231 RFID"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Giá cả phải chăng nhất của Zebra. Tốc độ in nhanh",
+        "**Độ phân giải / Khổ in**: 204 dpi, 300 dpi",
+        "**Ứng dụng**: In hóa đơn, tem nhãn",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 4,
+      "cat": "Máy in công nghiệp",
+      "subcat": "Máy in công nghiệp",
+      "serial": "Zebra ZT410",
+      "status": "Ngừng sx",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT410"
+      ],
+      "replacement": "Dòng ZT231 thay thế ZT230; ZT411 thay thế ZT410",
+      "points": [
+        "**Đặc điểm**: Ngừng sx - còn bán đầu in",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 5,
+      "cat": "Máy in công nghiệp",
+      "subcat": "203 dpi, 300 dpi , 600 dpi \n6-inch\nMáy 17-30tr\nđầu in 7-8tr",
+      "serial": "Zebra ZT411/ZT421 ZT411/ZT421 RFID",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT411",
+        "ZT421",
+        "ZT411",
+        "ZT421 RFID"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Thông dụng cho nhiều ứng dụng in trong nhà máy, xưởng sx hiệu suất cao \nRFID và công nghệ Zebra DNA dành cho máy in,",
+        "**Độ phân giải / Khổ in**: 203 dpi, 300 dpi , 600 dpi \n6-inch\nMáy 17-30tr\nđầu in 7-8tr",
+        "**Ứng dụng**: In tem nhãn số lượng lớn, giải pháp quản lý RFID",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 6,
+      "cat": "Máy in công nghiệp",
+      "subcat": "204 dpi, 300 dpi , 600 dpi\nCông suất lớn, bền bỉ",
+      "serial": "Zebra ZT-510",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT-510"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Thông dụng cho nhiều ứng dụng in trong nhà máy, xưởng sx hiệu suất cao",
+        "**Độ phân giải / Khổ in**: 204 dpi, 300 dpi , 600 dpi\nCông suất lớn, bền bỉ",
+        "**Ứng dụng**: In tem nhãn số lượng lớn, giải pháp quản lý RFID",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 7,
+      "cat": "Máy in công nghiệp",
+      "subcat": "205 dpi, 300 dpi , 600 dpi\nNhãn  6-inch\n60 - hơn 100tr",
+      "serial": "Zebra ZT610/ZT620 ZT610/ZT620 RFID",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZT610",
+        "ZT620",
+        "ZT610",
+        "ZT620 RFID"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Thông dụng cho nhiều ứng dụng in trong nhà máy, xưởng sx hiệu suất cao",
+        "**Độ phân giải / Khổ in**: 205 dpi, 300 dpi , 600 dpi\nNhãn  6-inch\n60 - hơn 100tr",
+        "**Ứng dụng**: In tem nhãn số lượng lớn, giải pháp quản lý RFID",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 8,
+      "cat": "Máy in công nghiệp",
+      "subcat": "206 dpi, 300 dpi , 600 dpi\n8\" inch",
+      "serial": "Zebra 220Xi4",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "220Xi4"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Yêu cầu nhãn rộng hơn 6 inch",
+        "**Độ phân giải / Khổ in**: 206 dpi, 300 dpi , 600 dpi\n8\" inch",
+        "**Ứng dụng**: Nhu cầu in tem kích cỡ lơn",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 9,
+      "cat": "Máy in để bàn",
+      "subcat": "4 inch",
+      "serial": "Zebra ZD220",
+      "status": "Ngừng sx",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZD220"
+      ],
+      "replacement": "Dòng ZT231 thay thế ZT230; ZT411 thay thế ZT410",
+      "points": [
+        "**Đặc điểm**: Thay thế GC420 Ngừng sx",
+        "**Độ phân giải / Khổ in**: 4 inch",
+        "**Ứng dụng**: In hóa đơn, tem nhãn",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 10,
+      "cat": "Máy in để bàn",
+      "subcat": "203 dpi\n4 inch",
+      "serial": "Zebra ZD411/ZD411HC ZD421/ZD421HC",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZD411",
+        "ZD411HC",
+        "ZD421",
+        "ZD421HC"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Phụ kiện tùy chọn, ko tích hợp",
+        "**Độ phân giải / Khổ in**: 203 dpi\n4 inch",
+        "**Ứng dụng**: Chăm sóc sức khỏe, y tế",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 11,
+      "cat": "Máy in để bàn",
+      "subcat": "203 dpi (8 dot/mm), 300 dpi (12 dot/mm)\n4 inch",
+      "serial": "Zebra ZD611/ZD611HC/ZD611R ZD621/ZD621HC/ZD621R",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZD611",
+        "ZD611HC",
+        "ZD611R",
+        "ZD621",
+        "ZD621HC",
+        "ZD621R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Phụ kiện tùy chọn, ko tích hợp",
+        "**Độ phân giải / Khổ in**: 203 dpi (8 dot/mm), 300 dpi (12 dot/mm)\n4 inch",
+        "**Ứng dụng**: In hóa đơn, tem nhãn",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 12,
+      "cat": "Máy in để bàn",
+      "subcat": "300 dpi (12 dot/mm)",
+      "serial": "Zebra ZD510-HC",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZD510-HC"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Phụ kiện tùy chọn, ko tích hợp",
+        "**Độ phân giải / Khổ in**: 300 dpi (12 dot/mm)",
+        "**Ứng dụng**: In vòng tay - y tế",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 13,
+      "cat": "Máy in cầm tay",
+      "subcat": "Máy in cầm tay",
+      "serial": "Zebra ZQ610Plus/ZQ610 PlusHC ZQ620Plus/ZQ620 PlusHC ZQ630Plus/ZQ630 RFID Plus",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZQ610Plus",
+        "ZQ610 PlusHC",
+        "ZQ620Plus",
+        "ZQ620 PlusHC",
+        "ZQ630Plus",
+        "ZQ630 RFID Plus"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 14,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra ZC100 Card Printer",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZC100 Card Printer"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: In 1 mặt",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 15,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra ZC300 Card Printer",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZC300 Card Printer"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 16,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra ZC500 Card Printer",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZC500 Card Printer"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 17,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Sử dụng nhiều, dán ten liên tục trên dây chuyền",
+      "serial": "Zebra ZE511 và ZE521",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ZE511 và ZE521"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Lắp đặt trên dây chuyền tự động",
+        "**Ứng dụng**: Sử dụng nhiều, dán ten liên tục trên dây chuyền",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 18,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Bộ Cắt tự động",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Bộ Cắt tự động"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tùy chọn nếu ko tích hợp",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 19,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Bộ lột tự động",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Bộ lột tự động"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tùy chọn nếu ko tích hợp",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 20,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Kết nối wifi/blutooth",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Kết nối wifi",
+        "blutooth"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tùy chọn nếu ko tích hợp",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 21,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Trục lô",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Trục lô"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 22,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Tùy theo nhà cung cấp",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Tùy theo nhà cung cấp"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: - Nhãn liền, nhãn bế - tư vấn máy có bộ cắt \n- Chất liệu : Giấy in nhiệt, giấy phủ PVC, giấy phủ bạc...\n- Kich thước : Khả năng máy in có thể đáp ứng\n- Số lượng : bao nhiêu tem/cuộn,, đường kính cuộn tem đang dùng, số lượng dùng hàng ngày/ hàng tháng",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 23,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Mực in WAX, WAX/RESIN, RESIN",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Mực in WAX",
+        "WAX",
+        "RESIN",
+        "RESIN"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tùy vào độ bền yêu cầu",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 24,
+      "cat": "Máy in thẻ nhựa màu",
+      "subcat": "Máy in thẻ nhựa màu",
+      "serial": "Zebra Nhãn, thẻ RFID",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Nhãn",
+        "thẻ RFID"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 25,
+      "cat": "Máy quét cầm tay đa năng",
+      "subcat": "Kiểm kho, bán hàng. xuất nhâp",
+      "serial": "Zebra DS8178-SR DS457-HD DS4608-SR DS8178 DS4678 DS2278",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DS8178-SR",
+        "DS457-HD",
+        "DS4608-SR",
+        "DS8178",
+        "DS4678",
+        "DS2278"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Không dây - Blutooth\nCó dây  Kết nối USB/RS232",
+        "**Ứng dụng**: Kiểm kho, bán hàng. xuất nhâp",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 26,
+      "cat": "Máy quét cầm tay đa năng",
+      "subcat": "Máy quét cầm tay đa năng",
+      "serial": "Zebra LI4278",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "LI4278"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Máy quét không dây",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 27,
+      "cat": "Máy quét rảnh tay đa năng",
+      "subcat": "Kiểm kho, bán hàng",
+      "serial": "Zebra DS9308 DS3678SR",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DS9308",
+        "DS3678SR"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Gắn cố định, để bàn, nhỏ gọn",
+        "**Ứng dụng**: Kiểm kho, bán hàng",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 28,
+      "cat": "Máy quét gắn cố định",
+      "subcat": "Máy quét gắn cố định",
+      "serial": "Zebra DS55 Series DS457 Fixed Mount Symbol Miniscan MS954 Fixed Mount",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DS55 Series",
+        "DS457 Fixed Mount",
+        "Symbol Miniscan MS954 Fixed Mount"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 29,
+      "cat": "Máy quét mã vạch siêu bền",
+      "subcat": "Máy quét mã vạch siêu bền",
+      "serial": "Zebra Máy quét mã vạch siêu bền",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Máy quét mã vạch siêu bền"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 30,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Máy quét mã vạch ngành y tế",
+      "serial": "Zebra Máy quét mã vạch ngành y tế",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Máy quét mã vạch ngành y tế"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 31,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Kết nối Wifi, Blutooth, 5G\nKích thươc màn hình từ 5 icnh",
+      "serial": "Zebra TC21 TC22 TC27",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "TC21",
+        "TC22",
+        "TC27"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tích hợp phần mềm kiểm kho, phần mềm bán hàng, cập nhật thời gian thực, tính di dộng cao",
+        "**Độ phân giải / Khổ in**: Kết nối Wifi, Blutooth, 5G\nKích thươc màn hình từ 5 icnh",
+        "**Ứng dụng**: Quản lý hàng tồn kho\nĐiểm bán hàng di động \nHỗ trợ tại lối đi, kiểm tra sản phẩm và giá cả\nHoạt động cửa hàng và quản lý nhiệm vụ\nThực hiện đơn hàng (BOPIS/BOPAC)",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 32,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Máy quét mã vạch ngành y tế",
+      "serial": "Zebra Gắn trên xe",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Gắn trên xe"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 33,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Máy quét mã vạch ngành y tế",
+      "serial": "Zebra Máy tính đeo được",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Máy tính đeo được"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 34,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Máy quét mã vạch ngành y tế",
+      "serial": "Zebra Dành cho ngành y tế",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Dành cho ngành y tế"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 35,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Máy quét mã vạch ngành y tế",
+      "serial": "Zebra ET4 Series ET4-HC Series ET6 Series ET8 Series",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "ET4 Series",
+        "ET4-HC Series",
+        "ET6 Series",
+        "ET8 Series"
+      ],
+      "replacement": "",
+      "points": [
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    },
+    {
+      "id": 36,
+      "cat": "Máy quét mã vạch ngành y tế",
+      "subcat": "Ngân Giang",
+      "serial": "Zebra Tân Hưng Hà",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "Tân Hưng Hà"
+      ],
+      "replacement": "",
+      "points": [
+        "**Đặc điểm**: Tân Phát",
+        "**Độ phân giải / Khổ in**: Ngân Giang",
+        "**Ứng dụng**: Hồng Kim Phát",
+        "**Nhà cung cấp**: Việt Á, Baso, Tân Phát"
+      ],
+      "software": "ZebraDesigner 3",
+      "brochure": "https://www.zebra.com/",
+      "suppliers": "Việt Á, Baso, Tân Phát, Tân Hưng Hà"
+    }
+  ],
+  "history": [
+    {
+      "category": "Máy In Mã Vạch Công Nghiệp Zebra",
+      "steps": [
+        {
+          "era": "2000 - 2014",
+          "name": "S4M / ZM400 / 105SL",
+          "status": "Đã khai tử",
+          "badge": "discontinued",
+          "software": "ZebraDesigner v2",
+          "highlight": "Bộ khung kim loại bền bỉ nổi tiếng, hoạt động liên tục 24/7 trong các kho vận Logistics."
+        },
+        {
+          "era": "2014 - 2021",
+          "name": "ZT410 / ZT230 / GT800",
+          "status": "Thông dụng",
+          "badge": "classic",
+          "software": "ZebraDesigner 3",
+          "highlight": "Dòng máy in công nghiệp bán chạy nhất lịch sử Zebra, tốc độ in 14 ips, chuẩn mực ngành barcode."
+        },
+        {
+          "era": "2021 - Nay",
+          "name": "ZT411 / ZT231 / ZD421",
+          "status": "Chuẩn hiện hành",
+          "badge": "current",
+          "software": "Print DNA / Link-OS",
+          "highlight": "Màn hình cảm ứng màu 4.3 inch trực quan, hỗ trợ mã hóa RFID và kết nối đám mây từ xa."
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "ZebraDesigner 3",
+      "version": "v3.2+",
+      "target": "Máy in mã vạch công nghiệp ZT series, máy in để bàn ZD series",
+      "purpose": "Thiết kế tem nhãn mã vạch 1D, 2D QR Code, Datamatrix, liên kết cơ sở dữ liệu in tem hàng loạt.",
+      "note": "Bản Standard miễn phí kèm theo máy, bản Professional hỗ trợ kết nối SQL/ODBC chuyên sâu.",
+      "link": "https://www.zebra.com/us/en/support-downloads/printer-software/zebradesigner.html"
+    }
+  ],
+  "brochures": [
+    {
+      "title": "Zebra Industrial Printers Portfolio Guide",
+      "category": "Catalog Tổng Hợp",
+      "desc": "Tổng hợp các dòng máy in tem nhãn mã vạch công nghiệp ZT111, ZT231, ZT411, ZT610.",
+      "link": "https://www.zebra.com/us/en/products/printers/industrial.html",
+      "isLocal": false
+    }
+  ]
+}

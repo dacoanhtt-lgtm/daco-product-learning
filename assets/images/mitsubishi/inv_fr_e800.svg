@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="inv_body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="100%" stop-color="#171923"/>
+    </linearGradient>
+    <linearGradient id="inv_heatsink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a5568"/>
+      <stop offset="100%" stop-color="#2d3748"/>
+    </linearGradient>
+  </defs>
+  <!-- Main Housing -->
+  <rect x="70" y="10" width="260" height="260" rx="8" fill="url(#inv_body)" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Red Top Accent Bar -->
+  <rect x="70" y="10" width="260" height="8" rx="3" fill="#e60012"/>
+
+  <!-- Brand Label -->
+  <text x="85" y="34" fill="#f8fafc" font-size="12" font-weight="900" font-family="Arial, sans-serif">MITSUBISHI ELECTRIC</text>
+  <text x="85" y="48" fill="#e60012" font-size="13" font-weight="bold" font-family="Arial, sans-serif">FREQROL-E800</text>
+
+  <!-- Digital Parameter Unit Display Panel -->
+  <rect x="85" y="58" width="230" height="95" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- 7-Segment LED Display (showing 50.00 Hz) -->
+  <rect x="95" y="68" width="110" height="38" rx="3" fill="#020617" stroke="#1e293b"/>
+  <text x="105" y="96" fill="#ef4444" font-size="24" font-weight="bold" font-family="monospace" letter-spacing="2">50.00</text>
+  <text x="180" y="80" fill="#22c55e" font-size="8" font-family="sans-serif">Hz</text>
+  <text x="180" y="92" fill="#64748b" font-size="8" font-family="sans-serif">RUN</text>
+
+  <!-- Rotary Digital Dial Keypad -->
+  <circle cx="265" cy="88" r="22" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <circle cx="265" cy="88" r="8" fill="#334155"/>
+  <line x1="265" y1="68" x2="265" y2="76" stroke="#f8fafc" stroke-width="2"/>
+
+  <!-- Keypad Buttons -->
+  <rect x="95" y="115" width="45" height="24" rx="3" fill="#1e293b" stroke="#475569"/>
+  <text x="105" y="131" fill="#94a3b8" font-size="9" font-family="sans-serif" font-weight="bold">MODE</text>
+
+  <rect x="150" y="115" width="45" height="24" rx="3" fill="#1e293b" stroke="#475569"/>
+  <text x="162" y="131" fill="#94a3b8" font-size="9" font-family="sans-serif" font-weight="bold">SET</text>
+
+  <rect x="205" y="115" width="50" height="24" rx="3" fill="#15803d" stroke="#22c55e"/>
+  <text x="218" y="131" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold">RUN</text>
+
+  <rect x="265" y="115" width="45" height="24" rx="3" fill="#991b1b" stroke="#ef4444"/>
+  <text x="273" y="131" fill="#ffffff" font-size="8" font-family="sans-serif" font-weight="bold">STOP</text>
+
+  <!-- Dual Ethernet RJ45 Ports (CC-Link IE TSN / Modbus TCP) -->
+  <rect x="85" y="162" width="230" height="50" rx="4" fill="#111827" stroke="#334155"/>
+  <text x="95" y="177" fill="#38bdf8" font-size="9" font-weight="bold" font-family="sans-serif">DUAL ETHERNET (PORT 1 &amp; 2)</text>
+  <rect x="100" y="183" width="28" height="22" rx="2" fill="#020617" stroke="#64748b"/>
+  <rect x="140" y="183" width="28" height="22" rx="2" fill="#020617" stroke="#64748b"/>
+  <text x="180" y="198" fill="#94a3b8" font-size="8" font-family="sans-serif">CC-Link IE TSN / Modbus</text>
+
+  <!-- Lower Terminal Cover & Cooling Fins -->
+  <rect x="85" y="220" width="230" height="42" rx="4" fill="url(#inv_heatsink)" stroke="#334155"/>
+  <line x1="95" y1="230" x2="305" y2="230" stroke="#1f2937" stroke-width="2"/>
+  <line x1="95" y1="240" x2="305" y2="240" stroke="#1f2937" stroke-width="2"/>
+  <line x1="95" y1="250" x2="305" y2="250" stroke="#1f2937" stroke-width="2"/>
+  <text x="120" y="246" fill="#cbd5e1" font-size="10" font-weight="bold" font-family="monospace">FR-E820-0.75K-1</text>
+</svg>

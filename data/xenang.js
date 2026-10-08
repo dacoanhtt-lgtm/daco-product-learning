@@ -1,0 +1,970 @@
+window.PORTAL_DATA_XENANG = {
+  "brand": "An Toàn Xe Nâng & Cầu Trục",
+  "products": [
+    {
+      "id": 1,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu đỏ 18W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-8185R-18W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-8185R-18W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 2,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu xanh blue 18W",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-8185B-18W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-8185B-18W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 3,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu đỏ 30W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-8185R-30W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-8185R-30W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 4,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu xanh blue 30W",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-8185B-30W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-8185B-30W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 5,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu đỏ 18W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-TPB18W-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-TPB18W-R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 6,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu xanh blue 18W",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-TPB18W-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-TPB18W-B",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 7,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu đỏ 18W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-TPBL18W-03-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-TPBL18W-03-R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 8,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED dạng thanh màu xanh blue 18W",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-TPBL18W-03-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-TPBL18W-03-B",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 9,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED vòng cung chữ U",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZUL-1081M-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZUL-1081M-B",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 10,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED vòng cung chữ U",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZUL-1081M-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZUL-1081M-R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 11,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED vòng cung chữ U",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZUL-1081M-G"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZUL-1081M-G",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 12,
+      "cat": "Đèn vạch vùng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED (  Tia sáng mảnh )",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZBL-TPJG02"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZBL-TPJG02",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 13,
+      "cat": "Đèn rọi điểm  ( hình tròn )",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn rọi điểm màu đỏ",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSL-8107-R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSL-8107-R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 14,
+      "cat": "Đèn rọi điểm  ( hình tròn )",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn rọi điểm màu xanh blue",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSL-8107-B"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSL-8107-B",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 15,
+      "cat": "Đèn cầu trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED chiếu sáng cảnh báo vùng làm việc của cầu trục 140W",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "CRSZSLBL14L-140W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: CRSZSLBL14L-140W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 16,
+      "cat": "Đèn cầu trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED chiếu sáng cảnh báo vùng làm việc của cầu trục 120W",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "CRSZSLBL24L-120W"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: CRSZSLBL24L-120W",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 17,
+      "cat": "Đèn cầu trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn LED chiếu sáng (dạng tròn ), dùng cho cầu trục chiều cao 20m, 30m",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "CRSZSL-TP9310R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: CRSZSL-TP9310R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 18,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera lắp càng xe nâng loại có tia laser",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCWHD-23A2M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCWHD-23A2M",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 19,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera lắp càng không có tia laser",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCWHD-232M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCWHD-232M",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 20,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera lắp khung càng xe nâng",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCWHD-152M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCWHD-152M",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 21,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Màn hình không dây 7inch",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMWHD-774HD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMWHD-774HD",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 22,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "PIN cho Camera gắn càng, khung xe nâng dùng 8h",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMP-01A10W1"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMP-01A10W1",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 23,
+      "cat": "Camera Xe Nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "PIN cho Camera gắn càng, khung xe nâng dùng 32h",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMP-03B10W1"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMP-03B10W1",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 24,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Màn hình có dây 7inch ( Chỉ dùng được với 1 Camera AI )",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMHD-761"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMHD-761",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 25,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera AI có dây",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCHD-122MAI"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCHD-122MAI",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 26,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Màn hình có dây 7inch ( Kết nối tối đa 4 Camera AI )",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMHD-7154MJ"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMHD-7154MJ",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 27,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera AI có dây",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCHD-122MAI1"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCHD-122MAI1",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 28,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera AI có dây",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCHD-122MAI2"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCHD-122MAI2",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 29,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera AI có dây",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCHD-122MAI3"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCHD-122MAI3",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 30,
+      "cat": "Camera AI Phát hiện người hoặc vật di chuyển",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera AI có dây",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCHD-122MAI4"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCHD-122MAI4",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 31,
+      "cat": "Camera Cầu Trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Màn hình camera không dây 1080P 10.1 inch",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMWHD-1024SHD"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMWHD-1024SHD",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 32,
+      "cat": "Camera Cầu Trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera zoom 30x không dây kỹ thuật số 1080P",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCWHD-672M"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCWHD-672M",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 33,
+      "cat": "Camera Cầu Trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Pin sạc di động 30000mAh, DC12V",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCMP-03B10W2"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCMP-03B10W2",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 34,
+      "cat": "Camera Cầu Trục",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Camera zoom 30x không dây kỹ thuật số 1080P Kèm gạt mưa",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "DCCWHD-672MW"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: DCCWHD-672MW",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 35,
+      "cat": "Bộ cảnh báo va chạm 360 độ cho xe nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Bộ điều khiển cảnh báo chống va chạm, cảnh báo tốc độ xe nâng 360 độ",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSF-112"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSF-112",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 36,
+      "cat": "Bộ cảnh báo va chạm 360 độ cho xe nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Thẻ cảnh báo đeo người",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZPTag-UT-241-C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZPTag-UT-241-C",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 37,
+      "cat": "Bộ cảnh báo va chạm 360 độ cho xe nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Thẻ cảnh báo đeo tay",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZPTag-UT-206-H"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZPTag-UT-206-H",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 38,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Hệ thống cảnh báo chống va chạm xe nâng 360 độ, Tác động đèn còi Ptag",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSF-540"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSF-540",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 39,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Hệ thống cảnh báo chống va chạm xe nâng 360 độ, Góc khuất, Tác động Thẻ Ptag",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSF-540D"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSF-540D",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 40,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Hệ thống cảnh báo chống va chạm xe nâng 360 độ Xuất tín hiệu Relay, Tác động Thẻ Ptag",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSF-540DRL"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSF-540DRL",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 41,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Đèn tích hợp thẻ cảnh báo",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZPTag-SF-901R"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZPTag-SF-901R",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 42,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Thẻ cảnh báo đeo người",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZPTag-UT-241-C"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZPTag-UT-241-C",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 43,
+      "cat": "Bộ cảnh báo góc khuất trong NM",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Thẻ cảnh báo đeo tay",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZPTag-UT-206-H"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZPTag-UT-206-H",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    },
+    {
+      "id": 44,
+      "cat": "Bộ cảnh báo tốc độ xe nâng",
+      "subcat": "Hệ thống cảnh báo an toàn nhà xưởng DACO",
+      "serial": "Cảnh báo tốc độ xe nâng",
+      "status": "Hiếm",
+      "fake": "Không",
+      "renew": "Không",
+      "models": [
+        "FLSZSF-102"
+      ],
+      "replacement": "",
+      "points": [
+        "**Mã sản phẩm**: FLSZSF-102",
+        "**Chuyên dụng**: Lắp đặt an toàn cho xe nâng hàng, cầu trục công xưởng",
+        "**Nhà cung cấp**: DACO, VTH, VIETMRO"
+      ],
+      "software": "Không dùng",
+      "brochure": "https://daco.vn/",
+      "suppliers": "DACO, VTH, VIETMRO"
+    }
+  ],
+  "history": [
+    {
+      "category": "Hệ Thống An Toàn Xe Nâng & Cầu Trục",
+      "steps": [
+        {
+          "era": "2010 - 2018",
+          "name": "Còi Lùi & Đèn Chớp Cơ Bản",
+          "status": "Kinh điển",
+          "badge": "classic",
+          "software": "Đấu nối nguồn 12-48V",
+          "highlight": "Các giải pháp cảnh báo truyền thống dùng còi lùi tít tít và đèn chớp gắn nóc xe nâng."
+        },
+        {
+          "era": "2018 - Nay",
+          "name": "Đèn Vạch Vùng & Đèn Rọi Điểm LED",
+          "status": "Chuẩn hiện hành",
+          "badge": "current",
+          "software": "Quang học LED",
+          "highlight": "Chiếu vạch LED đỏ/xanh bao quanh thân xe nâng và điểm rọi cảnh báo trước mũi xe 3-5m."
+        },
+        {
+          "era": "2022 - Nay",
+          "name": "Camera AI Nhận Diện Người 360",
+          "status": "Thế hệ mới",
+          "badge": "future",
+          "software": "AI Computer Vision",
+          "highlight": "Camera AI phân biệt chính xác con người, tự động phát âm thanh cảnh báo và kích hoạt phanh."
+        }
+      ]
+    }
+  ],
+  "software": [],
+  "brochures": [
+    {
+      "title": "DACO Forklift Safety Solutions Catalog",
+      "category": "Catalog Sản Phẩm",
+      "desc": "Tổng hợp giải pháp đèn vạch an toàn, camera AI phát hiện người đi bộ và hệ thống chống va chạm xe nâng.",
+      "link": "https://daco.vn/",
+      "isLocal": false
+    }
+  ]
+};

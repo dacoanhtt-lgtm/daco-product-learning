@@ -1,0 +1,181 @@
+{
+  "brand": "Mitutoyo",
+  "software": [
+    {
+      "name": "USB-ITPAK",
+      "version": "v2.1+",
+      "target": "Thước cặp, Panme, Đồng hồ so có cổng dữ liệu Digimatic",
+      "purpose": "Thu thập dữ liệu đo lường tự động từ thước vào bảng tính Excel chỉ bằng 1 nút bấm trên dây cáp",
+      "note": "Tiết kiệm 80% thời gian nhập liệu thủ công trong phòng QC, loại bỏ hoàn toàn lỗi gõ nhầm số."
+    },
+    {
+      "name": "MeasurLink",
+      "version": "v9.0+ (SPC Real-Time)",
+      "target": "Toàn bộ hệ thống thiết bị đo Mitutoyo kết nối mạng nhà máy",
+      "purpose": "Phần mềm quản lý chất lượng thống kê (SPC), giám sát dung sai sai số kích thước sản phẩm theo thời gian thực",
+      "note": "Tiêu chuẩn bắt buộc trong các nhà máy sản xuất linh kiện ô tô, hàng không vũ trụ và y tế."
+    }
+  ],
+  "history": [
+    {
+      "category": "Thước Cặp Đo Cơ Khí (Calipers)",
+      "steps": [
+        {
+          "era": "Cổ điển",
+          "name": "Thước Cặp Cơ Khí (Series 530)",
+          "status": "Thông dụng",
+          "badge": "current",
+          "software": "Không dùng",
+          "highlight": "Vạch chia khắc laser 0.02mm, siêu bền bỉ không lo hết pin"
+        },
+        {
+          "era": "Kinh điển",
+          "name": "Thước Cặp Đồng Hồ (Series 505)",
+          "status": "Thông dụng",
+          "badge": "current",
+          "software": "Không dùng",
+          "highlight": "Mặt đồng hồ kim hiển thị trực quan 0.01mm, chống va đập"
+        },
+        {
+          "era": "Hiện đại",
+          "name": "Thước Cặp Điện Tử (Series 500 - AOS)",
+          "status": "Chủ lực số 1",
+          "badge": "current",
+          "software": "USB-ITPAK",
+          "highlight": "Màn hình LCD 0.01mm, công nghệ cảm biến AOS chống bụi bẩn nước bắn"
+        },
+        {
+          "era": "Môi trường khắc nghiệt",
+          "name": "Thước Điện Tử Chống Nước IP67 (Series 500-702)",
+          "status": "Chuẩn cao cấp",
+          "badge": "future",
+          "software": "USB-ITPAK",
+          "highlight": "Chống ngâm dầu làm mát và nước rửa phôi gia công CNC đạt chuẩn IP67"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "cat": "Thước Cặp",
+      "subcat": "Thước cặp điện tử tiêu chuẩn AOS (Bán chạy nhất)",
+      "serial": "Digimatic Caliper 500-196-30 / 500-197-30",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "500-196-30",
+        "500-197-30",
+        "500-193-30"
+      ],
+      "replacement": "Dòng hiện hành chủ lực của Mitutoyo",
+      "software": "USB-ITPAK (Cần mua cáp cắm)",
+      "brochure": "https://www.mitutoyo.com/products/calipers/standard-calipers/",
+      "points": [
+        "**Bản chất**: Cảm biến điện từ trường AOS (Advanced Onsite Sensor) chống bụi bẩn mạt kim loại; độ chia 0.01mm.",
+        "**Ứng dụng**: Đo kích thước ngoài, đo lỗ trong, đo chiều sâu và đo bậc của mọi chi tiết cơ khí chính xác.",
+        "**TÂM ĐIỂM FAKE SỐ 1**: 500-196-30 là mã thước bị làm FAKE nhiều nhất thị trường Việt Nam!",
+        "**Cách phân biệt Fake**: Thước xịn dùng pin oxit bạc SR44 (hàng fake dùng pin kiềm LR44 rẻ tiền); font số LCD thước xịn nét thanh mảnh, di chuyển mượt mà không bị khựng."
+      ],
+      "suppliers": "Tuyến 1: Tinh Hà, Insize (NPP chính hãng Mitutoyo) | Tuyến 2: Khang Thịnh, kho thước bãi"
+    },
+    {
+      "id": 102,
+      "cat": "Thước Cặp",
+      "subcat": "Thước cặp điện tử chống nước dầu làm mát IP67",
+      "serial": "Coolant Proof Caliper 500-702-20 / 500-703-20",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "500-702-20",
+        "500-703-20",
+        "500-704-20"
+      ],
+      "replacement": "Dòng chuẩn đo gá ngay trên máy phay/tiện CNC",
+      "software": "USB-ITPAK",
+      "brochure": "https://www.mitutoyo.com/products/calipers/coolant-proof-calipers/",
+      "points": [
+        "**Bản chất**: Đạt tiêu chuẩn bảo vệ quốc tế IP67, chống ngâm nước và dầu làm mát dập phôi.",
+        "**Ứng dụng**: Đo kích thước phôi trực tiếp trên bàn máy CNC đang phun dung dịch trơn nguội.",
+        "**Ưu điểm**: Không cần lau khô thước khi đo; cảm biến chống nhiễu từ trường cực tốt.",
+        "**Thực chiến**: Giá cao hơn dòng thường 30-40%; kiểm tra nắp pin có gioăng cao su tròn màu cam đệm kín."
+      ],
+      "suppliers": "Tuyến 1: Tinh Hà (NPP chính ngạch) | Tuyến 2: Các đại lý thiết bị đo miền Bắc"
+    },
+    {
+      "id": 103,
+      "cat": "Panme",
+      "subcat": "Panme đo ngoài cơ khí tiêu chuẩn",
+      "serial": "Outside Micrometer Series 103",
+      "status": "Thông dụng",
+      "fake": "Không",
+      "renew": "Có",
+      "models": [
+        "103-137",
+        "103-138",
+        "103-139",
+        "103-140"
+      ],
+      "replacement": "Dòng cơ khí kinh điển",
+      "software": "Không dùng",
+      "brochure": "https://www.mitutoyo.com/products/micrometers/outside-micrometers/",
+      "points": [
+        "**Bản chất**: Bề mặt đo bằng hợp kim Carbide chống mài mòn, độ chia vạch 0.01mm (hoặc 0.001mm với bản phụ du xích).",
+        "**Ứng dụng**: Đo đường kính ngoài trục tròn, độ dày tấm kim loại, dây đồng với độ chính xác cao.",
+        "**Đặc điểm**: Bền bỉ, dùng cơ cấu cóc xoay bánh cóc (ratchet stop) giữ lực ép đo đồng đều.",
+        "**Thực chiến**: Hàng renew tháo máy thanh lý khá nhiều; kiểm tra đầu đo hợp kim xem có bị mẻ hoặc xước lõm không."
+      ],
+      "suppliers": "Tuyến 1: Tinh Hà, Insize | Tuyến 2: Kho bãi dụng cụ đo"
+    },
+    {
+      "id": 104,
+      "cat": "Panme",
+      "subcat": "Panme đo ngoài điện tử chính xác cao",
+      "serial": "Digimatic Micrometer 293-240-30",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "293-240-30",
+        "293-241-30",
+        "293-242-30"
+      ],
+      "replacement": "Chuẩn phòng QC và xưởng CNC cao cấp",
+      "software": "USB-ITPAK",
+      "brochure": "https://www.mitutoyo.com/products/micrometers/outside-micrometers/",
+      "points": [
+        "**Bản chất**: Độ chính xác siêu cao ±1 µm; độ chia điện tử 0.001mm (1 micron); chuẩn chống nước IP65.",
+        "**Ứng dụng**: Đo chi tiết gia công siêu chính xác, dưỡng gá, chi tiết khuôn mẫu, trục bạc đạn.",
+        "**Cảnh báo Fake**: Đã có hàng giả bo mạch từ TQ; nút bấm lỏng lẻo, số nhảy lung tung khi xiết cóc xoay.",
+        "**Tư vấn**: Luôn bán kèm thanh chuẩn mẫu (Setting Standard) đi kèm hộp để hiệu chuẩn điểm Zero."
+      ],
+      "suppliers": "Tuyến 1: Tinh Hà (CO/CQ chính hãng) | Tuyến 2: Khang Thịnh"
+    },
+    {
+      "id": 105,
+      "cat": "Đồng Hồ So",
+      "subcat": "Đồng hồ so cơ khí tiêu chuẩn hành trình 10mm",
+      "serial": "Dial Indicator Series 2046S / 2109S",
+      "status": "Thông dụng",
+      "fake": "Có",
+      "renew": "Có",
+      "models": [
+        "2046S",
+        "2046SB",
+        "2109S"
+      ],
+      "replacement": "Đồng hồ so chuẩn công nghiệp",
+      "software": "Không dùng",
+      "brochure": "https://www.mitutoyo.com/products/dial-indicators/",
+      "points": [
+        "**Bản chất**: Trục đo gắn đầu bi carbide, cơ cấu bánh răng đá sapphire giảm ma sát, chống sốc.",
+        "**Ứng dụng**: Rà mặt phẳng phôi, rà độ đảo trục tròn tâm máy tiện, đo độ đồng phẳng đồ gá.",
+        "**Phân biệt đuôi mã**: Đuôi -S có tai móc sau lưng (Lug back); đuôi -SB là nắp lưng phẳng (Flat back).",
+        "**Cảnh báo Fake**: 2046S bị làm giả rất nhiều; hàng nhái kim đo giật cục và mặt kính nhựa dễ trầy xước."
+      ],
+      "suppliers": "Tuyến 1: Tinh Hà | Tuyến 2: Các cửa hàng dụng cụ cắt gọt"
+    }
+  ]
+}

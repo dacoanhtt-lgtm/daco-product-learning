@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fx5u_body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3340"/>
+      <stop offset="100%" stop-color="#1a1f29"/>
+    </linearGradient>
+    <linearGradient id="mitsu_red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1a2b"/>
+      <stop offset="100%" stop-color="#b8000e"/>
+    </linearGradient>
+    <linearGradient id="term_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3e4756"/>
+      <stop offset="100%" stop-color="#2a313d"/>
+    </linearGradient>
+  </defs>
+  <!-- Background panel -->
+  <rect x="10" y="10" width="380" height="260" rx="12" fill="url(#fx5u_body)" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Red Brand Stripe -->
+  <rect x="25" y="24" width="8" height="232" rx="3" fill="url(#mitsu_red)"/>
+  
+  <!-- Top Terminal Block (Inputs) -->
+  <rect x="45" y="24" width="330" height="42" rx="4" fill="url(#term_grad)" stroke="#1e2430" stroke-width="1.5"/>
+  <g fill="#94a3b8" font-family="monospace" font-size="9">
+    <circle cx="65" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="95" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="125" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="155" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="185" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="215" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="245" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="275" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="305" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="335" cy="40" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+  <text x="50" y="60" fill="#94a3b8" font-size="8" font-family="sans-serif">L  N  24V 0V  X0  X1  X2  X3  X4  X5  X6  X7</text>
+
+  <!-- Central Unit Cover -->
+  <rect x="45" y="74" width="330" height="132" rx="6" fill="#1e2430" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Logo & Model Label -->
+  <text x="60" y="98" fill="#f8fafc" font-size="14" font-weight="900" font-family="Arial, sans-serif" letter-spacing="1">MITSUBISHI ELECTRIC</text>
+  <text x="60" y="118" fill="#e60012" font-size="16" font-weight="900" font-family="Arial, sans-serif">MELSEC iQ-F</text>
+  <rect x="60" y="125" width="130" height="24" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="68" y="141" fill="#38bdf8" font-size="12" font-weight="bold" font-family="monospace">FX5U-32MT/ES</text>
+
+  <!-- Status LEDs -->
+  <g transform="translate(205, 85)">
+    <circle cx="10" cy="12" r="4" fill="#22c55e"><animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="20" y="15" fill="#cbd5e1" font-size="9" font-family="sans-serif" font-weight="bold">PWR</text>
+    <circle cx="55" cy="12" r="4" fill="#22c55e"/>
+    <text x="65" y="15" fill="#cbd5e1" font-size="9" font-family="sans-serif" font-weight="bold">RUN</text>
+    <circle cx="100" cy="12" r="4" fill="#475569"/>
+    <text x="110" y="15" fill="#94a3b8" font-size="9" font-family="sans-serif" font-weight="bold">ERR</text>
+
+    <!-- I/O Monitor LEDs Matrix -->
+    <rect x="5" y="28" width="145" height="42" rx="3" fill="#090d16" stroke="#1e293b"/>
+    <text x="10" y="40" fill="#64748b" font-size="8" font-family="monospace">IN:  ● ● ● ● ○ ○ ○ ○</text>
+    <text x="10" y="58" fill="#64748b" font-size="8" font-family="monospace">OUT: ● ● ○ ○ ○ ○ ○ ○</text>
+  </g>
+
+  <!-- Ethernet RJ-45 Port & SD Slot -->
+  <rect x="60" y="160" width="38" height="34" rx="4" fill="#0b0f19" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="68" y="170" width="22" height="18" rx="2" fill="#334155"/>
+  <text x="64" y="202" fill="#94a3b8" font-size="7" font-family="sans-serif">ETHERNET</text>
+
+  <rect x="115" y="163" width="16" height="28" rx="2" fill="#020617" stroke="#475569"/>
+  <text x="111" y="202" fill="#94a3b8" font-size="7" font-family="sans-serif">SD CARD</text>
+
+  <rect x="145" y="164" width="30" height="26" rx="3" fill="#0b0f19" stroke="#475569"/>
+  <text x="150" y="180" fill="#22c55e" font-size="8" font-family="sans-serif">RS485</text>
+
+  <!-- Bottom Terminal Block (Outputs) -->
+  <rect x="45" y="214" width="330" height="42" rx="4" fill="url(#term_grad)" stroke="#1e2430" stroke-width="1.5"/>
+  <g fill="#94a3b8" font-family="monospace" font-size="9">
+    <circle cx="65" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="95" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="125" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="155" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="185" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="215" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="245" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="275" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="305" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="335" cy="230" r="5" fill="#64748b" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+  <text x="50" y="250" fill="#94a3b8" font-size="8" font-family="sans-serif">COM0 Y0  Y1  COM1 Y2  Y3  COM2 Y4  Y5  COM3 Y6  Y7</text>
+</svg>

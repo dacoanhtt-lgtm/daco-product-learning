@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <!-- Base Rack -->
+  <rect x="15" y="20" width="370" height="240" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+  <line x1="15" y1="230" x2="385" y2="230" stroke="#f59e0b" stroke-width="3"/>
+  <!-- Power Supply Module -->
+  <rect x="30" y="30" width="65" height="190" rx="4" fill="#1f2937" stroke="#4b5563"/>
+  <text x="40" y="55" fill="#ffffff" font-size="10" font-weight="bold">Q61P</text>
+  <text x="38" y="70" fill="#9ca3af" font-size="8">POWER</text>
+  <circle cx="50" cy="90" r="4" fill="#22c55e"/>
+  <rect x="35" y="130" width="55" height="75" rx="3" fill="#111827"/>
+  <text x="40" y="150" fill="#e5e7eb" font-size="8">100-240V</text>
+  <!-- CPU Module Q03UDV -->
+  <rect x="100" y="30" width="65" height="190" rx="4" fill="#1f2937" stroke="#3b82f6"/>
+  <text x="105" y="55" fill="#38bdf8" font-size="10" font-weight="bold">Q03UDV</text>
+  <text x="105" y="70" fill="#9ca3af" font-size="8">CPU</text>
+  <circle cx="115" cy="90" r="3" fill="#22c55e"/><circle cx="130" cy="90" r="3" fill="#22c55e"/>
+  <rect x="108" y="110" width="50" height="22" rx="2" fill="#030712" stroke="#60a5fa"/>
+  <text x="114" y="125" fill="#60a5fa" font-size="7">ETHERNET</text>
+  <rect x="108" y="140" width="50" height="18" rx="2" fill="#030712"/>
+  <text x="120" y="152" fill="#e5e7eb" font-size="7">USB</text>
+  <!-- I/O Module QX40 -->
+  <rect x="170" y="30" width="60" height="190" rx="4" fill="#1f2937" stroke="#4b5563"/>
+  <text x="175" y="55" fill="#ffffff" font-size="10" font-weight="bold">QX40</text>
+  <text x="175" y="70" fill="#9ca3af" font-size="8">16pt IN</text>
+  <rect x="175" y="90" width="50" height="115" rx="2" fill="#030712"/>
+  <g fill="#22c55e" font-size="7"><circle cx="185" cy="105" r="2"/><circle cx="195" cy="105" r="2"/><circle cx="205" cy="105" r="2"/><circle cx="215" cy="105" r="2"/></g>
+  <!-- Output Module QY40P -->
+  <rect x="235" y="30" width="60" height="190" rx="4" fill="#1f2937" stroke="#4b5563"/>
+  <text x="240" y="55" fill="#ffffff" font-size="10" font-weight="bold">QY40P</text>
+  <text x="240" y="70" fill="#9ca3af" font-size="8">16pt OUT</text>
+  <rect x="240" y="90" width="50" height="115" rx="2" fill="#030712"/>
+  <!-- Network Module QJ71E71 -->
+  <rect x="300" y="30" width="70" height="190" rx="4" fill="#1f2937" stroke="#10b981"/>
+  <text x="305" y="55" fill="#34d399" font-size="9" font-weight="bold">QJ71E71</text>
+  <text x="305" y="70" fill="#9ca3af" font-size="8">100M ENET</text>
+  <rect x="310" y="110" width="50" height="30" rx="2" fill="#030712" stroke="#34d399"/>
+  <text x="316" y="128" fill="#34d399" font-size="8">RJ-45</text>
+</svg>
