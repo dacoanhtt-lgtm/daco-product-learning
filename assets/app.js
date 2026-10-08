@@ -4970,6 +4970,21 @@ function renderProposalsList() {
 
   let list = getProposals();
 
+  // Hiển thị nút Duyệt Tất Cả Đang Chờ ở thanh tiêu đề (Dành riêng cho Admin)
+  const bulkContainer = document.getElementById('bulkApproveContainer');
+  const pendingItems = list.filter(p => p.status === 'pending');
+  if (bulkContainer) {
+    if (isAdminLoggedIn() && pendingItems.length > 0) {
+      bulkContainer.innerHTML = `
+        <button class="btn-primary" onclick="adminBulkApproveAll()" style="font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-sm); font-size: 0.88rem; background: var(--gradient-success); color: #fff; box-shadow: 0 4px 12px rgba(16,185,129,0.35);" title="Duyệt tất cả đề xuất đang chờ và tự động cập nhật hết vào từng sản phẩm">
+          <span>⚡</span> <span>Duyệt Tất Cả Đang Chờ (${pendingItems.length})</span>
+        </button>
+      `;
+    } else {
+      bulkContainer.innerHTML = '';
+    }
+  }
+
   // Apply filters
   if (brandFilter !== 'all') {
     list = list.filter(item => item.brand === brandFilter);
@@ -5008,7 +5023,7 @@ function renderProposalsList() {
   const statusLabelMap = {
     'pending': { text: '⏳ Chờ Admin Duyệt', cls: 'pending' },
     'approved': { text: '✅ Đã Duyệt & Áp Dụng', cls: 'approved' },
-    'rejected': { text: '❌ Đã Từ Chối', cls: 'rejected' }
+    'rejected': { text: '❌ Không Được Duyệt', cls: 'rejected' }
   };
 
   const isAdmin = isAdminLoggedIn();
@@ -5045,26 +5060,29 @@ function renderProposalsList() {
         ` : ''}
 
         ${item.adminComment ? `
-          <div class="proposal-admin-feedback">
-            <b>🛡️ Ý kiến Quản trị viên:</b> ${escapeHtml(item.adminComment)}
-          </div>
+          ${item.status === 'rejected' ? `
+            <div style="background: rgba(239, 68, 68, 0.08); border: 1px dashed rgba(239, 68, 68, 0.4); padding: 0.6rem 0.9rem; border-radius: 6px; margin-top: 0.6rem; font-size: 0.84rem; color: #ef4444;">
+              <b>❌ Lý do không được duyệt:</b> ${escapeHtml(item.adminComment)}
+            </div>
+          ` : `
+            <div class="proposal-admin-feedback">
+              <b>🛡️ Quản trị viên:</b> ${escapeHtml(item.adminComment)}
+            </div>
+          `}
         ` : ''}
 
         ${isAdmin ? `
           <div class="proposal-actions-row">
-            <span style="font-size: 0.76rem; color: var(--text-dim); margin-right: auto;">Quyền Admin:</span>
+            <span style="font-size: 0.76rem; color: var(--text-dim); margin-right: auto;">Thao tác Quản trị viên:</span>
             ${item.status === 'pending' ? `
-              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id}, false)" style="background: var(--gradient-success); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;" title="1 Click tự động đưa thẳng nội dung này vào sản phẩm mà không cần gõ lại">
-                ⚡ Tự Động Thêm Vào SP
+              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id})" style="background: var(--gradient-success); font-weight: 700; font-size: 0.82rem; padding: 5px 14px;" title="Duyệt và tự động cập nhật ngay nội dung này vào sản phẩm tương ứng">
+                ✅ Duyệt
               </button>
-              <button class="btn-secondary btn-sm" onclick="adminApproveProposal(${item.id}, true)" style="color: var(--accent-blue); border: 1px solid var(--accent-blue); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;" title="Mở form sửa sản phẩm với nội dung đã được điền sẵn để kiểm tra và lưu">
-                ✏️ Mở Form Sửa (Điền Sẵn)
-              </button>
-              <button class="btn-secondary btn-sm" onclick="adminRejectProposal(${item.id})" style="color: #ef4444; font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
+              <button class="btn-secondary btn-sm" onclick="adminRejectProposal(${item.id})" style="color: #ef4444; border: 1px solid rgba(239,68,68,0.4); font-weight: 700; font-size: 0.82rem; padding: 5px 12px;" title="Từ chối và ghi rõ lý do để người đề xuất đọc">
                 ❌ Từ Chối
               </button>
             ` : ''}
-            <button class="btn-secondary btn-sm" onclick="adminDeleteProposal(${item.id})" style="color: var(--text-muted); font-size: 0.78rem; padding: 4px 8px;">
+            <button class="btn-secondary btn-sm" onclick="adminDeleteProposal(${item.id})" style="color: var(--text-muted); font-size: 0.78rem; padding: 5px 8px;" title="Xóa vĩnh viễn ghi chú này">
               🗑️ Xóa
             </button>
           </div>
@@ -5074,86 +5092,8 @@ function renderProposalsList() {
   }).join('');
 }
 
-function openNoteProposalModal(productId, productSerial, cat) {
-  const modal = document.getElementById('noteProposalModal');
-  if (!modal) return;
-
-  const brandSelect = document.getElementById('proposalBrandSelect');
-  const serialInp = document.getElementById('proposalProductSerialInput');
-  const idInp = document.getElementById('proposalProductId');
-  const authorInp = document.getElementById('proposalAuthorInput');
-
-  if (brandSelect && CURRENT_BRAND) brandSelect.value = CURRENT_BRAND;
-  if (serialInp) serialInp.value = productSerial || '';
-  if (idInp) idInp.value = productId || '';
-
-  // Remember author name in session
-  const lastAuthor = sessionStorage.getItem('DACO_LAST_PROPOSAL_AUTHOR') || '';
-  if (authorInp && lastAuthor) authorInp.value = lastAuthor;
-
-  modal.classList.add('active');
-  const contentInp = document.getElementById('proposalContentInput');
-  if (contentInp) setTimeout(() => contentInp.focus(), 150);
-}
-
-function closeNoteProposalModal() {
-  const modal = document.getElementById('noteProposalModal');
-  if (modal) modal.classList.remove('active');
-}
-
-function submitNoteProposal(e) {
-  if (e) e.preventDefault();
-
-  const author = (document.getElementById('proposalAuthorInput')?.value || '').trim();
-  const brand = document.getElementById('proposalBrandSelect')?.value || CURRENT_BRAND || 'other';
-  const productSerial = (document.getElementById('proposalProductSerialInput')?.value || '').trim();
-  const typeSelect = document.getElementById('proposalTypeSelect');
-  const type = typeSelect?.value || 'spec';
-  const typeText = typeSelect?.options[typeSelect.selectedIndex]?.text || 'Ghi chú';
-  const content = (document.getElementById('proposalContentInput')?.value || '').trim();
-  const link = (document.getElementById('proposalLinkInput')?.value || '').trim();
-
-  if (!author || !content) {
-    alert('Vui lòng điền họ tên/bộ phận và nội dung đề xuất!');
-    return;
-  }
-
-  sessionStorage.setItem('DACO_LAST_PROPOSAL_AUTHOR', author);
-
-  const now = new Date();
-  const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth()+1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-
-  const list = getProposals();
-  const newId = list.length ? Math.max(...list.map(x => x.id || 0)) + 1 : 1;
-
-  const newProposal = {
-    id: newId,
-    author: author,
-    brand: brand,
-    productSerial: productSerial,
-    type: type,
-    typeText: typeText,
-    content: content,
-    link: link,
-    status: 'pending',
-    date: dateStr,
-    adminComment: ''
-  };
-
-  list.unshift(newProposal);
-  saveProposals(list);
-
-  closeNoteProposalModal();
-  document.getElementById('noteProposalForm')?.reset();
-
-  showToast('📨 Đề xuất của bạn đã được gửi thành công! Admin sẽ duyệt và cập nhật sớm.');
-
-  if (CURRENT_VIEW === 'notes') {
-    renderProposalsList();
-  }
-}
-
-function adminApproveProposal(id, openForm = false) {
+// 1. DUYỆT 1 ĐỀ XUẤT RIÊNG LẺ
+function adminApproveProposal(id) {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
     return;
@@ -5163,37 +5103,43 @@ function adminApproveProposal(id, openForm = false) {
   const item = list.find(x => x.id === id);
   if (!item) return;
 
-  // Tìm sản phẩm tương ứng trong BRAND_DATA
+  const appliedName = applySingleProposalToProduct(item);
+
+  item.status = 'approved';
+  item.adminComment = appliedName 
+    ? `Admin đã duyệt: Đã tự động cập nhật vào sản phẩm [${appliedName}] lúc ${new Date().toLocaleTimeString('vi-VN')}.`
+    : `Admin đã duyệt ghi chú toàn hệ thống.`;
+
+  saveProposals(list);
+  renderProposalsList();
+  
+  if (CURRENT_BRAND === item.brand && CURRENT_VIEW === 'brand') {
+    applyCatalogFilters();
+  }
+
+  showToast(appliedName 
+    ? `✅ Đã duyệt và tự động cập nhật vào dòng [${appliedName}]!` 
+    : `✅ Đã duyệt đề xuất #${id}!`);
+}
+
+// Hàm bổ trợ: Tự động đưa nội dung của 1 proposal vào sản phẩm tương ứng
+function applySingleProposalToProduct(item) {
   const bData = BRAND_DATA[item.brand];
+  if (!bData || !bData.products) return null;
+
   let matchedProduct = null;
-  if (bData && bData.products) {
-    if (item.productId) {
-      matchedProduct = bData.products.find(p => p.id == item.productId);
-    }
-    if (!matchedProduct && item.productSerial) {
-      const q = item.productSerial.toLowerCase().trim();
-      matchedProduct = bData.products.find(p => 
-        p.serial.toLowerCase().includes(q) || 
-        q.includes(p.serial.toLowerCase()) ||
-        (p.models || []).some(m => m.toLowerCase().includes(q))
-      );
-    }
+  if (item.productId) {
+    matchedProduct = bData.products.find(p => p.id == item.productId);
+  }
+  if (!matchedProduct && item.productSerial) {
+    const q = item.productSerial.toLowerCase().trim();
+    matchedProduct = bData.products.find(p => 
+      p.serial.toLowerCase().includes(q) || 
+      q.includes(p.serial.toLowerCase()) ||
+      (p.models || []).some(m => m.toLowerCase().includes(q))
+    );
   }
 
-  // Lựa chọn 1: Duyệt & Mở Form Sửa với nội dung đã được điền sẵn nguyên vẹn
-  if (openForm && matchedProduct) {
-    CURRENT_BRAND = item.brand;
-    const prefilledNote = `\n**Đề xuất Sales/Mua hàng (${item.author})**: ${item.content}`;
-    openEditProductModal(matchedProduct.id, prefilledNote);
-    
-    item.status = 'approved';
-    item.adminComment = `Admin đã duyệt và mở form chỉnh sửa dòng [${matchedProduct.serial}].`;
-    saveProposals(list);
-    renderProposalsList();
-    return;
-  }
-
-  // Lựa chọn 2: 1-CLICK TỰ ĐỘNG CẬP NHẬT TRỰC TIẾP VÀO SẢN PHẨM (KHÔNG CẦN GÕ LẠI BẤT KỲ CHỮ NÀO)
   if (matchedProduct) {
     matchedProduct.points = matchedProduct.points || [];
     let bulletPrefix = '💡 **Tư vấn Sales & Mua hàng**';
@@ -5202,53 +5148,87 @@ function adminApproveProposal(id, openForm = false) {
     else if (item.type === 'catalog') bulletPrefix = '📚 **Tài liệu tham khảo**';
 
     const newBullet = `${bulletPrefix} (${item.author}): ${item.content}`;
-    matchedProduct.points.push(newBullet);
+    // Kiểm tra tránh trùng lặp
+    if (!matchedProduct.points.includes(newBullet)) {
+      matchedProduct.points.push(newBullet);
+    }
 
     if (item.link && (item.type === 'catalog' || !matchedProduct.brochure)) {
       matchedProduct.brochure = item.link;
     }
 
-    // Lưu vào LocalStorage của thương hiệu
     localStorage.setItem(`portal_custom_products_${item.brand}`, JSON.stringify(bData.products));
-
-    item.status = 'approved';
-    item.adminComment = `Đã tự động thêm vào thông tin sản phẩm [${matchedProduct.serial}] lúc ${new Date().toLocaleTimeString('vi-VN')}.`;
-    saveProposals(list);
-    renderProposalsList();
-    
-    // Nếu đang xem thương hiệu này, re-render bảng catalog
-    if (CURRENT_BRAND === item.brand && CURRENT_VIEW === 'brand') {
-      applyCatalogFilters();
-    }
-
-    showToast(`⚡ ĐÃ TỰ ĐỘNG CẬP NHẬT ghi chú vào sản phẩm [${matchedProduct.serial}] thành công!`);
-  } else {
-    // Nếu là ghi chú toàn hệ thống không gắn riêng model nào
-    item.status = 'approved';
-    item.adminComment = `Admin đã duyệt ghi chú toàn hệ thống.`;
-    saveProposals(list);
-    renderProposalsList();
-    showToast(`✅ Đã phê duyệt đề xuất #${id}!`);
+    return matchedProduct.serial;
   }
+  return null;
 }
 
+// 2. TỪ CHỐI ĐỀ XUẤT (KÈM LÝ DO RÕ RÀNG)
 function adminRejectProposal(id) {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
     return;
   }
-  const comment = prompt('Lý do từ chối đề xuất này:', 'Thông tin chưa đủ căn cứ hoặc đã có phương án thay thế.');
-  if (comment === null) return;
 
   const list = getProposals();
   const item = list.find(x => x.id === id);
-  if (item) {
-    item.status = 'rejected';
-    item.adminComment = comment || 'Admin đã từ chối đề xuất này.';
-    saveProposals(list);
-    renderProposalsList();
-    showToast(`❌ Đã từ chối đề xuất #${id}!`);
+  if (!item) return;
+
+  const reason = prompt(
+    `Nhập lý do không duyệt đề xuất của "${item.author}" (lý do này sẽ hiển thị công khai trên thẻ để người đề xuất đọc và hiểu):`,
+    'Thông tin giá chưa bao gồm VAT / Mã hàng này khách đã chọn phương án khác.'
+  );
+
+  if (reason === null) return; // Người dùng bấm Hủy (Cancel)
+
+  item.status = 'rejected';
+  item.adminComment = (reason.trim() || 'Admin không duyệt đề xuất này do thông tin chưa phù hợp.');
+  
+  saveProposals(list);
+  renderProposalsList();
+  showToast(`❌ Đã từ chối đề xuất #${id} với lý do được ghi nhận!`);
+}
+
+// 3. NÚT CHUNG: DUYỆT TẤT CẢ ĐANG CHỜ & TỰ ĐỘNG CẬP NHẬT HÀNG LOẠT
+function adminBulkApproveAll() {
+  if (!isAdminLoggedIn()) {
+    openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
+    return;
   }
+
+  const list = getProposals();
+  const pendingItems = list.filter(p => p.status === 'pending');
+
+  if (!pendingItems.length) {
+    alert('Hiện không có đề xuất nào đang chờ duyệt!');
+    return;
+  }
+
+  const confirmMsg = `Bạn có chắc chắn muốn DUYỆT HÀNG LOẠT toàn bộ ${pendingItems.length} đề xuất đang chờ?
+
+Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm tương ứng và lưu dữ liệu.`;
+  if (!confirm(confirmMsg)) return;
+
+  let updatedCount = 0;
+  const nowStr = new Date().toLocaleTimeString('vi-VN');
+
+  pendingItems.forEach(item => {
+    const appliedName = applySingleProposalToProduct(item);
+    item.status = 'approved';
+    item.adminComment = appliedName 
+      ? `Đã duyệt hàng loạt: Tự động cập nhật vào [${appliedName}] (${nowStr}).`
+      : `Đã duyệt hàng loạt lúc ${nowStr}.`;
+    updatedCount++;
+  });
+
+  saveProposals(list);
+  renderProposalsList();
+
+  if (CURRENT_VIEW === 'brand') {
+    applyCatalogFilters();
+  }
+
+  showToast(`⚡ ĐÃ DUYỆT VÀ TỰ ĐỘNG CẬP NHẬT TOÀN BỘ ${updatedCount} ĐỀ XUẤT THÀNH CÔNG!`);
 }
 
 function adminDeleteProposal(id) {
