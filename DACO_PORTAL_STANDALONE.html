@@ -22949,7 +22949,7 @@ function closeSupplierEditModal() {
 }
 
 // 1. Mở Modal chỉnh sửa nội dung Sản Phẩm (Dòng bảng)
-function openEditProductModal(id) {
+function openEditProductModal(id, prefilledNote = '') {
   const data = BRAND_DATA[CURRENT_BRAND];
   if (!data || !data.products) return;
   const p = data.products.find(x => x.id === id);
@@ -23024,7 +23024,7 @@ function openEditProductModal(id) {
 
       <div style="margin-bottom: 0.75rem;">
         <label class="form-label">Đặc Điểm & Cảnh Báo Kỹ Thuật (Cột 4 - Mỗi dòng 1 ý gạch đầu dòng):</label>
-        <textarea id="editProdPoints" class="form-input" rows="3" placeholder="**Bản chất**: ...&#10;**Ứng dụng**: ...&#10;**Cảnh báo**: ...&#10;**Tư vấn Sales**: ...">${(p.points || []).join('\n')}</textarea>
+        <textarea id="editProdPoints" class="form-input" rows="3" placeholder="**Bản chất**: ...&#10;**Ứng dụng**: ...&#10;**Cảnh báo**: ...&#10;**Tư vấn Sales**: ...">${(p.points || []).join('\n')}${prefilledNote}</textarea>
       </div>
 
       <div style="margin-bottom: 0.75rem;">
@@ -23771,8 +23771,11 @@ function renderProposalsList() {
           <div class="proposal-actions-row">
             <span style="font-size: 0.76rem; color: var(--text-dim); margin-right: auto;">Quyền Admin:</span>
             ${item.status === 'pending' ? `
-              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id})" style="background: var(--gradient-success); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
-                ✅ Duyệt & Cập Nhật
+              <button class="btn-primary btn-sm" onclick="adminApproveProposal(${item.id}, false)" style="background: var(--gradient-success); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;" title="1 Click tự động đưa thẳng nội dung này vào sản phẩm mà không cần gõ lại">
+                ⚡ Tự Động Thêm Vào SP
+              </button>
+              <button class="btn-secondary btn-sm" onclick="adminApproveProposal(${item.id}, true)" style="color: var(--accent-blue); border: 1px solid var(--accent-blue); font-weight: 700; font-size: 0.78rem; padding: 4px 10px;" title="Mở form sửa sản phẩm với nội dung đã được điền sẵn để kiểm tra và lưu">
+                ✏️ Mở Form Sửa (Điền Sẵn)
               </button>
               <button class="btn-secondary btn-sm" onclick="adminRejectProposal(${item.id})" style="color: #ef4444; font-weight: 700; font-size: 0.78rem; padding: 4px 10px;">
                 ❌ Từ Chối
@@ -23867,19 +23870,79 @@ function submitNoteProposal(e) {
   }
 }
 
-function adminApproveProposal(id) {
+function adminApproveProposal(id, openForm = false) {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
     return;
   }
-  const comment = prompt('Nhập phản hồi/ghi chú của Admin khi duyệt (có thể để trống):', 'Admin đã duyệt và cập nhật vào hệ thống.');
-  if (comment === null) return; // user cancelled
 
   const list = getProposals();
   const item = list.find(x => x.id === id);
-  if (item) {
+  if (!item) return;
+
+  // Tìm sản phẩm tương ứng trong BRAND_DATA
+  const bData = BRAND_DATA[item.brand];
+  let matchedProduct = null;
+  if (bData && bData.products) {
+    if (item.productId) {
+      matchedProduct = bData.products.find(p => p.id == item.productId);
+    }
+    if (!matchedProduct && item.productSerial) {
+      const q = item.productSerial.toLowerCase().trim();
+      matchedProduct = bData.products.find(p => 
+        p.serial.toLowerCase().includes(q) || 
+        q.includes(p.serial.toLowerCase()) ||
+        (p.models || []).some(m => m.toLowerCase().includes(q))
+      );
+    }
+  }
+
+  // Lựa chọn 1: Duyệt & Mở Form Sửa với nội dung đã được điền sẵn nguyên vẹn
+  if (openForm && matchedProduct) {
+    CURRENT_BRAND = item.brand;
+    const prefilledNote = `\n**Đề xuất Sales/Mua hàng (${item.author})**: ${item.content}`;
+    openEditProductModal(matchedProduct.id, prefilledNote);
+    
     item.status = 'approved';
-    item.adminComment = comment || 'Admin đã duyệt thành công.';
+    item.adminComment = `Admin đã duyệt và mở form chỉnh sửa dòng [${matchedProduct.serial}].`;
+    saveProposals(list);
+    renderProposalsList();
+    return;
+  }
+
+  // Lựa chọn 2: 1-CLICK TỰ ĐỘNG CẬP NHẬT TRỰC TIẾP VÀO SẢN PHẨM (KHÔNG CẦN GÕ LẠI BẤT KỲ CHỮ NÀO)
+  if (matchedProduct) {
+    matchedProduct.points = matchedProduct.points || [];
+    let bulletPrefix = '💡 **Tư vấn Sales & Mua hàng**';
+    if (item.type === 'price_supplier') bulletPrefix = '💰 **Ghi chú Giá & Tồn kho NCC**';
+    else if (item.type === 'spec') bulletPrefix = '⚙️ **Bổ sung kỹ thuật**';
+    else if (item.type === 'catalog') bulletPrefix = '📚 **Tài liệu tham khảo**';
+
+    const newBullet = `${bulletPrefix} (${item.author}): ${item.content}`;
+    matchedProduct.points.push(newBullet);
+
+    if (item.link && (item.type === 'catalog' || !matchedProduct.brochure)) {
+      matchedProduct.brochure = item.link;
+    }
+
+    // Lưu vào LocalStorage của thương hiệu
+    localStorage.setItem(`portal_custom_products_${item.brand}`, JSON.stringify(bData.products));
+
+    item.status = 'approved';
+    item.adminComment = `Đã tự động thêm vào thông tin sản phẩm [${matchedProduct.serial}] lúc ${new Date().toLocaleTimeString('vi-VN')}.`;
+    saveProposals(list);
+    renderProposalsList();
+    
+    // Nếu đang xem thương hiệu này, re-render bảng catalog
+    if (CURRENT_BRAND === item.brand && CURRENT_VIEW === 'brand') {
+      applyCatalogFilters();
+    }
+
+    showToast(`⚡ ĐÃ TỰ ĐỘNG CẬP NHẬT ghi chú vào sản phẩm [${matchedProduct.serial}] thành công!`);
+  } else {
+    // Nếu là ghi chú toàn hệ thống không gắn riêng model nào
+    item.status = 'approved';
+    item.adminComment = `Admin đã duyệt ghi chú toàn hệ thống.`;
     saveProposals(list);
     renderProposalsList();
     showToast(`✅ Đã phê duyệt đề xuất #${id}!`);
