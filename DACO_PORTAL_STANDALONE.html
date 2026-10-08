@@ -3999,6 +3999,61 @@ body.is-resizing-table-col {
     </div>
   </div>
 
+  <!-- Modal Từ Chối Đề Xuất Chuyên Nghiệp (In-App Modal) -->
+  <div class="modal-overlay" id="rejectProposalModal">
+    <div class="modal-card" style="max-width: 530px; border-radius: 14px;">
+      <button class="modal-close" onclick="closeRejectProposalModal()">&times;</button>
+      <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.75rem;">
+        <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(239,68,68,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">❌</div>
+        <div>
+          <h3 style="margin: 0; font-size: 1.22rem; font-weight: 800; color: var(--text-main);">Từ Chối Đề Xuất</h3>
+          <div style="font-size: 0.8rem; color: var(--text-muted);" id="rejectModalSubtext">Lý do từ chối sẽ hiển thị minh bạch cho người đề xuất đọc</div>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45; margin-bottom: 0.9rem; background: var(--bg-secondary); padding: 0.75rem 0.9rem; border-radius: 8px; border: 1px solid var(--border-color);" id="rejectProposalSummaryBox">
+      </div>
+
+      <div style="margin-bottom: 0.75rem;">
+        <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.4rem;">Gợi ý lý do nhanh (Nhấp để chọn):</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.65rem;">
+          <button type="button" class="sample-chip" onclick="fillRejectReason('Báo giá chưa bao gồm VAT hoặc phí vận chuyển.')">Chưa có VAT</button>
+          <button type="button" class="sample-chip" onclick="fillRejectReason('Mã hàng này khách đã chọn phương án thay thế khác.')">Đã chọn mã khác</button>
+          <button type="button" class="sample-chip" onclick="fillRejectReason('Thông số kỹ thuật chưa chính xác theo catalogue chính hãng.')">Sai thông số hãng</button>
+          <button type="button" class="sample-chip" onclick="fillRejectReason('Hệ thống đã có thông tin tương tự, tránh ghi nhận trùng lặp.')">Trùng lặp</button>
+          <button type="button" class="sample-chip" onclick="fillRejectReason('Chưa đủ tài liệu / báo giá chính thức từ đại lý để kiểm chứng.')">Chưa đủ tài liệu</button>
+        </div>
+        <label style="display: block; font-size: 0.76rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.35rem;">Nội Dung Lý Do Từ Chối (*):</label>
+        <textarea id="rejectReasonTextarea" rows="3" placeholder="Nhập lý do cụ thể để anh em Sales / Mua hàng hiểu rõ..." required style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); font-size: 0.88rem; line-height: 1.45; outline: none;"></textarea>
+      </div>
+
+      <input type="hidden" id="rejectProposalTargetId" value="">
+
+      <div style="display: flex; gap: 0.75rem; justify-content: flex-end; border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+        <button type="button" class="btn-secondary" onclick="closeRejectProposalModal()" style="padding: 0.55rem 1.1rem;">Đóng</button>
+        <button type="button" class="btn-primary" onclick="confirmSubmitRejectProposal()" style="background: var(--gradient-danger); border-color: #ef4444; font-weight: 700; padding: 0.55rem 1.4rem;">Xác Nhận Từ Chối</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Xác Nhận Duyệt Hàng Loạt Chuyên Nghiệp (In-App Modal) -->
+  <div class="modal-overlay" id="bulkApproveModal">
+    <div class="modal-card" style="max-width: 480px; border-radius: 14px; text-align: center;">
+      <button class="modal-close" onclick="closeBulkApproveModal()">&times;</button>
+      <div style="padding: 0.5rem 0 1rem;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(16,185,129,0.15); display: inline-flex; align-items: center; justify-content: center; font-size: 1.7rem; margin-bottom: 0.75rem;">⚡</div>
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.4rem;">Xác Nhận Duyệt Hàng Loạt</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin: 0 auto; max-width: 390px;" id="bulkApproveModalDesc">
+          Hệ thống sẽ tự động duyệt toàn bộ các đề xuất đang chờ và cập nhật trực tiếp vào từng dòng sản phẩm tương ứng.
+        </p>
+      </div>
+      <div style="display: flex; gap: 0.75rem; justify-content: flex-end; border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+        <button type="button" class="btn-secondary" onclick="closeBulkApproveModal()" style="padding: 0.55rem 1.1rem;">Hủy Bỏ</button>
+        <button type="button" class="btn-primary" onclick="executeConfirmedBulkApprove()" style="background: var(--gradient-success); border-color: #10b981; font-weight: 700; padding: 0.55rem 1.4rem;">⚡ Duyệt Tất Cả Ngay</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
   <div class="toast" id="toastMessage">📋 Đã sao chép vào bộ nhớ tạm!</div>
 
@@ -23881,7 +23936,7 @@ function applySingleProposalToProduct(item) {
   return null;
 }
 
-// 2. TỪ CHỐI ĐỀ XUẤT (KÈM LÝ DO RÕ RÀNG)
+// 2. TỪ CHỐI ĐỀ XUẤT - MỞ IN-APP MODAL CHÍNH DIỆN XỊN SÒ
 function adminRejectProposal(id) {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
@@ -23892,22 +23947,65 @@ function adminRejectProposal(id) {
   const item = list.find(x => x.id === id);
   if (!item) return;
 
-  const reason = prompt(
-    `Nhập lý do không duyệt đề xuất của "${item.author}" (lý do này sẽ hiển thị công khai trên thẻ để người đề xuất đọc và hiểu):`,
-    'Thông tin giá chưa bao gồm VAT / Mã hàng này khách đã chọn phương án khác.'
-  );
+  const modal = document.getElementById('rejectProposalModal');
+  const targetIdInput = document.getElementById('rejectProposalTargetId');
+  const subtextEl = document.getElementById('rejectModalSubtext');
+  const summaryBox = document.getElementById('rejectProposalSummaryBox');
+  const textarea = document.getElementById('rejectReasonTextarea');
 
-  if (reason === null) return; // Người dùng bấm Hủy (Cancel)
+  if (targetIdInput) targetIdInput.value = item.id;
+  if (subtextEl) subtextEl.innerText = `Đề xuất #${item.id} từ ${item.author} (${item.date})`;
+  if (summaryBox) {
+    summaryBox.innerHTML = `
+      <div style="font-weight: 700; color: var(--text-main); margin-bottom: 3px;">
+        ${escapeHtml(item.productSerial || item.typeText || 'Đề xuất')}
+      </div>
+      <div style="font-style: italic; color: var(--text-secondary);">"${escapeHtml(item.content)}"</div>
+    `;
+  }
+  if (textarea) {
+    textarea.value = '';
+    setTimeout(() => textarea.focus(), 150);
+  }
 
-  item.status = 'rejected';
-  item.adminComment = (reason.trim() || 'Admin không duyệt đề xuất này do thông tin chưa phù hợp.');
-  
-  saveProposals(list);
-  renderProposalsList();
-  showToast(`❌ Đã từ chối đề xuất #${id} với lý do được ghi nhận!`);
+  if (modal) modal.classList.add('active');
 }
 
-// 3. NÚT CHUNG: DUYỆT TẤT CẢ ĐANG CHỜ & TỰ ĐỘNG CẬP NHẬT HÀNG LOẠT
+function fillRejectReason(text) {
+  const textarea = document.getElementById('rejectReasonTextarea');
+  if (textarea) {
+    textarea.value = text;
+    textarea.focus();
+  }
+}
+
+function closeRejectProposalModal() {
+  const modal = document.getElementById('rejectProposalModal');
+  if (modal) modal.classList.remove('active');
+}
+
+function confirmSubmitRejectProposal() {
+  const targetId = parseInt(document.getElementById('rejectProposalTargetId')?.value);
+  const reason = (document.getElementById('rejectReasonTextarea')?.value || '').trim();
+
+  if (!reason) {
+    alert('Vui lòng nhập lý do từ chối để người đề xuất đọc và hiểu!');
+    return;
+  }
+
+  const list = getProposals();
+  const item = list.find(x => x.id === targetId);
+  if (item) {
+    item.status = 'rejected';
+    item.adminComment = reason;
+    saveProposals(list);
+    renderProposalsList();
+    closeRejectProposalModal();
+    showToast(`❌ Đã từ chối đề xuất #${targetId} với lý do được ghi nhận!`);
+  }
+}
+
+// 3. NÚT CHUNG: DUYỆT TẤT CẢ ĐANG CHỜ - MỞ IN-APP CONFIRM MODAL
 function adminBulkApproveAll() {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
@@ -23918,15 +24016,26 @@ function adminBulkApproveAll() {
   const pendingItems = list.filter(p => p.status === 'pending');
 
   if (!pendingItems.length) {
-    alert('Hiện không có đề xuất nào đang chờ duyệt!');
+    showToast('Hiện không có đề xuất nào đang chờ duyệt!');
     return;
   }
 
-  const confirmMsg = `Bạn có chắc chắn muốn DUYỆT HÀNG LOẠT toàn bộ ${pendingItems.length} đề xuất đang chờ?
+  const modal = document.getElementById('bulkApproveModal');
+  const descEl = document.getElementById('bulkApproveModalDesc');
+  if (descEl) {
+    descEl.innerHTML = `Bạn có chắc chắn muốn duyệt hàng loạt toàn bộ <b>${pendingItems.length} đề xuất đang chờ</b>?<br><br>Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm tương ứng và lưu dữ liệu ngay lập tức.`;
+  }
+  if (modal) modal.classList.add('active');
+}
 
-Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm tương ứng và lưu dữ liệu.`;
-  if (!confirm(confirmMsg)) return;
+function closeBulkApproveModal() {
+  const modal = document.getElementById('bulkApproveModal');
+  if (modal) modal.classList.remove('active');
+}
 
+function executeConfirmedBulkApprove() {
+  const list = getProposals();
+  const pendingItems = list.filter(p => p.status === 'pending');
   let updatedCount = 0;
   const nowStr = new Date().toLocaleTimeString('vi-VN');
 
@@ -23940,6 +24049,7 @@ Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm 
   });
 
   saveProposals(list);
+  closeBulkApproveModal();
   renderProposalsList();
 
   if (CURRENT_VIEW === 'brand') {

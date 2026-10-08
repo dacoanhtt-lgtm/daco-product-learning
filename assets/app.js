@@ -5163,7 +5163,7 @@ function applySingleProposalToProduct(item) {
   return null;
 }
 
-// 2. TỪ CHỐI ĐỀ XUẤT (KÈM LÝ DO RÕ RÀNG)
+// 2. TỪ CHỐI ĐỀ XUẤT - MỞ IN-APP MODAL CHÍNH DIỆN XỊN SÒ
 function adminRejectProposal(id) {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
@@ -5174,22 +5174,65 @@ function adminRejectProposal(id) {
   const item = list.find(x => x.id === id);
   if (!item) return;
 
-  const reason = prompt(
-    `Nhập lý do không duyệt đề xuất của "${item.author}" (lý do này sẽ hiển thị công khai trên thẻ để người đề xuất đọc và hiểu):`,
-    'Thông tin giá chưa bao gồm VAT / Mã hàng này khách đã chọn phương án khác.'
-  );
+  const modal = document.getElementById('rejectProposalModal');
+  const targetIdInput = document.getElementById('rejectProposalTargetId');
+  const subtextEl = document.getElementById('rejectModalSubtext');
+  const summaryBox = document.getElementById('rejectProposalSummaryBox');
+  const textarea = document.getElementById('rejectReasonTextarea');
 
-  if (reason === null) return; // Người dùng bấm Hủy (Cancel)
+  if (targetIdInput) targetIdInput.value = item.id;
+  if (subtextEl) subtextEl.innerText = `Đề xuất #${item.id} từ ${item.author} (${item.date})`;
+  if (summaryBox) {
+    summaryBox.innerHTML = `
+      <div style="font-weight: 700; color: var(--text-main); margin-bottom: 3px;">
+        ${escapeHtml(item.productSerial || item.typeText || 'Đề xuất')}
+      </div>
+      <div style="font-style: italic; color: var(--text-secondary);">"${escapeHtml(item.content)}"</div>
+    `;
+  }
+  if (textarea) {
+    textarea.value = '';
+    setTimeout(() => textarea.focus(), 150);
+  }
 
-  item.status = 'rejected';
-  item.adminComment = (reason.trim() || 'Admin không duyệt đề xuất này do thông tin chưa phù hợp.');
-  
-  saveProposals(list);
-  renderProposalsList();
-  showToast(`❌ Đã từ chối đề xuất #${id} với lý do được ghi nhận!`);
+  if (modal) modal.classList.add('active');
 }
 
-// 3. NÚT CHUNG: DUYỆT TẤT CẢ ĐANG CHỜ & TỰ ĐỘNG CẬP NHẬT HÀNG LOẠT
+function fillRejectReason(text) {
+  const textarea = document.getElementById('rejectReasonTextarea');
+  if (textarea) {
+    textarea.value = text;
+    textarea.focus();
+  }
+}
+
+function closeRejectProposalModal() {
+  const modal = document.getElementById('rejectProposalModal');
+  if (modal) modal.classList.remove('active');
+}
+
+function confirmSubmitRejectProposal() {
+  const targetId = parseInt(document.getElementById('rejectProposalTargetId')?.value);
+  const reason = (document.getElementById('rejectReasonTextarea')?.value || '').trim();
+
+  if (!reason) {
+    alert('Vui lòng nhập lý do từ chối để người đề xuất đọc và hiểu!');
+    return;
+  }
+
+  const list = getProposals();
+  const item = list.find(x => x.id === targetId);
+  if (item) {
+    item.status = 'rejected';
+    item.adminComment = reason;
+    saveProposals(list);
+    renderProposalsList();
+    closeRejectProposalModal();
+    showToast(`❌ Đã từ chối đề xuất #${targetId} với lý do được ghi nhận!`);
+  }
+}
+
+// 3. NÚT CHUNG: DUYỆT TẤT CẢ ĐANG CHỜ - MỞ IN-APP CONFIRM MODAL
 function adminBulkApproveAll() {
   if (!isAdminLoggedIn()) {
     openAdminLoginModal('Bạn cần đăng nhập Admin để thực hiện thao tác này.');
@@ -5200,15 +5243,26 @@ function adminBulkApproveAll() {
   const pendingItems = list.filter(p => p.status === 'pending');
 
   if (!pendingItems.length) {
-    alert('Hiện không có đề xuất nào đang chờ duyệt!');
+    showToast('Hiện không có đề xuất nào đang chờ duyệt!');
     return;
   }
 
-  const confirmMsg = `Bạn có chắc chắn muốn DUYỆT HÀNG LOẠT toàn bộ ${pendingItems.length} đề xuất đang chờ?
+  const modal = document.getElementById('bulkApproveModal');
+  const descEl = document.getElementById('bulkApproveModalDesc');
+  if (descEl) {
+    descEl.innerHTML = `Bạn có chắc chắn muốn duyệt hàng loạt toàn bộ <b>${pendingItems.length} đề xuất đang chờ</b>?<br><br>Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm tương ứng và lưu dữ liệu ngay lập tức.`;
+  }
+  if (modal) modal.classList.add('active');
+}
 
-Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm tương ứng và lưu dữ liệu.`;
-  if (!confirm(confirmMsg)) return;
+function closeBulkApproveModal() {
+  const modal = document.getElementById('bulkApproveModal');
+  if (modal) modal.classList.remove('active');
+}
 
+function executeConfirmedBulkApprove() {
+  const list = getProposals();
+  const pendingItems = list.filter(p => p.status === 'pending');
   let updatedCount = 0;
   const nowStr = new Date().toLocaleTimeString('vi-VN');
 
@@ -5222,6 +5276,7 @@ Hệ thống sẽ tự động đưa toàn bộ ghi chú vào các sản phẩm 
   });
 
   saveProposals(list);
+  closeBulkApproveModal();
   renderProposalsList();
 
   if (CURRENT_VIEW === 'brand') {
